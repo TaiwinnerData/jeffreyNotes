@@ -1,0 +1,247 @@
+2022/8/23
+
+1. Our office's computers would reset to default setting every time when you restart your computers.
+2. in tableau, there are tableau and tableau server, you can use broswer to login in tableau server and check some data and setting. 
+3. what's the difference between .hypher files and .tde files. It seems like hyper files are updated to tde fies.
+4. are sql server files .mdf encryped?(or are they safe?)  Seems like no and here's why we need "Transparent data encryped".
+Here's some references talk about this: 
+	https://stackoverflow.com/questions/2186591/how-safe-are-sql-server-2005-mdf-files-re-security
+	https://docs.microsoft.com/en-us/sql/relational-databases/security/encryption/transparent-data-encryption?view=sql-server-2017
+	https://stackoverflow.com/questions/54597082/sql-server-encrypt-mdf-file
+5. how to connect tableau to sql server? 
+	https://www.youtube.com/watch?v=vsthuQk-D18
+6. what is mapping in data analysis, it's kinda like old database field match the new database field, here's some reference:
+	https://www.talend.com/resources/data-mapping/ 
+7. what does data retrievel do? 
+	https://zhuanlan.zhihu.com/p/217566122
+8. what does "extract" do in tableau?
+9. what's the difference between "data living" and "data extract"??? here's some reference: 
+	https://www.tableau.com/zh-tw/about/blog/2016/4/tableau-online-tips-extracts-live-connections-cloud-data-53351
+10. what's the usage of "@" the decorators symbol in python?? here's some renferece:
+	https://builtin.com/software-engineering-perspectives/python-symbol
+	 
+
+
+
+question collection to david:
+1. does every table in david_test has no relationships with each other?
+2. are the tableau server's data from sql server? or the data is just saved in tableau's own databases.
+3. It seems like table server's database collect the columns from sql server's tables?
+4. what is tableau data engine? i saw this one on tableau server?
+5. why do we have p_日报, t_日报 , what's the difference between them and why do we need them both at the same time?
+6. how tableau server connect to mssql server?
+7. there are four datasource in tableau server which are "daily", "log", "thirdParty2", "operation"
+
+
+2022/8/24
+
+1. study about david's code and trying to understand the relationship between "ETL" and david's python code, 
+I was wondering it's doing the "ETL" job
+2. Compared the coding files between taiwinner's production server and test server and i find that test server has 
+files than production files, in a sense that means that the test server is more general than the production server.
+3. tried to figure out if the gitRepo folder in test server actually git all the files in that server actually needs.
+4. I just found that in Taiwinner's production server, there's no crawler script. that means that the test server does
+the crawler??.
+5. ok, i know why tableau server use .hyper files, it's because tableau server is slow when directly connect to 
+sql server, but if you directly use .hyper files, then the speed would way more faster.
+
+
+
+questions collection to david:
+1. why do we use hyper file rather than just using directly connection between sql server and tableau server?
+2. David use git for versino control, but the problem is why didn't david use git repository code as the running code.
+He used git only for code version control but didn't use the code in git repository but seems like copying them to other
+folder outside the gitRepo folder and use them, why? why not just use the gitRepo's code?
+3. Only the test server does the crawler script?? or Production server does crawler too???
+4. what does attendance_record folder do in python script?? 
+
+
+
+2022/8/25
+
+1. keep study about how david's python script and how it works? i read one by one.
+2. what is decorator "@" in python and why do we use it??? here' a reference talk about this, you can check the 
+second answer, and the decorator is actually very useful in python, you should definitely check it out.
+	https://www.zhihu.com/question/26930016
+3. the account before has some type from 7/4 to 8/4 kinda like that, so you need to be careful.
+4. what is table mapping. here's some reference: 
+	https://www.tutorialspoint.com/qlikview/qlikview_mapping_tables.htm
+
+2022/8/26
+1. Alan taught me about the model of the financial table of taiwinner.
+2. keep study david's code.
+3. what is concurrent.future?? here's some reference: 
+	https://steam.oxxostudio.tw/category/python/library/concurrent-futures.html
+4. how to use pandas.read_excel()?
+
+
+
+
+questions collection to david:
+1. why did david use selenium for crawlers script?
+2. why in crawlers script, david need to download the chrome driver and zip the file?? why did he need to use chrome driver
+when the driver is already in the server.
+3. i was really confused right now, in david's code it seems like david only crawled the chrome driver?? but not the 
+customer's rate data???
+4. why did david use pycharm, why do we use it?
+
+
+
+2022/8/29
+1. How to use tableau flow ?? here's a tutorial you should check it out: 
+https://www.youtube.com/watch?v=ECHtuvYxRRA
+2. what does "in-memory" mean for database?? 
+https://zh.wikipedia.org/zh-tw/%E5%86%85%E5%AD%98%E6%95%B0%E6%8D%AE%E5%BA%93
+3. what are the benefits of the "in-memory" databases?? 
+https://www.syscom.com.tw/ePaper_New_Content.aspx?id=355&EPID=191&TableName=sgEPArticle
+4. but if the data is very huge, how can "in memory computer(IMC)" be even possible? here's some references:
+https://www.zhihu.com/question/24519772
+5. and what is the relationship between "Von Neumann architecture" and "in-memory-computing"?
+https://zh.wikipedia.org/zh-tw/%E5%86%AF%C2%B7%E8%AF%BA%E4%BC%8A%E6%9B%BC%E7%BB%93%E6%9E%84
+
+2022/8/30
+1. how to remove the language i don't need by command line or powershell? 
+https://www.sysgeek.cn/windows-10-force-remove-language-pack/
+https://zh.freax.be/outriders-launch-times
+
+
+
+2022/9/1
+1. sql server doesn't get smaller when you delete the rows you have to use shrink, here's some reference:
+https://social.msdn.microsoft.com/Forums/zh-TW/3f870601-a8d4-4b4d-9cd7-2173b53d47b4/2103438500360392600924460360392600927284277943572223567?forum=240
+https://stackoverflow.com/questions/49359889/database-size-after-deleting-rows-does-not-change
+https://stackoverflow.com/questions/439071/how-do-i-shrink-my-sql-server-database
+
+
+
+
+questions to david:
+1. 兩邊資料庫是否有同步的program 
+2. 
+
+
+2022/9/2
+1. how to use decorator in python again? when you use decorator you are actually doing something like the reference below:
+https://stackoverflow.com/questions/14536242/decorator-error-nonetype-object-is-not-callable
+2. what if i use 2 decorator in python script? 
+https://medium.com/citycoddee/python%E9%80%B2%E9%9A%8E%E6%8A%80%E5%B7%A7-3-%E7%A5%9E%E5%A5%87%E5%8F%88%E7%BE%8E%E5%A5%BD%E7%9A%84-decorator-%E5%97%B7%E5%97%9A-6559edc87bc0
+3. how do i package python code to exe? 
+4. as the question3 told, what's the difference between disutils and pyinstaller? here's some reference
+https://www.readfog.com/a/1631851083966025728
+
+
+2022/9/7
+1. how to use python exec() function: https://stackoverflow.com/questions/8294618/define-a-lambda-expression-that-raises-an-exception
+
+
+
+2022/9/12
+1. github 正式環境如何操作: https://ithelp.ithome.com.tw/questions/10190410
+2. github 如何自動部屬? https://learnku.com/articles/9319/the-automatic-deployment-server-environment-and-use-git-to-achieve-the-local-code-automatically-synchronized-to-the-server
+3. windows command line 卡住(或是python卡住), 這是可能的原因: https://blog.csdn.net/qq_34254642/article/details/104641591
+
+2022/9/13
+1. convention of the python variable or function or other naming style:
+https://zhuanlan.zhihu.com/p/389055515
+2. about python internal object: http://note.drx.tw/2015/01/google-python-style-callname-rules-main.html ,
+you can use this in a lotta situation.
+3. is __init__.py must be neccessary in python package? it seems not: https://segmentfault.com/q/1010000012365228 , https://zhuanlan.zhihu.com/p/130927618
+4. 現鈔, 現匯, 買入賣出... : https://www.zhihu.com/question/21482074
+
+2022/9/14
+1. how do you use "cmd" to call another "cmd" to do some bat commands? here's the reference:
+https://stackoverflow.com/questions/9392874/bat-file-open-new-cmd-window-and-execute-a-command-in-there
+2. git silent installation: https://superuser.com/questions/944576/git-for-windows-silent-install-silent-arguments
+3. can you connect mysql database with sql server management tool? it seems like possible?  https://docs.devart.com/odbc/mysql/microsoft_sql_server_manager_s.htm
+4. how can you change password in sql server in sqlcmd, here's some reference: https://www.techonthenet.com/sql_server/users/alter_login.php
+5. i did change password in sqlcmd following the way number 4 did but nothing happens, how?
+6. here's how you can use sqlcmd to show all the login user: "select name, type_desc from sys.sql_logins"
+7. sqlcmd, how to create login username and set password? here's some reference: you can use "create login username with PASSWORD = 'password';"
+
+
+2022/9/15
+1. git push can't be done because of the authentication method change in github, you have to use token, here's how you can make it: 
+https://stackoverflow.com/questions/68775869/message-support-for-password-authentication-was-removed-please-use-a-personal
+in the reference url above, you can use the developer's hack method to directly make push step works very convenient
+https://brucehsu-developer.medium.com/%E8%BD%89%E6%8F%9B%E4%BD%BF%E7%94%A8-personal-access-token-%E6%9B%B4%E5%AE%89%E5%85%A8%E7%9A%84%E6%93%8D%E4%BD%9C-github-86deee62bd52
+
+
+2022/9/16
+1. When using Git, is it a bad practice if I always commit and push to the master branch directly? here's some reference:
+https://www.quora.com/When-using-Git-is-it-a-bad-practice-if-I-always-commit-and-push-to-the-master-branch-directly
+2. When using Git, if there is no such branch in github, then you can't push the current branch, you have to create branch first, 
+here's the way i think you can check it out: 
+https://stackoverflow.com/questions/13743468/why-cant-i-push-my-new-branch
+3. Try to use flask to create a back end for jeffrey project
+4. In windows command line, if you just want to show the directories in current folder. you can use "dir /AD"
+
+2022/9/19
+1. python vs traditional ETL tools(like "DataStage/Pentaho <also called kettle> or whatever else"), here's some reference i think you should check out:
+https://www.quora.com/When-you-choose-to-make-an-ETL-pipeline-manually-Python-Java-Scala-etc-instead-of-make-it-in-a-tool-such-as-Informatica-SSIS-Pentaho-etc
+here's some reference of etl tools:
+https://zhuanlan.zhihu.com/p/491090772
+2. english, "scrape" means "crawl", well ,kinda, when you see "scrape" or something like "scrapy" it means "crawler"
+3. i just find out that you can't connect to "test sql server" is because the firewall problem, you can set your "port" connectable in <<Windows Firewall with Advanced Security>>,
+here's some reference:
+https://store.oceansystems.com/knowledgebase/quickdme-faqs/sql-server-sql-express/configure-sql-express-server-host-enable-tcp-ip-firewall-settings/
+https://www.tomshardware.com/news/how-to-open-firewall-ports-in-windows-10,36451.html  ---> definitely check it out.    
+4. in the note 3. in windows Firewall with Advanced Security, I set the profile to "all" which is including "Domain", "Private" and "public", then finally can connect the "test server"
+, I guess the problem is that the test server is not in the domain of our environment.
+
+
+2022/9/20
+1. how to set envrionment variable in windows command line? using this command: "setx PATH "%PATH%;C:\Something\bin" , here's some reference:
+https://stackoverflow.com/questions/24219627/how-to-update-system-path-variable-permanently-from-cmd
+2. how to silent install python? here's some reference: 
+https://docs.python.org/3/using/windows.html
+3. 
+
+2022/9/21
+1. what's the difference between "apply", "map", "applymap" in pandas?  
+
+2022/9/22
+1. pandas dataframe index method: https://stackoverflow.com/questions/21800169/python-pandas-get-index-of-rows-where-column-matches-certain-value
+2. for method for pandas dataframe: https://stackoverflow.com/questions/16476924/how-to-iterate-over-rows-in-a-dataframe-in-pandas
+
+
+2022/9/23
+1. In vim, how do i delete all after cursor? Here's some reference: https://unix.stackexchange.com/questions/4415/delete-from-cursor-to-end-of-line-in-vi
+2. for flask website developement, how can i use index.html in flask application?? here's some refernce tutorial talk about this:
+https://www.digitalocean.com/community/tutorials/how-to-make-a-web-application-using-flask-in-python-3
+
+
+2022/9/26
+1. how do i import relative packages in python?? https://stackoverflow.com/questions/66024987/how-to-import-a-module-from-outside-the-current-folder
+2. 
+
+
+2022/9/27
+1. how to use "keyword arguments" in function in python: https://stackoverflow.com/questions/18195391/why-a-calling-function-in-python-contains-variable-equal-to-value
+, here's another reference i think you can check it out: https://treyhunner.com/2018/04/keyword-arguments-in-python/
+2. test_module_rows for "2022-09-01" month, the number of records is: 645
+
+2022/9/28
+1. how to use flask to run python code in back end. here a good tutorial and a good reference: 
+https://stackoverflow.com/questions/42601478/flask-calling-python-function-on-button-onclick-event
+2. 
+
+2022/9/29
+1. in python class, what's the difference between "staticmethod", "classmethod" and normal instance method. here's some reference talk about this: 
+https://zhuanlan.zhihu.com/p/28010894
+https://blog.csdn.net/Gobsd/article/details/56282967    , <---- here's another reference talk about this.
+2. should and could i use bultin server in flask?? here's some discussion talk about this: 
+https://stackoverflow.com/questions/20843486/what-are-the-limitations-of-the-flask-built-in-web-server
+3. CA003499 9/7's record in questions has some problems.
+
+2022/10/4
+1. 我發現 CB0154YH 6月的問題討論 有7月的帳務(第144欄位), 很有可能是Jay打錯了.
+2. how can i use command line to connect to remote server?? for example:     something like this: 
+\\192.168.200.2\ga-data\12-分析臨時共用\02-個人資料\Jeffrey
+here's some reference talk about this: 
+https://superuser.com/questions/52220/how-do-i-connect-to-a-network-share-via-the-windows-command-prompt
+
+2022/10/5
+1. when you want to use git remote on remote shared disk(something like Z disk or F disk rather your own host's disk", you would encounter some problem like this:
+you can't use "git add file" it would tell you that the other people own this directory!, here's some reference i think you can check it out:
+https://zhuanlan.zhihu.com/p/503889333
+https://www.aspirantzhang.com/network/git-fatal-unsafe-repository.html
