@@ -1,4 +1,4 @@
-2022/8/23
+﻿2022/8/23
 
 1. Our office's computers would reset to default setting every time when you restart your computers.
 2. in tableau, there are tableau and tableau server, you can use broswer to login in tableau server and check some data and setting. 
@@ -245,3 +245,10 @@ https://superuser.com/questions/52220/how-do-i-connect-to-a-network-share-via-th
 you can't use "git add file" it would tell you that the other people own this directory!, here's some reference i think you can check it out:
 https://zhuanlan.zhihu.com/p/503889333
 https://www.aspirantzhang.com/network/git-fatal-unsafe-repository.html
+
+2022/10/6
+1. Here's a machine learning basic tutorial step by step, i think you can read about this: 
+https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
+2. I used matplotlib and i wondering if i can use two "figure" and show two plot diagram, here's some reference talk about this, you can actually make it:
+https://stackoverflow.com/questions/7744697/how-to-show-two-figures-using-matplotlib
+
