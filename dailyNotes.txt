@@ -252,3 +252,8 @@ https://machinelearningmastery.com/machine-learning-in-python-step-by-step/
 2. I used matplotlib and i wondering if i can use two "figure" and show two plot diagram, here's some reference talk about this, you can actually make it:
 https://stackoverflow.com/questions/7744697/how-to-show-two-figures-using-matplotlib
 
+2022/10/12
+1. Here's another machine learning basic, talk about how to use "support vector machine", you should definitely check it out:
+https://towardsdatascience.com/support-vector-machine-python-example-d67d9b63f1c8
+2. Here's another reference talk about what's a model in machine learning: 
+https://zhuanlan.zhihu.com/p/74874291
