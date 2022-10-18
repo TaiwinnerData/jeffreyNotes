@@ -264,10 +264,16 @@ https://zhuanlan.zhihu.com/p/74874291
 1. 今天遇到一個很突然的bug, 關於問題回復, 重跑7, 8月的的資料, 7月對, 8月錯, 其實是因為david的程式t_questions這支不會去併下個月的資料, 理論上重跑8月的資料要去併9月的資料, 但是
 這支程式不會, 所以應該要用p_questions這支程式去跑.
 
-20220/10/14
+2022/10/14
 1. how to use excel to find the number of a columns with certain value(and all the values it has)?
 
 
 2022/10/17
 1. Ijust find out that CB002007 收入金額 = 205021 in Alan's result he gave to me, is equal to the 小小聚合代付, which only one records(but we want the summation), so Alan was definitely wrong
 
+
+2022/10/18
+1. i am studying about how to make login page for a website And I got a problem which is that "Does the default page should be <<index.html>> or <<login.html>>".
+It seems like the <<index.html>> should be default page in some discussion, here's some discussions:
+https://stackoverflow.com/questions/17785500/should-index-page-be-the-first-page-or-the-login-page-what-is-the-best-practice
+2. 
