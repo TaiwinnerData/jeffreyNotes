@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<title> 分析部開發後台 </title>
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="narbar-header">
+					<a class="navbar-brand" href="#">資料庫數據程式後台</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">重灌</a></li>
+					<li><a href="#">Log</a></li>
+					<li><a href="#">錯誤回報</a></li>
+					<li><a href="#">其他</a></li>
+				</ul>
+			</div>
+		</nav>
+		<header> 點選按鈕, 執行程式 </header>
+		<form action="/test_run_python", method="post">
+			<div class="btn-group-vertical">
+				<button name="test_python_run" type="submit" class="btn btn-primary"> 報表模板當月與上月重跑 </button>
+				<button name="test_python_run" type="submit" class="btn btn-primary"> 報表模板超過2個月分以上重跑 </button>
+				<button name="test_python_run" type="submit" class="btn btn-primary"> 生活費用上月重跑 </button>
+				<button name="test_python_run" type="submit" class="btn btn-primary"> 生活費用超過1個月分以上重跑 </button>
+				<button name="test_python_run" type="submit" class="btn btn-primary"> 問題錯誤當月與上月重跑 </button>
+				<button name="test_python_run" type="submit" class="btn btn-primary"> 問題錯誤超過2個月分以上重跑 </button>
+			</div>
+		</form>
+	</body>
+</html>
