@@ -278,3 +278,10 @@ It seems like the <<index.html>> should be default page in some discussion, here
 https://stackoverflow.com/questions/17785500/should-index-page-be-the-first-page-or-the-login-page-what-is-the-best-practice
 2. i am trying to create a login.html using css style but somehow flask get find the path of the css file path, well, here's some references talk about this, i don't know but it works: 
 https://blog.csdn.net/weixin_43853673/article/details/104875913
+3. here's some flask simple login tutorial reference: 
+https://ithelp.ithome.com.tw/articles/10224408
+4. 
+
+2022/10/20
+1. here's an example of how to use flask basic login, i think you should definitely check it out:
+https://hackmd.io/@shaoeChen/rkpy9CGZz?type=view
