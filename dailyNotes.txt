@@ -285,3 +285,7 @@ https://ithelp.ithome.com.tw/articles/10224408
 2022/10/20
 1. here's an example of how to use flask basic login, i think you should definitely check it out:
 https://hackmd.io/@shaoeChen/rkpy9CGZz?type=view
+
+2022/10/21
+1. other kinda regressions, including linear regression and polynomial regression example: 
+https://github.com/chwang12341/Machine-Learning/blob/master/Linear_Regression/sklearn_learning/Linear_Regression.ipynb
