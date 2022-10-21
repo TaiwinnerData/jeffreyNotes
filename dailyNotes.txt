@@ -289,3 +289,9 @@ https://hackmd.io/@shaoeChen/rkpy9CGZz?type=view
 2022/10/21
 1. other kinda regressions, including linear regression and polynomial regression example: 
 https://github.com/chwang12341/Machine-Learning/blob/master/Linear_Regression/sklearn_learning/Linear_Regression.ipynb
+2. i met an interesting question about the error of dimension of the numpy array when i use logisitc model of machine learning, here's some very important reference talk
+about this:
+https://stackoverflow.com/questions/51150153/valueerror-expected-2d-array-got-1d-array-instead 
+here's another explanation:
+https://discuss.codingblocks.com/t/what-is-meaning-of-reshape-1-1/14830
+
