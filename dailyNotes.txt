@@ -294,4 +294,7 @@ about this:
 https://stackoverflow.com/questions/51150153/valueerror-expected-2d-array-got-1d-array-instead 
 here's another explanation:
 https://discuss.codingblocks.com/t/what-is-meaning-of-reshape-1-1/14830
+here's another example of logistic regression:
+https://github.com/andy6804tw/2021-13th-ironman/blob/main/9.%E9%82%8F%E8%BC%AF%E8%BF%B4%E6%AD%B8/9.%E9%82%8F%E8%BC%AF%E8%BF%B4%E6%AD%B8.ipynb
+3. david's cell phone: 0972737388 
 
