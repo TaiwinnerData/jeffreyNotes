@@ -298,3 +298,11 @@ here's another example of logistic regression:
 https://github.com/andy6804tw/2021-13th-ironman/blob/main/9.%E9%82%8F%E8%BC%AF%E8%BF%B4%E6%AD%B8/9.%E9%82%8F%E8%BC%AF%E8%BF%B4%E6%AD%B8.ipynb
 3. david's cell phone: 0972737388 
 
+
+2022/10/24
+1. sql server backup problems, here's some reference i think you should check
+https://ithelp.ithome.com.tw/articles/10282099
+https://blog.hungwin.com.tw/sqlserver-backup-delete-file/
+https://stackoverflow.com/questions/18286765/sql-server-operating-system-error-5-5access-is-denied    --> the folder path get access denied, how?
+
+
