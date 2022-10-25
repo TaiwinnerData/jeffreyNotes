@@ -299,10 +299,19 @@ https://github.com/andy6804tw/2021-13th-ironman/blob/main/9.%E9%82%8F%E8%BC%AF%E
 3. david's cell phone: 0972737388 
 
 
-2022/10/24
+2022/10/24	
 1. sql server backup problems, here's some reference i think you should check
 https://ithelp.ithome.com.tw/articles/10282099
 https://blog.hungwin.com.tw/sqlserver-backup-delete-file/
 https://stackoverflow.com/questions/18286765/sql-server-operating-system-error-5-5access-is-denied    --> the folder path get access denied, how?
+
+2022/10/25
+1. I was trying to backup tableau server by using "TSM", here's some reference:
+https://help.tableau.com/current/server/zh-tw/cli_maintenance_tsm.htm#tsm
+2. I was trying to backup tableau server by using "TSM" command but fail and the reason is highly, and here's the reason, because the memory of the 
+production server is too small(only 4G), it is mininumtly need 8G, here's some references: 
+https://community.tableau.com/s/question/0D54T00000C5OxaSAF/hi-guys-im-with-tableau-message-error-error-occured-during-initialization-of-vm-could-not-reserve-enough-space-for-object-heap
+3. maybe you can use "tableau server api" to solve some automation problem: 
+https://help.tableau.com/current/server/zh-tw/tsm.htm
 
 
