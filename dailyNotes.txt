@@ -314,4 +314,9 @@ https://community.tableau.com/s/question/0D54T00000C5OxaSAF/hi-guys-im-with-tabl
 3. maybe you can use "tableau server api" to solve some automation problem: 
 https://help.tableau.com/current/server/zh-tw/tsm.htm
 
+2022/10/27
+1. I was study about machine learning, and i create differential function and newton's method for find the solution of the functions
+2. I was trying to test the baskup files about tableau_server
+3. 
+
 
