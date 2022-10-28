@@ -319,4 +319,12 @@ https://help.tableau.com/current/server/zh-tw/tsm.htm
 2. I was trying to test the baskup files about tableau_server
 3. 
 
+2022/10/28
+1.  I was trying to make developing envrionment automatically executed, and here's a command to execute switch the screen to clone to "extend":
+https://sdwh.dev/posts/2020/06/DisplaySwitch/
+You can use this command: "displayswitch/extend"  to switch screen setting
+2. conclusion of first notes: here're two interesting commands i think you should know:
+"displayswitch/extend  (or you can use internal, clone, external and so on)
+"scrnsave.scr /s"
+
 
