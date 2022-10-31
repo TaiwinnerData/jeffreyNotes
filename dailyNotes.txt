@@ -327,4 +327,8 @@ You can use this command: "displayswitch/extend"  to switch screen setting
 "displayswitch/extend  (or you can use internal, clone, external and so on)
 "scrnsave.scr /s"
 
+2022/10/31
+1. how to use python array slicing element from an array? You should know how to use it:
+https://www.w3schools.com/python/numpy/numpy_array_slicing.asp
+
 
