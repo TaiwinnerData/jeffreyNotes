@@ -1,1 +1,6 @@
+logistic basic example:
 https://ithelp.ithome.com.tw/articles/10269006
+
+logistic regression fit line(how to use matplotlib to draw), in this example
+you can know the coefficients of the sklearn logistic regression:
+https://scipython.com/blog/plotting-the-decision-boundary-of-a-logistic-regression-model/
