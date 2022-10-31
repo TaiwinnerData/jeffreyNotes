@@ -332,8 +332,7 @@ You can use this command: "displayswitch/extend"  to switch screen setting
 https://www.w3schools.com/python/numpy/numpy_array_slicing.asp
 2. When I use sklearn's logisticRegression() function, how can i get the "weight" and "bias" of the fit function?? here's some reference:
 https://stackoverflow.com/questions/56039406/how-can-i-display-the-weights-and-bias-from-linearregression
-3. Here's another example of how to use SVM.SVC():
-https://pythonprogramming.net/linear-svc-example-scikit-learn-svm-python/
-you should be able to understand 'kernel'
+3. windows task scheduler how to make notification when there's a fail(use email or some other way)? here's some reference:
+https://superuser.com/questions/249103/make-windows-task-scheduler-alert-me-on-fail
 
 
