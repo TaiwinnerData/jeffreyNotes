@@ -336,3 +336,18 @@ https://stackoverflow.com/questions/56039406/how-can-i-display-the-weights-and-b
 https://superuser.com/questions/249103/make-windows-task-scheduler-alert-me-on-fail
 
 
+2022/11/1
+1. study about support vector machine, so why do we call support vector machine "support vector"? here's some explanation:
+https://towardsdatascience.com/so-why-the-heck-are-they-called-support-vector-machines-52fc72c990a1
+https://zhuanlan.zhihu.com/p/49331510
+2. in windows schedule task, how can you get the fail event? and maybe send some message to mail or chat software, here's some reference:
+https://superuser.com/questions/249103/make-windows-task-scheduler-alert-me-on-fail  , you can use this method to send message but you can get the event name.
+3. in telegram send message bot, here's some reference talk about :
+https://stackoverflow.com/questions/55218068/telegram-bot-chat-not-found
+here's another one:
+https://stackoverflow.com/questions/41174831/telegram-bot-chat-not-found
+
+2022/11/2
+1. windows schedule event log, no matter the task successs or fails, the event id always complete with '201', so if we want to trigger the failure alert, we also need to 
+know the result code of the event, here's some reference talk about this:
+https://superuser.com/questions/1278486/acting-on-exit-code-in-windows-task-scheduler
