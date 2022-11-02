@@ -353,3 +353,6 @@ know the result code of the event, here's some reference talk about this:
 https://superuser.com/questions/1278486/acting-on-exit-code-in-windows-task-scheduler
 here's another reference talk about this:
 https://stackoverflow.com/questions/39458024/how-to-trigger-windows-task-schedule-restart-after-fails-with-python-script
+2. in powershell, you can use this kinda script to get the information about the schedule action that is running or not:
+https://stackoverflow.com/questions/49259076/show-task-scheduler-jobs-that-contain-actions
+3. i encountered a very important problem about how to get the schedule task name of the task is running.
