@@ -351,3 +351,5 @@ https://stackoverflow.com/questions/41174831/telegram-bot-chat-not-found
 1. windows schedule event log, no matter the task successs or fails, the event id always complete with '201', so if we want to trigger the failure alert, we also need to 
 know the result code of the event, here's some reference talk about this:
 https://superuser.com/questions/1278486/acting-on-exit-code-in-windows-task-scheduler
+here's another reference talk about this:
+https://stackoverflow.com/questions/39458024/how-to-trigger-windows-task-schedule-restart-after-fails-with-python-script
