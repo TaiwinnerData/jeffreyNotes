@@ -4,3 +4,7 @@ https://ithelp.ithome.com.tw/articles/10269006
 logistic regression fit line(how to use matplotlib to draw), in this example
 you can know the coefficients of the sklearn logistic regression:
 https://scipython.com/blog/plotting-the-decision-boundary-of-a-logistic-regression-model/
+
+here's another example talks about the difference between "vector support
+machine" and "logistic regression:
+https://medium.com/axum-labs/logistic-regression-vs-support-vector-machines-svm-c335610a3d16
