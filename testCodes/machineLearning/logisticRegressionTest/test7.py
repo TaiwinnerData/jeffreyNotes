@@ -95,7 +95,6 @@ print(logistic_model.coef_)
 #print("training set: ", logistic_model.score(x_train, y_train))
 #print("training set: ", logistic_model.score(x_validation, y_validation))
 
-
 w1 = logistic_model.coef_[0][0]
 w2 = logistic_model.coef_[0][1]
 b = result_intercept
@@ -107,9 +106,13 @@ m = -w1/w2
 # and so we want to draw the fit line as  y = -w1/w2 * x - b/w2
 
 
-
 # Show diagram
+# Show the scatter dots
 plt.scatter(test_x[:, 0], test_x[:, 1], s=1)
-plt.plot(test_x[:, 0], test_x[:,0]*m+c, linewidth='0.5')
+# Show the fitted lines
+plt.plot(test_x[:, 0], test_x[:,0]*m+c, 'r-', linewidth='0.5', label="fitted line")
+plt.plot(test_x[:, 0], test_x[:,0]*m+c+10, linewidth='0.5', label="test line")
+# You have to add this line below to make label appeared in the plot
+plt.legend()
 plt.show()
 
