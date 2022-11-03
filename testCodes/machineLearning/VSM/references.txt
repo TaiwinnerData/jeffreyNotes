@@ -2,4 +2,4 @@ https://towardsdatascience.com/support-vector-machine-python-example-d67d9b63f1c
 --- SVM, machine learning website, it talks about the basic.
 
 here's another references talks about the difference between "vsm" and
-logistic regression"
+"logistic regression"
