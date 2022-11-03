@@ -5,11 +5,20 @@ from sklearn.linear_model import LogisticRegression
 from matplotlib import pyplot as plt
 from sklearn.metrics import confusion_matrix
 import numpy as np
+import math as math
 
 
-# Load(or create) dataset
+# Define sigmoid function to logistic regression usage
+def sigmoid(x):
+    return 1/(1+np.exp(-x))
+
+
+# Load(or create) dataset, these datas are created by jeffrey for test.
+
+# this one wouldn't work
 x = [1, 2, 4, 6, 10]
 
+# this one would work, it needs, at least, two columnes to work in logistic regression.
 x = [
         [1, 2],
         [2, 4],
@@ -42,7 +51,7 @@ y = np.array(y)
 print(x)
 print(y)
 
-# Create test dataset
+# Create test dataset, this data is created for test by jeffrey.
 test_x = [11, 12, 13, 14, 16]
 
 test_x = [
@@ -111,8 +120,49 @@ m = -w1/w2
 plt.scatter(test_x[:, 0], test_x[:, 1], s=1)
 # Show the fitted lines
 plt.plot(test_x[:, 0], test_x[:,0]*m+c, 'r-', linewidth='0.5', label="fitted line")
-plt.plot(test_x[:, 0], test_x[:,0]*m+c+10, linewidth='0.5', label="test line")
+#plt.plot(test_x[:, 0], test_x[:,0]*m+c+10, linewidth='0.5', label="test line")
 # You have to add this line below to make label appeared in the plot
 plt.legend()
-plt.show()
+#plt.show()
+
+
+# show the "z = w1x1 + w2x2 + b"
+print("z = w1*x1 + w2*x2 + b")
+print("z = " + str(w1) + "x1"+ str(w2) + "x2" + "+" + str(b))
+test_z = test_x[:, 0]*w1 + test_x[:, 1]*w2 + b
+print("show test_z")
+print(test_z)
+print("show sigmoid result of test_z")
+sigmoid_z = sigmoid(test_z)
+print(sigmoid_z)
+#for i in range(len(test_z)):
+#    sigmoid_z[i] = f'{sigmoid_z[i]:.20f}'  # this script doesn't work.
+#sigmoid_z = f'{sigmoid_z:.20f}'
+print("show sigmoid result without scientific notation.")
+np.set_printoptions(suppress=True)
+print(sigmoid_z)
+# showing y from sigmoid result the pass z value is 0.5
+
+temp_result = []
+for i in range(len(sigmoid_z)):
+    if sigmoid_z[i] > 0.5:
+        temp_result.append(1)
+    else:
+        temp_result.append(0)
+
+
+print("show the prediction value from sigmoid method.")
+print(temp_result)
+        
+
+# show x+y
+print("show x")
+print(test_x[:, 0])
+print("show y")
+print(test_x[:, 1])
+print("show x+y")
+print(test_x[:, 0]*30 + test_x[:, 1]*20)
+
+
+
 
