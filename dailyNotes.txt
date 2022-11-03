@@ -356,3 +356,16 @@ https://stackoverflow.com/questions/39458024/how-to-trigger-windows-task-schedul
 2. in powershell, you can use this kinda script to get the information about the schedule action that is running or not:
 https://stackoverflow.com/questions/49259076/show-task-scheduler-jobs-that-contain-actions
 3. i encountered a very important problem about how to get the schedule task name of the task is running.
+
+
+2022/11/3
+1. What's the difference between "support vector machine" and "Logistic regression" in theory way and practical way? here's some reference talk about this:
+https://medium.com/axum-labs/logistic-regression-vs-support-vector-machines-svm-c335610a3d16
+2. well, it seems like "logistic regression" and "support vector machine" both use vector coefficients but the next steps they use different method to fit the 
+boundary?? here's some reference:
+https://scipython.com/blog/plotting-the-decision-boundary-of-a-logistic-regression-model/
+3. how can you print number result without scientific notation, for example,
+if i want to print my results as 0.0001 rather than 1.0000e_05 ,because maybe
+i want to use this result as data to do something. Here's some reference:
+https://stackoverflow.com/questions/658763/how-to-suppress-scientific-notation-when-printing-float-values
+
