@@ -368,4 +368,10 @@ https://scipython.com/blog/plotting-the-decision-boundary-of-a-logistic-regressi
 if i want to print my results as 0.0001 rather than 1.0000e_05 ,because maybe
 i want to use this result as data to do something. Here's some reference:
 https://stackoverflow.com/questions/658763/how-to-suppress-scientific-notation-when-printing-float-values
+here's another reference talks about this:
+https://thispointer.com/print-numpy-array-without-scientific-notation-in-python/
+
+4. how can i get trigger task name when the trigger happens in windows
+scheduler task? i think the <ValueQueries> tag is the key point, here's some
+reference: https://michlstechblog.info/blog/windows-passing-parameters-to-event-triggered-schedule-tasks/
 
