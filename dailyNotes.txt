@@ -381,3 +381,4 @@ reference: https://michlstechblog.info/blog/windows-passing-parameters-to-event-
 https://www.quora.com/Which-is-better-for-binary-classification-SVM-or-logistic-regression    , you can read the answer from Tarun Bawa
 2. how to use trigger events?? in windows scheduler task:
 https://community.broadcom.com/communities/community-home/digestviewer/viewthread?MID=783977
+3. how to get task log event: https://stackoverflow.com/questions/50349577/how-to-pass-the-name-of-failed-task-to-action-argument-on-event-log-eventid-203
