@@ -379,3 +379,5 @@ reference: https://michlstechblog.info/blog/windows-passing-parameters-to-event-
 2022/11/4
 1. which one is better for linear classification? Logistic regression or SVM? Here's some references talks about this:
 https://www.quora.com/Which-is-better-for-binary-classification-SVM-or-logistic-regression    , you can read the answer from Tarun Bawa
+2. how to use trigger events?? in windows scheduler task:
+https://community.broadcom.com/communities/community-home/digestviewer/viewthread?MID=783977
