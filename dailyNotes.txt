@@ -382,3 +382,17 @@ https://www.quora.com/Which-is-better-for-binary-classification-SVM-or-logistic-
 2. how to use trigger events?? in windows scheduler task:
 https://community.broadcom.com/communities/community-home/digestviewer/viewthread?MID=783977
 3. how to get task log event: https://stackoverflow.com/questions/50349577/how-to-pass-the-name-of-failed-task-to-action-argument-on-event-log-eventid-203
+
+
+
+2022/11/7
+1. i was making windows schedule task, for task completement trigger the message to telegram but doesn't work.
+2. in sql server, what's the difference between "delete from table" and "drop table" and "truncate table"? here's some reference: 
+https://dotblogs.com.tw/brian/2013/03/22/98648 
+the key point is that using "delete from" would cause a lotta memories, it's not a good way to delete whole table data.
+
+
+
+2022/11/8
+1. how do you search special symbol character in vim?
+You can use escape character: like '\', so if you want to search ',' you can type '\,'. something like that.
