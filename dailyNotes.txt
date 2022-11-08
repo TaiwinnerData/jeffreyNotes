@@ -396,3 +396,5 @@ the key point is that using "delete from" would cause a lotta memories, it's not
 2022/11/8
 1. how do you search special symbol character in vim?
 You can use escape character: like '\', so if you want to search ',' you can type '\,'. something like that.
+2. what is make_blobs in sklearn, and how do you use this, here's some explanation:
+https://blog.csdn.net/DeniuHe/article/details/102407537
