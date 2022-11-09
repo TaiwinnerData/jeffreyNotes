@@ -398,3 +398,7 @@ the key point is that using "delete from" would cause a lotta memories, it's not
 You can use escape character: like '\', so if you want to search ',' you can type '\,'. something like that.
 2. what is make_blobs in sklearn, and how do you use this, here's some explanation:
 https://blog.csdn.net/DeniuHe/article/details/102407537
+
+2022/11/9
+1. tsm command still can't be used after liscence renew, so it's probably another problem, here's some references and possible reasons cause this kinda trouble:
+https://kb.tableau.com/articles/issue/tsm-commands-failing-after-rebooting-the-server-host?lang=it-it
