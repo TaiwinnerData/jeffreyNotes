@@ -409,4 +409,7 @@ https://towardsdatascience.com/multi-class-classification-one-vs-all-one-vs-one-
 https://data-flair.training/blogs/iris-flower-classification/
 2. what's the difference between name "multinomial" and "polynomial"??
 3. what's the difference between name "nomial" and "nominal"?? they are kinda difference.
+4. I still can't use tableau api, and i think it's still because of the permission of the ryan account doesn't have the permission that's probably the reason:
+https://kb.tableau.com/articles/issue/unable-to-refresh-salesforce-data-source-on-tableau-server-due-to-java-lang-runtimeexception-operation-timed-out
+
 
