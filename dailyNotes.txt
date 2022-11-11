@@ -402,3 +402,11 @@ https://blog.csdn.net/DeniuHe/article/details/102407537
 2022/11/9
 1. tsm command still can't be used after liscence renew, so it's probably another problem, here's some references and possible reasons cause this kinda trouble:
 https://kb.tableau.com/articles/issue/tsm-commands-failing-after-rebooting-the-server-host?lang=it-it
+
+2022/11/11
+1. in machine learning, how can i deal with multi-class classificaiton? here are some references talks about this you should be able to understand the content:
+https://towardsdatascience.com/multi-class-classification-one-vs-all-one-vs-one-94daed32a87b
+https://data-flair.training/blogs/iris-flower-classification/
+2. what's the difference between name "multinomial" and "polynomial"??
+3. what's the difference between name "nomial" and "nominal"?? they are kinda difference.
+
