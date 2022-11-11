@@ -38,7 +38,13 @@ print("-"*50)
 #dataset.hist()
 print("-"*50)
 # scatter plot matrix
-scatter_matrix(dataset)
+scatter_matrix(dataset)     # If you don't set the color, the dots default color would be blue.
+scatter_matrix(dataset, color='red')     # you can set the color for all kinda class of dot. If you want to set different color to different class, you the set below.
+scatter_matrix(dataset, color=['red', 'blue'])     # If you want to set different color for different class dot, you can use....... Fuck! this doesn't work! this should work on all the data which is not what i want.
+# here's a refernece talk about this: 
+# https://stackoverflow.com/questions/45862223/use-different-colors-in-scatterplot-for-iris-dataset
+
+
 print("-"*50)
 
 pyplot.show()
