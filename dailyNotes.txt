@@ -413,3 +413,6 @@ https://data-flair.training/blogs/iris-flower-classification/
 https://kb.tableau.com/articles/issue/unable-to-refresh-salesforce-data-source-on-tableau-server-due-to-java-lang-runtimeexception-operation-timed-out
 
 
+2022/11/14
+1. how to backup sql server in sql commands? here's some reference:
+https://stackoverflow.com/questions/42315280/how-to-copy-mdf-and-ldf-files-from-one-location-to-another-while-the-applicati
