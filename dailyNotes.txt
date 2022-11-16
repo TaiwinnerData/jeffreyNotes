@@ -434,5 +434,5 @@ https://blog.csdn.net/qq_43391414/article/details/112909834
 when you set this argument the same.
 	b. test_size(or you can use train_size) this is the percentage of the train and test data you want to separate
 4. how can i draw three dimensions data in two dimension diagram(which is the normal diagram)?? Here's the usage of "scatter matrix" which you were gonna use this in iris example
-
+5. I want to use scatter_matrix function and pandas has one but what about matplotlib? doesn't it have one?
 
