@@ -416,3 +416,22 @@ https://kb.tableau.com/articles/issue/unable-to-refresh-salesforce-data-source-o
 2022/11/14
 1. how to backup sql server in sql commands? here's some reference:
 https://stackoverflow.com/questions/42315280/how-to-copy-mdf-and-ldf-files-from-one-location-to-another-while-the-applicati
+
+
+2022/11/15
+1. Here's an exmaple talk about how to use matplotlib to draw colorful plot:
+https://stackoverflow.com/questions/70891146/how-to-plot-descion-boundary-for-three-classes-in-logistic-regression
+
+
+2022/11/16
+1. I was studying machine learning, and I was already to know the binary classification problem but can't still understand how to classified three classification problem.
+So I was trying to use "vsm(vector support machine)" method to deal with the "iris" flower problem which is a three classification problem.
+2. when i use iris flower data, the data i loaded from internet was got arranged, so i have to make it more random, you can use train_test_split function to separate the 
+train data and test data, it's very convinent. Here's some reference talks about this:
+https://blog.csdn.net/qq_43391414/article/details/112909834
+3. when i use train_test_split function in sklearn here's a very import two parameters for function you should know:
+	a. random_state=??  ---> which would make the data separate with a randomness. The number of the this argument is kinda like seed which would make result the same 
+when you set this argument the same.
+	b. test_size(or you can use train_size) this is the percentage of the train and test data you want to separate
+4. 
+
