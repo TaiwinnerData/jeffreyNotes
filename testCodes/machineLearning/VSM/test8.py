@@ -1,15 +1,24 @@
 # Load libraries
 from pandas import read_csv
+from pandas.plotting import scatter_matrix
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
+from matplotlib import pyplot as plt
 
 
 # Load dataset
 url = "https://raw.githubusercontent.com/jbrownlee/Datasets/master/iris.csv"
 names = ['sepal-length', 'sepal-width', 'petal-length', 'petal-width', 'class']
 dataset = read_csv(url, names=names)
+print("show the original dataset:")
+print(dataset)
+print(dataset.values)
+scatter_matrix(dataset)
+plt.show()
 
+
+"""
 
 # Split dataset
 iris_data = dataset.values
@@ -48,3 +57,10 @@ model.fit(train_x, train_y)
 # fit the test data
 print("Show the prediction result")
 print(model.predict(test_x))
+
+
+# plot the diagram result
+plt.scatter(test_x, test_y)
+
+plt.show()
+"""
