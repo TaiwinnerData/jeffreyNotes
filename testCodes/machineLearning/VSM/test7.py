@@ -106,3 +106,8 @@ print(predicted_value2)
 
 
 
+
+# trying to create dataframe of the data
+
+
+
