@@ -440,3 +440,5 @@ when you set this argument the same.
 2022/11/17
 1. how can i draw the boundary of the classification problem in the matplotlib?? here's some references talk about this:
 https://stackoverflow.com/questions/22294241/plotting-a-decision-boundary-separating-2-classes-using-matplotlibs-pyplot
+2. could i use the same method for two dimensional classification problem with three dimensional classification problem? i don't know, i am not sure about this.
+
