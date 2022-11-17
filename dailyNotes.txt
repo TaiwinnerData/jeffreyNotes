@@ -436,3 +436,7 @@ when you set this argument the same.
 4. how can i draw three dimensions data in two dimension diagram(which is the normal diagram)?? Here's the usage of "scatter matrix" which you were gonna use this in iris example
 5. I want to use scatter_matrix function and pandas has one but what about matplotlib? doesn't it have one?
 
+
+2022/11/17
+1. how can i draw the boundary of the classification problem in the matplotlib?? here's some references talk about this:
+https://stackoverflow.com/questions/22294241/plotting-a-decision-boundary-separating-2-classes-using-matplotlibs-pyplot
