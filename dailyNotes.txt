@@ -442,3 +442,10 @@ when you set this argument the same.
 https://stackoverflow.com/questions/22294241/plotting-a-decision-boundary-separating-2-classes-using-matplotlibs-pyplot
 2. could i use the same method for two dimensional classification problem with three dimensional classification problem? i don't know, i am not sure about this.
 
+
+2022/11/28
+1. i was trying to find the answer if we can get the all the query parameters that a website can be used but it seems like it's not possible: 
+here's some reference talk about this:
+https://stackoverflow.com/questions/20009262/how-to-know-what-are-all-the-possible-parameters-for-a-query-string-for-a-site
+2. 
+
