@@ -449,3 +449,9 @@ here's some reference talk about this:
 https://stackoverflow.com/questions/20009262/how-to-know-what-are-all-the-possible-parameters-for-a-query-string-for-a-site
 2. 
 
+
+2022/11/29
+1. when you want to scrape something that is rendered by javascript which is basically cannot be scraped by normal method, you can use selenium.
+Or you would have a high probability to find the data you want in <script> tag. I scrape something inside <script> tag and find the exchange rate data i want.
+2. when you want to use regular expression to find the text between two words, here's some reference talk about this:
+https://stackoverflow.com/questions/32680030/match-text-between-two-strings-with-regular-expression
