@@ -16,7 +16,7 @@ from sklearn.datasets import make_blobs
 
 # Load datasets from sklearn
 samples_number = 1000 
-x, y = make_blobs(n_samples=samples_number, centers=2, random_state=100, cluster_std=0.5, center_box=(-1, 1))
+x, y = make_blobs(n_samples=samples_number, centers=2, n_features=2, random_state=100, cluster_std=0.5, center_box=(-1, 1))
 tt_split = int(samples_number/2)
 
 
