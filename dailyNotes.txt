@@ -361,6 +361,7 @@ https://stackoverflow.com/questions/49259076/show-task-scheduler-jobs-that-conta
 2022/11/3
 1. What's the difference between "support vector machine" and "Logistic regression" in theory way and practical way? here's some reference talk about this:
 https://medium.com/axum-labs/logistic-regression-vs-support-vector-machines-svm-c335610a3d16
+in this website above you can search "distance between the line and the support vectors" then you would find a perfect answers.
 2. well, it seems like "logistic regression" and "support vector machine" both use vector coefficients but the next steps they use different method to fit the 
 boundary?? here's some reference:
 https://scipython.com/blog/plotting-the-decision-boundary-of-a-logistic-regression-model/
