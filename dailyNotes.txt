@@ -494,3 +494,7 @@ It seems like logistic regression is the basic
 https://towardsdatascience.com/multi-layer-neural-networks-with-sigmoid-function-deep-learning-for-rookies-2-bf464f09eb7f
 2. English note:  backpropagation, darn
 3. The key point between single peceptron in neural network and multiple layer of neural network is "hidden layers"
+4. What does the node mean in deep learning diagram? here are some reference talk about this:
+https://www.youtube.com/watch?v=fHzaWO2mGuA
+Well, basically, nodes actually mean a number that has been calculated by weight.
+5. I am kinda confused right now... What is the difference between "neuron" and "node"??
