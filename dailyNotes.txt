@@ -500,4 +500,7 @@ Well, basically, nodes actually mean a number that has been calculated by weight
 5. I am kinda confused right now... What is the difference between "neuron" and "node"??
 6. how to build a simple basic neural network with only 3 simple layers, here's an simple tutorial referece talk about this: 
 https://medium.com/@qempsil0914/implement-neural-network-without-using-deep-learning-libraries-step-by-step-tutorial-python3-e2aa4e5766d1
+7. here's another example talk about basic three layers neural network, you can understand the basic idea behind what a neuron is: 
+https://becominghuman.ai/understanding-neural-networks-2-the-math-of-neural-networks-in-3-equations-6085fd3f09df
+
 
