@@ -467,3 +467,23 @@ https://stackoverflow.com/questions/20009262/how-to-know-what-are-all-the-possib
 Or you would have a high probability to find the data you want in <script> tag. I scrape something inside <script> tag and find the exchange rate data i want.
 2. when you want to use regular expression to find the text between two words, here's some reference talk about this:
 https://stackoverflow.com/questions/32680030/match-text-between-two-strings-with-regular-expression
+
+
+2022/11/30
+1. I think i have already know the basic idea behind the machine learning classification problem and i want test something more.
+2. I was planning to start learning neural network and deep learning.
+3. Now the first question came up. What is the difference between "neural network" and "deep learning". 
+Well, it seems like "deep learning" is a subject and "neural network" is a solution model to it, here's some referene talk about this:
+https://www.zhihu.com/question/26017374
+https://www.geeksforgeeks.org/difference-between-a-neural-network-and-a-deep-learning-system/
+4. What's the difference between "Neural Network" and "SVM". It seems like they are all a kinda machine learning model.
+Here are some reference talk about this:
+https://ithelp.ithome.com.tw/articles/10187829
+5. 
+
+
+2022/12/1
+1. What is the difference between "Logistic Regression" and "Neural Network". I saw that Neural Network "neuron" use the idea of Logistic Regression, Doesn't that make both 
+method the same thing? Here are some explanation:
+https://stats.stackexchange.com/questions/43538/what-is-the-difference-between-logistic-regression-and-neural-networks
+It seems like logistic regression is the basic 
