@@ -493,3 +493,4 @@ It seems like logistic regression is the basic
 1. I was study about deep learning basic, here are some reference talk about this:
 https://towardsdatascience.com/multi-layer-neural-networks-with-sigmoid-function-deep-learning-for-rookies-2-bf464f09eb7f
 2. English note:  backpropagation, darn
+3. The key point between single peceptron in neural network and multiple layer of neural network is "hidden layers"
