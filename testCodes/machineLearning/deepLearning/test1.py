@@ -52,7 +52,6 @@ plot('petal length(cm)', 'petal width(cm)', X[:, 2], X[:, 3], y, re_y)
 plt.show()
 
 
-
 # --------------- fourth step
 class my_NN(object):
     def __init__(self):
@@ -110,11 +109,13 @@ class my_NN(object):
             self._update()
             if i%10==0:
                 print("loss: ", loss)
+
                 
     def predict(self, X):
         y_hat = self._forward_propagation(X)
         y_hat = [1 if i[0] >= 0.5 else 0 for i in y_hat.T]
         return np.array(y_hat)
+
     
     def score(self, predict, y):
         cnt = np.sum(predict==y)
