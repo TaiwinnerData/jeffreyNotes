@@ -77,11 +77,10 @@ class my_NN(object):
     def _sigmoid(self, z):
         return 1/(1+np.exp(-z))
 
-
     def _loss(self, predict, y):
         m = y.shape[0]
-        logprobs = np.multiply(np.log(predict), y) - np.multiply(1 - y), np.log(1 - predict)
-        loss = np.sum(logprobs) / m
+        logprobs = np.multiply(np.log(predict), y) + np.multiply((1 - y), np.log(1 - predict))
+        loss = - np.sum(logprobs) / m
         return loss
 
     def _backward_propagation(self, X, y):
