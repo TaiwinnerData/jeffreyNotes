@@ -66,6 +66,7 @@ class my_NN(object):
         # weight2: hidden layer -> output
         self.w2 = np.random.randn(self.hidden_units, self.output) # 6*1 matrix
 
+
     def _forward_propagation(self, X):
         self.z2 = np.dot(self.w1.T, X.T)
         self.a2 = self._sigmoid(self.z2) 
@@ -73,14 +74,17 @@ class my_NN(object):
         self.a3 = self._sigmoid(self.z3)
         return self.a3
 
+
     def _sigmoid(self, z):
         return 1/(1+np.exp(-z))
+
 
     def _loss(self, predict, y):
         m = y.shape[0]
         logprobs = np.multiply(np.log(predict), y) + np.multiply((1 - y), np.log(1 - predict))
         loss = - np.sum(logprobs) / m
         return loss
+
 
     def _backward_propagation(self, X, y):
         predict = self._forward_propagation(X)
@@ -91,6 +95,7 @@ class my_NN(object):
         
         delta2 = delta3*self.w2*self._sigmoid_prime(self.z2)
         self.dw1 = (1/m)*np.dot(X.T, delta2.T)
+
         
     def _sigmoid_prime(self, z):
         return self._sigmoid(z)*(1-self._sigmoid(z))
