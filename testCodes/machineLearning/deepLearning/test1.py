@@ -1,3 +1,4 @@
+# --------------- first step
 from sklearn import datasets
 iris = datasets.load_iris()
 X = iris.data
@@ -9,6 +10,7 @@ A data:[5.1 3.5 1.4 0.2]
 Label: 0
 '''
 
+# --------------- second step
 import numpy as np
 re_y = np.array([1 if i==0 else 0 for i in y]) # relabel, 'setosa':1, 'not setosa':0
 print(re_y)
@@ -21,6 +23,7 @@ print(re_y)
 '''
 
 
+# --------------- third step
 import matplotlib.pyplot as plt
 
 def plot(xfeature_name, yfeature_name, xfeature, yfeature, ori_label, re_label):
@@ -47,3 +50,19 @@ def plot(xfeature_name, yfeature_name, xfeature, yfeature, ori_label, re_label):
 plot('sepal length(cm)', 'sepal width(cm)', X[:, 0], X[:, 1], y, re_y)
 plot('petal length(cm)', 'petal width(cm)', X[:, 2], X[:, 3], y, re_y)
 plt.show()
+
+
+
+# --------------- fourth step
+class my_NN(object):
+    def __init__(self):
+        self.input = 4 # feature numbers
+        self.output = 1 # class number 
+        self.hidden_units = 6 # single layer
+        
+        # initialize matrix of weights;
+        np.random.seed(1) 
+        # weight1: input -> hidden layer 
+        self.w1 = np.random.randn(self.input, self.hidden_units) # 4*6 matrix
+        # weight2: hidden layer -> output
+        self.w2 = np.random.randn(self.hidden_units, self.output) # 6*1 matrix
