@@ -505,3 +505,10 @@ https://medium.com/@qempsil0914/implement-neural-network-without-using-deep-lear
 https://becominghuman.ai/understanding-neural-networks-2-the-math-of-neural-networks-in-3-equations-6085fd3f09df
 
 
+
+2022/12/9
+1. when I want to download mingw(gcc for windows), i encountered a problem that i download process incorrectly, here's the solution for this:
+https://stackoverflow.com/questions/46455927/mingw-w64-installer-the-file-has-been-downloaded-incorrectly
+
+
+
