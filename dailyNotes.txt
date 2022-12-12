@@ -518,5 +518,7 @@ https://stackoverflow.com/questions/46455927/mingw-w64-installer-the-file-has-be
 4. why does c language has no memory check mechansm, the point is c language allowing undefineed behavior happens:
 here's some refernece talks about this:
 https://stackoverflow.com/questions/1239938/accessing-an-array-out-of-bounds-gives-no-error-why
+5. music note:
+https://www.youtube.com/watch?v=0QKQlf8r7ls
 
 
