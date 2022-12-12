@@ -511,4 +511,10 @@ https://becominghuman.ai/understanding-neural-networks-2-the-math-of-neural-netw
 https://stackoverflow.com/questions/46455927/mingw-w64-installer-the-file-has-been-downloaded-incorrectly
 
 
+2022/12/12
+1. I reviewed about c language, pointer, array, pointer array, array of pointer, something like that.
+2. I reviewed about c language, dynamic memory, static memory.
+3. I reviewed about c language, struct, define, construct, something like that.
+
+
 
