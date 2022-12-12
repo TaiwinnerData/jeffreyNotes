@@ -10,6 +10,8 @@ void main(){
 	printf("%p\n", arrayPointer);
 	printf("--------------\n");
 
+
+	// The both situations are different.
 	// array pointer is the pointer array to stored multiple array into array.
 	int *arrayTest2[3];
 	int a = 1;
