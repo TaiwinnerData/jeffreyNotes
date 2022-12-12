@@ -515,6 +515,8 @@ https://stackoverflow.com/questions/46455927/mingw-w64-installer-the-file-has-be
 1. I reviewed about c language, pointer, array, pointer array, array of pointer, something like that.
 2. I reviewed about c language, dynamic memory, static memory.
 3. I reviewed about c language, struct, define, construct, something like that.
-
+4. why does c language has no memory check mechansm, the point is c language allowing undefineed behavior happens:
+here's some refernece talks about this:
+https://stackoverflow.com/questions/1239938/accessing-an-array-out-of-bounds-gives-no-error-why
 
 
