@@ -526,6 +526,11 @@ https://www.youtube.com/watch?v=0QKQlf8r7ls
 2022/12/13
 1. I was keeping studying about c language, how to use realloc function to reset the memory i want to give to a variable.
 2. I was reviewing about how chars and strings works in c language and here's some reference talk about this:
+this is the probabily best practice for creating string in c language:
 https://www.tutorialandexample.com/null-character-in-c
+3. You can use "sizeof" function to determine the byte size of the array datatype. That's how you check how many byte length you can use in c language
+array, here's a reference talks about this:
+https://stackoverflow.com/questions/37538/how-do-i-determine-the-size-of-my-array-in-c
+4. But here raise another question, does dynamics memory can use this same "sizeof" technique? I have to test this out.
 
 
