@@ -534,5 +534,8 @@ https://stackoverflow.com/questions/37538/how-do-i-determine-the-size-of-my-arra
 4. But here raise another question, does dynamics memory can use this same "sizeof" technique? I have to test this out.
 5. the size of a poiner in c language, here's some reference talks about this:
 https://www.scaler.com/topics/size-of-a-pointer-in-c/
+6. what is the difference between "int array[10];" and "(int *)malloc(sizeof(int)*10);", they both create array but here are still some difference between them.
+Here are some references talk about this: 
+https://stackoverflow.com/questions/41512872/can-malloc-be-used-to-define-the-size-of-an-array
 
 
