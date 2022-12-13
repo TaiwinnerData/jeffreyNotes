@@ -537,5 +537,7 @@ https://www.scaler.com/topics/size-of-a-pointer-in-c/
 6. what is the difference between "int array[10];" and "(int *)malloc(sizeof(int)*10);", they both create array but here are still some difference between them.
 Here are some references talk about this: 
 https://stackoverflow.com/questions/41512872/can-malloc-be-used-to-define-the-size-of-an-array
+They key point is that the malloc would create an "annoymous" array which you can only know the pointer of that array. So you 
+can't size of it. All you can do is track the size by yourself.
 
 
