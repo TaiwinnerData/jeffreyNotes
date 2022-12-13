@@ -532,5 +532,7 @@ https://www.tutorialandexample.com/null-character-in-c
 array, here's a reference talks about this:
 https://stackoverflow.com/questions/37538/how-do-i-determine-the-size-of-my-array-in-c
 4. But here raise another question, does dynamics memory can use this same "sizeof" technique? I have to test this out.
+5. the size of a poiner in c language, here's some reference talks about this:
+https://www.scaler.com/topics/size-of-a-pointer-in-c/
 
 
