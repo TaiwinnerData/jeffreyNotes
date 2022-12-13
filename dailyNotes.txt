@@ -539,5 +539,7 @@ Here are some references talk about this:
 https://stackoverflow.com/questions/41512872/can-malloc-be-used-to-define-the-size-of-an-array
 They key point is that the malloc would create an "annoymous" array which you can only know the pointer of that array. So you 
 can't size of it. All you can do is track the size by yourself.
+7. This website give you a very good example of how to use c language to create a project including phonebook and calendar.
+https://www.codewithc.com/mini-project-in-c-phonebook/
 
 
