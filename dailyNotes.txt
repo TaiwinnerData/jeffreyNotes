@@ -544,3 +544,5 @@ https://www.codewithc.com/mini-project-in-c-phonebook/
 8. i was reciewing about how to use c language to read file and write file
 
 
+2022/12/14
+1. I was reviewing about c language, how to read a file and write a file content in c language. And compare the method of reading file and write file with python.
