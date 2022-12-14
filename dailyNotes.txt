@@ -546,3 +546,6 @@ https://www.codewithc.com/mini-project-in-c-phonebook/
 
 2022/12/14
 1. I was reviewing about c language, how to read a file and write a file content in c language. And compare the method of reading file and write file with python.
+2. I was reading about how to use fscanf and how it works. It seems like it can remember the position you've already read. here's a reference talks about this:
+https://stackoverflow.com/questions/24523431/reading-files-how-file-pointer-is-moved-using-fscanf-and-how-scanf-fscanf-work
+3. And here is another function that you can use to read a file.
