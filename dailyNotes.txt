@@ -541,5 +541,6 @@ They key point is that the malloc would create an "annoymous" array which you ca
 can't size of it. All you can do is track the size by yourself.
 7. This website give you a very good example of how to use c language to create a project including phonebook and calendar.
 https://www.codewithc.com/mini-project-in-c-phonebook/
+8. i was reciewing about how to use c language to read file and write file
 
 
