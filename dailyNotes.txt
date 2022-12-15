@@ -558,5 +558,6 @@ https://stackoverflow.com/questions/8175144/how-to-fgets-a-specific-line-from-a-
 2. I gradually remembered how to use struct. when you want to use struct to some variable. it some kinda would need uncertain size of variable so you need to use
 dynamic memory to create struct variable. here's some reference talks about:
 https://stackoverflow.com/questions/62979813/when-do-we-use-structure-variable-and-structure-pointer
-3. 
+3. about c language object oriented Progamming. You can create object as you want. here's some references talks about this:
+https://www.zhihu.com/question/59292999
 
