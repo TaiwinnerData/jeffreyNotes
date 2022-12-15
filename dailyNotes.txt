@@ -550,7 +550,7 @@ https://www.codewithc.com/mini-project-in-c-phonebook/
 https://stackoverflow.com/questions/24523431/reading-files-how-file-pointer-is-moved-using-fscanf-and-how-scanf-fscanf-work
 3. And here is another function that you can use to read a file. "fget()"
 4. Is there a way to read the file by certain line? It seems no.
-https://stackoverflow.com/questions/8175144/how-to-fgets-a-specific-line-from-a-file-in-c
+http://stackoverflow.com/questions/8175144/how-to-fgets-a-specific-line-from-a-file-in-c
 
 
 2022/12/15
@@ -560,4 +560,6 @@ dynamic memory to create struct variable. here's some reference talks about:
 https://stackoverflow.com/questions/62979813/when-do-we-use-structure-variable-and-structure-pointer
 3. about c language object oriented Progamming. You can create object as you want. here's some references talks about this:
 https://www.zhihu.com/question/59292999
+4. I was studying about how to use pointer function in c language.
+
 
