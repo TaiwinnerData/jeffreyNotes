@@ -555,3 +555,7 @@ https://stackoverflow.com/questions/8175144/how-to-fgets-a-specific-line-from-a-
 
 2022/12/15
 1. I was reviewing about c language, how to use struct.
+2. I gradually remembered how to use struct. when you want to use struct to some variable. it some kinda would need uncertain size of variable so you need to use
+dynamic memory to create struct variable.
+3. 
+
