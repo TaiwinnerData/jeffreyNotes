@@ -565,6 +565,9 @@ https://www.zhihu.com/question/59292999
 2022/12/16
 1. If you want to create a struct in c language you have to use dynamic memory to that. Or you would get memory wrong alert.
 2. I was modified moduleCleanFunct for taiwinner. I think that sucks.
+3. In python dataframe, how do you drop multiple columns, here's some references talks about this:
+https://www.geeksforgeeks.org/how-to-drop-one-or-multiple-columns-in-pandas-dataframe/
+4. In python how do you pass a "list" as an command argument to the script.
 
 
 
