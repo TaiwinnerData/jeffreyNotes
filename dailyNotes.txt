@@ -562,4 +562,8 @@ https://stackoverflow.com/questions/62979813/when-do-we-use-structure-variable-a
 https://www.zhihu.com/question/59292999
 4. I was studying about how to use pointer function in c language.
 
+2022/12/16
+1. If you want to create a struct in c language you have to use dynamic memory to that. Or you would get memory wrong alert.
+
+
 
