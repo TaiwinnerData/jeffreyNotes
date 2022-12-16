@@ -564,6 +564,7 @@ https://www.zhihu.com/question/59292999
 
 2022/12/16
 1. If you want to create a struct in c language you have to use dynamic memory to that. Or you would get memory wrong alert.
+2. I was modified moduleCleanFunct for taiwinner. I think that sucks.
 
 
 
