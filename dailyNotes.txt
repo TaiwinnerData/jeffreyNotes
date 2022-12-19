@@ -570,4 +570,8 @@ https://www.geeksforgeeks.org/how-to-drop-one-or-multiple-columns-in-pandas-data
 4. In python how do you pass a "list" as an command argument to the script.
 
 
+2022/12/19
+1. I find a weird thing about python local and global variable. In python, you can't change global variable in function!! That's very important!! 
+here's some  reference talks about this:
+https://ithelp.ithome.com.tw/articles/10223457
 
