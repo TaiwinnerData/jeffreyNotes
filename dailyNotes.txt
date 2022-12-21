@@ -583,5 +583,6 @@ loss function.
 https://blog.teclado.com/handling-the-next-url-when-logging-in-with-flask/
 3. How to use flask's module, here's some references talk about this:
 http://www.coolpython.net/flask_tutorial/template/flask-template-if.html
+4. how can i prevent users from directly accessing url and redict to login if not logged in flask.
 
 
