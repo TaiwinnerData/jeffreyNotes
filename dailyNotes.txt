@@ -589,6 +589,8 @@ https://stackoverflow.com/questions/65434221/prevent-users-from-directly-accessi
 https://copyprogramming.com/howto/prevent-users-from-directly-accessing-url-and-redirect-to-login-if-not-logged-in-flask
 5. Here is another thing to consider when you use flask session, there's the the secret key. here's some reference talk about this:
 https://stackoverflow.com/questions/26080872/secret-key-not-set-in-flask-session-using-the-flask-session-extension
+6. How to use url_for to redirect different pages url? here's some references:
+https://stackoverflow.com/questions/65066253/how-to-make-a-redirect-button-in-flask-template
 
 
 
