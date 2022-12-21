@@ -581,5 +581,7 @@ https://ithelp.ithome.com.tw/articles/10223457
 loss function.
 2. I was studying about how to use flask to create login and here's some references i think is very good:
 https://blog.teclado.com/handling-the-next-url-when-logging-in-with-flask/
+3. How to use flask's module, here's some references talk about this:
+http://www.coolpython.net/flask_tutorial/template/flask-template-if.html
 
 
