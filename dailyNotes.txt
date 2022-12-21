@@ -579,4 +579,7 @@ https://ithelp.ithome.com.tw/articles/10223457
 2022/12/21
 1. What is the difference between activiation function and loss function in machine learning? Does deep learning use activiation function as same as 
 loss function.
+2. I was studying about how to use flask to create login and here's some references i think is very good:
+https://blog.teclado.com/handling-the-next-url-when-logging-in-with-flask/
+
 
