@@ -587,6 +587,8 @@ http://www.coolpython.net/flask_tutorial/template/flask-template-if.html
 https://stackoverflow.com/questions/68552644/trying-to-use-flask-principal-to-restrict-access-to-particular-web-pages
 https://stackoverflow.com/questions/65434221/prevent-users-from-directly-accessing-url-and-redirect-to-login-if-not-logged-in
 https://copyprogramming.com/howto/prevent-users-from-directly-accessing-url-and-redirect-to-login-if-not-logged-in-flask
-5. Here is another thing to consider when you use flask session, there's the the secret key.
+5. Here is another thing to consider when you use flask session, there's the the secret key. here's some reference talk about this:
+https://stackoverflow.com/questions/26080872/secret-key-not-set-in-flask-session-using-the-flask-session-extension
+
 
 
