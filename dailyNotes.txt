@@ -575,3 +575,8 @@ https://www.geeksforgeeks.org/how-to-drop-one-or-multiple-columns-in-pandas-data
 here's some  reference talks about this:
 https://ithelp.ithome.com.tw/articles/10223457
 
+
+2022/12/21
+1. What is the difference between activiation function and loss function in machine learning? Does deep learning use activiation function as same as 
+loss function.
+
