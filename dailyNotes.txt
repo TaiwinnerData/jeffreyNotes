@@ -599,6 +599,8 @@ https://stackoverflow.com/questions/68325664/run-os-command-inside-a-directory
 2. And I was studying about how to chain the commands all together in windows command line, here's some reference talks about this:
 https://stackoverflow.com/questions/8055371/how-do-i-run-two-commands-in-one-line-in-windows-cmd
 3. In flask how can i know if the task is running or end of the running.
+4. How can you show the innerhtml content even if you submit the form? Here's some references talks about this:
+https://www.youtube.com/watch?v=jDfrY2UUSrc
 
 
 
