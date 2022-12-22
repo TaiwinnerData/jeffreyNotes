@@ -593,4 +593,12 @@ https://stackoverflow.com/questions/26080872/secret-key-not-set-in-flask-session
 https://stackoverflow.com/questions/65066253/how-to-make-a-redirect-button-in-flask-template
 
 
+2022/12/22
+1. I was studying about how to use how can i run python code from another python script, here's some reference talks about this:
+https://stackoverflow.com/questions/68325664/run-os-command-inside-a-directory
+2. And I was studying about how to chain the commands all together in windows command line, here's some reference talks about this:
+https://stackoverflow.com/questions/8055371/how-do-i-run-two-commands-in-one-line-in-windows-cmd
+
+
+
 
