@@ -602,6 +602,10 @@ https://stackoverflow.com/questions/8055371/how-do-i-run-two-commands-in-one-lin
 4. How can you show the innerhtml content even if you submit the form? Here's some references talks about this:
 https://www.youtube.com/watch?v=jDfrY2UUSrc
 
+2022/12/23
+1. I was studying about how to use flask to sumbit something and also doing innerHTML method and we can do this thing by the method above,
+but when the action in form tag doesn't work anymore. And how do i solve this problem?
+
 
 
 
