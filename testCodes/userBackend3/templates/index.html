@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title> XMLHttpRequest Test </title>
+	</head>
+	<body>
+		<p1 id="test_para"></p1>
+		<button onclick="testSend()"> test request </button>
+		<script>
+			function testSend(){
+				var testPara = document.getElementById("test_para");
+				testPara.innerHTML = "running";
+
+				var xhr = new XMLHttpRequest();
+//				xhr.open('get', '/testFunct');
+				xhr.open('get', '/testRun');
+				xhr.send();
+				xhr.addEventListener('load', reqListener);
+
+				console.log('xhttp:responseText:', xhr.responseText);
+//				testPara.innerHTML = xhr.responseText;
+//				testPara.innerHTML = "test";
+
+		       
+
+			}  
+
+
+
+			function reqListener(){
+				console.log('this.resonseText:', this.responseText);
+				console.log('this.status:', this.status);
+				var testPara = document.getElementById("test_para");
+				testPara.innerHTML = this.responseText;
+			}
+		</script>
+
+	</body>
+</html>
