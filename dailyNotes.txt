@@ -610,4 +610,8 @@ to send the result to file.
 
 
 
+2022/12/26
+1. How can i use flask to show dynamic html result in web page. Here's some reference talks about this:
+https://stackoverflow.com/questions/26536187/is-it-possible-to-dynamically-update-a-rendered-template-in-flask-server-side
+2. Review about the difference between AJAX and XMLHttpRequest and JQuery and fetchAPI
 
