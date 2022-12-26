@@ -614,4 +614,7 @@ to send the result to file.
 1. How can i use flask to show dynamic html result in web page. Here's some reference talks about this:
 https://stackoverflow.com/questions/26536187/is-it-possible-to-dynamically-update-a-rendered-template-in-flask-server-side
 2. Review about the difference between AJAX and XMLHttpRequest and JQuery and fetchAPI
+3. When i use innerHTML in javascript, I find that i can't get flask return value, it would get "empty" or just "undefined", i must use addEventListener,
+Here's some references talk about this:
+https://stackoverflow.com/questions/61766579/empty-response-when-responding-to-xmlhttprequest-from-flask
 
