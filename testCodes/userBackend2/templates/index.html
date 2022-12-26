@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="static/style/indexStyle.css">
+		<title> Backend </title>
+	</head>
+	<body>
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="narbar-header">
+					<a class="navbar-brand" href="#">Backend (test)</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Reinsert</a></li>
+					<li><a href="#">Log</a></li>
+					<li><a href="#">Error</a></li>
+					<li><a href="#">Other</a></li>
+					<li id="logout_btn">
+						<form action="/logout">
+							<button name="logout" type="submit" class="btn btn-dark">logout </button>
+						</form>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="btn-group-vertical" id="left_nav">
+			<header>
+				<h1>Module</h1>
+				<p>Execute the module schedule</p>
+			</header>
+			{% if taskStatus == 1 %}
+			<p1 id="task_status">running</p1>
+			{% endif %}
+			<form action="/test_run_python" method="POST" onsubmit="return flase">
+				<button  name="test_python_run" type="submit" class="btn btn-dark"> 報表模板 </button>
+			</form>
+
+
+			<header>
+				<h1>Module</h1>
+				<p>Execute the module schedule</p>
+			</header>
+			<form>
+				<button name="test_python_run" type="submit" class="btn btn-dark"> 報表模板 reinsert </button>
+			</form>
+			
+			
+			<header>
+				<h1>Cost Living</h1>
+				<p>Execute the cost living schedule</p>
+			</header>
+			<form action="/runCostLiving" method="POST">
+				<button name="test_python_run" type="submit" class="btn btn-dark"> 生活費用  </button>
+			</form>
+
+			<header>
+				<h1>Cost Living</h1>
+				<p>Execute the cost living schedule</p>
+			</header>
+			<form>
+				<button name="test_python_run" type="submit" class="btn btn-dark"> 生活費用 reinsert </button>
+			</form>
+
+			
+		
+			<header>
+				<h1>Questions</h1>
+				<p>Execute the question schedule</p>
+			</header>
+			<form>
+				<button name="test_python_run" type="submit" class="btn btn-dark"> 問題錯誤當月與上月重跑 </button>
+			</form>
+
+
+			<header>
+				<h1>Questions</h1>
+				<p>Execute the question schedule</p>
+			</header>
+			<form>
+				<button name="test_python_run" type="submit" class="btn btn-dark"> 問題錯誤超過2個月分以上重跑 </button>
+			</form>
+		</div>
+		<script>
+			function running(){
+				let running_btn = document.getElementById("task_status");
+				running_btn.innerHTML = "running";
+				}
+		</script>
+	</body>
+</html>
