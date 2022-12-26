@@ -1,0 +1,13 @@
+#logout_btn {
+	display: flex;
+	position:absolute;
+	top: 10px;
+	right: 10px;
+}
+
+#left_nav {
+	position: relative;
+	top: 100px;
+	left: 20px;
+}
+	
