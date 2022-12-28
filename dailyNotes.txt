@@ -628,5 +628,6 @@ https://stackoverflow.com/questions/256754/how-to-pass-arguments-to-addeventlist
 2022/12/28
 1. How to use html to create an input dialog, here's a basic tutorial talks about this:
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog
-
+2. How do you use dialog in html to create a new windows:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog
 
