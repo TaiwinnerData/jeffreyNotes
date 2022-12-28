@@ -625,3 +625,8 @@ https://www.geeksforgeeks.org/how-to-get-the-id-of-the-clicked-button-using-java
 2. How can i pass arguments to "addEventListener()" function in javascript?? 
 https://stackoverflow.com/questions/256754/how-to-pass-arguments-to-addeventlistener-listener-function
 
+2022/12/28
+1. How to use html to create an input dialog, here's a basic tutorial talks about this:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog
+
+
