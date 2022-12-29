@@ -631,3 +631,10 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog
 2. How do you use dialog in html to create a new windows:
 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog
 
+2022/12/29
+1. Me and Kory talked about the environment about how to use new host to handle "tableau server" and "sql server", there're two plans.
+	a. tableau server install in a new windows machine, and sql server leave in the old machine.  In this plan, windows is very expensive. But the befits
+	is that you can use a new machine to install the newest tableau server which has high probability to successes.
+	b. sql server install in a new linux machine, and tableau server leave in the old one.  In this plan, linux is more cheap than windows server.
+	almost free. So this plan's befit is "cheap".
+
