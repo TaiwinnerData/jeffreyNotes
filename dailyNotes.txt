@@ -643,3 +643,6 @@ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog
 1. How to change the diable attribute in html division, here's some references:
 https://sebhastian.com/html-disable-button/
 https://stackoverflow.com/questions/15555295/how-to-disable-div-element-and-everything-inside
+
+2023/1/4
+1. I was studying about how to use checkbox to execute javascript.
