@@ -646,3 +646,9 @@ https://stackoverflow.com/questions/15555295/how-to-disable-div-element-and-ever
 
 2023/1/4
 1. I was studying about how to use checkbox to execute javascript.
+2. How can you get from javascript to flask server? here's some referencese talks about this:
+https://stackoverflow.com/questions/11774265/how-do-you-access-the-query-string-in-flask-routes
+https://stackabuse.com/get-request-query-parameters-with-flask/
+	the basic idea is using the query strings.
+	and in javascript xmlHttpRequest, how to send query strings:
+https://stackoverflow.com/questions/8064691/how-do-i-pass-along-variables-with-xmlhttprequest
