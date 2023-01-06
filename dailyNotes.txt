@@ -658,3 +658,5 @@ https://stackoverflow.com/questions/8064691/how-do-i-pass-along-variables-with-x
 1. when I use two dialog in one page, it seems like it we appear some weird situation that you would reload the page when you 
 use the second dialog. It seems like you can't use two form in one page.  NONONONONO. I figured it out. It just the wrong typing. I type "dialog" to "dailog". 
 That make things fails.
+2. I was decide to skip the backend css style.
+3. I am trying to doing the other back run.
