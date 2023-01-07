@@ -675,4 +675,10 @@ https://www.red-gate.com/simple-talk/databases/sql-server/learn/sql-server-ident
 https://stackoverflow.com/questions/1251636/what-do-clustered-and-non-clustered-index-actually-mean
 6. music note 2:
 https://www.youtube.com/watch?v=ajTTZ7iy6Ls
+7. Your c langauge algorithm homework: 	
+1. find the length of an number(integer) 
+2. use the way of finding remainder to separate that number in the first condition. and here are some refnereces:
+https://stackoverflow.com/questions/3068397/finding-the-length-of-an-integer-in-c
+3. 
+
 
