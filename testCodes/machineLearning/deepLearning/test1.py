@@ -1,4 +1,8 @@
+# the referece tutorial url:
+# https://medium.com/@qempsil0914/implement-neural-network-without-using-deep-learning-libraries-step-by-step-tutorial-python3-e2aa4e5766d1
+
 # --------------- first step
+# load iris data
 from sklearn import datasets
 iris = datasets.load_iris()
 X = iris.data
@@ -11,7 +15,9 @@ Label: 0
 '''
 
 # --------------- second step
+# create iris data coresponing result.
 import numpy as np
+
 re_y = np.array([1 if i==0 else 0 for i in y]) # relabel, 'setosa':1, 'not setosa':0
 print(re_y)
 '''output
@@ -24,6 +30,7 @@ print(re_y)
 
 
 # --------------- third step
+# load the pyplot lib
 import matplotlib.pyplot as plt
 
 def plot(xfeature_name, yfeature_name, xfeature, yfeature, ori_label, re_label):
@@ -53,6 +60,8 @@ plt.show()
 
 
 # --------------- fourth step
+# define deep learning function
+# class neural network
 class my_NN(object):
     def __init__(self):
         self.input = 4 # feature numbers
@@ -126,7 +135,7 @@ class my_NN(object):
         cnt = np.sum(predict==y)
         return (cnt/len(y))*100
 
-
+# import sklearn only for train_test_split function 
 from sklearn.model_selection import train_test_split
 if __name__=='__main__':
     train_X, test_X, train_y, test_y = train_test_split(X, re_y, test_size=0.25) # split training data and testing data
