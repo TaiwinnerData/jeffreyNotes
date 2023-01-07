@@ -660,3 +660,17 @@ use the second dialog. It seems like you can't use two form in one page.  NONONO
 That make things fails.
 2. I was decide to skip the backend css style.
 3. I am trying to doing the other back run.
+4. sql server setting foreign key tutorial: https://www.youtube.com/watch?v=TpKcAmaaBts
+
+
+2023/1/7
+1. I was reviewing about mysql, how to use mysql and how can i use it for data analysis.
+2. How can i installl client mysql command line tool for windows(or for linux), here're some references:
+3. I just download "MySQL shell" but don't know how to use it? The command line would show "MySQL JS" which means "MySQL javascript", So how can i change javascript
+to sql? Here are some referneces talk about this:
+https://stackoverflow.com/questions/65640284/how-to-change-mysql-js-to-only-mysql
+4. how to use "identity columns" in sql server: 
+https://www.red-gate.com/simple-talk/databases/sql-server/learn/sql-server-identity-column/
+5. what is the difference between "clustered index" and "nonclustered index". Here are some references talk about this:
+https://stackoverflow.com/questions/1251636/what-do-clustered-and-non-clustered-index-actually-mean
+
