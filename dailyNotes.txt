@@ -682,3 +682,9 @@ https://stackoverflow.com/questions/3068397/finding-the-length-of-an-integer-in-
 3. How can invert the order of an integer number in c language? Well, it's easy in python.
 
 
+2023/1/9
+1. there are some javascript lib that is very useful and popular for data visualization and 3d website:
+1. D3.js
+2. three.js
+
+
