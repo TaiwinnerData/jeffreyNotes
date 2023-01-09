@@ -679,6 +679,6 @@ https://www.youtube.com/watch?v=ajTTZ7iy6Ls
 1. find the length of an number(integer) 
 2. use the way of finding remainder to separate that number in the first condition. and here are some refnereces:
 https://stackoverflow.com/questions/3068397/finding-the-length-of-an-integer-in-c
-3. 
+3. How can invert the order of an integer number in c language? Well, it's easy in python.
 
 
