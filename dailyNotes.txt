@@ -701,5 +701,7 @@ int main(){
 }
 Here's some references talk about this:
 https://stackoverflow.com/questions/8844915/what-happens-if-main-does-not-return-an-int-value
+3. Why can't i assign array in c language directly?? Here's some references:
+https://stackoverflow.com/questions/744536/c-array-declaration-and-assignment
 
 
