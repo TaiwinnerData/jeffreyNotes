@@ -714,6 +714,7 @@ The key point is efficiency.
 6. what is the difference between "pointer to int" and "pointer to an array of ints". It seems like both situation can take as
 array to use. Here's a references talks about this:
 https://stackoverflow.com/questions/2397792/difference-between-pointer-to-int-and-pointer-to-array-of-ints
+7. I am trying to use dynamic memory(malloc()) to create bubble Sort function.
 
 
 
