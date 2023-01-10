@@ -695,6 +695,11 @@ int testFunct(){
 }
 Here's some references talk about this:
 https://www.decodejava.com/c-function-return-types.htm
-2. 
+2. what if I don't return anything in a function in c language?? for example:
+int main(){
+	doing something;  // no return anything.
+}
+Here's some references talk about this:
+https://stackoverflow.com/questions/8844915/what-happens-if-main-does-not-return-an-int-value
 
 
