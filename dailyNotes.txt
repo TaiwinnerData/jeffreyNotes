@@ -687,4 +687,14 @@ https://stackoverflow.com/questions/3068397/finding-the-length-of-an-integer-in-
 1. D3.js
 2. three.js
 
+2023/1/10
+1. study about c language, can we return different type of variable in a different type function? for example:
+int testFunct(){
+	char testChar = 'a';
+	return testChar;
+}
+Here's some references talk about this:
+https://www.decodejava.com/c-function-return-types.htm
+2. 
+
 
