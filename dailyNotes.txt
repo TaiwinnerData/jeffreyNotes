@@ -735,6 +735,9 @@ slmgr.vbs -dlv
 https://docs.plm.automation.siemens.com/content/polarion/19.3/help/en_US/polarion_linux_installation/configure_ole_object_support_and_attachment_preview_generator/install_openssh.html
 you can directly install the ssh folder. and here's the download site:
 https://github.com/PowerShell/Win32-OpenSSH/releases/tag/v7.9.0.0p1-Beta
+5. About tableau, What is the difference between "tableau api" and "tableau tabcmd"
+Here's a references talks about this:
+https://community.tableau.com/s/question/0D54T00000oLs65SAC/whats-the-difference-between-tableau-server-rest-api-and-tabcmd-
 
 
 
