@@ -720,6 +720,9 @@ https://stackoverflow.com/questions/2397792/difference-between-pointer-to-int-an
 2023/1/11
 1. I can't find "make" command for making file in mingw?? Here's the some reference talks about this:
 https://blog.csdn.net/sz76211822/article/details/77645960
+2. review about c language compiler process: it would create ".o" file and ".a" file. here's a simple reference: 
+https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/
+
 
 
 
