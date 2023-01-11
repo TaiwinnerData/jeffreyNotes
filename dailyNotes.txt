@@ -722,6 +722,19 @@ https://stackoverflow.com/questions/2397792/difference-between-pointer-to-int-an
 https://blog.csdn.net/sz76211822/article/details/77645960
 2. review about c language compiler process: it would create ".o" file and ".a" file. here's a simple reference: 
 https://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/
+3. how can i check if my windows system is original or pariated? Here's a simple reference:
+https://answers.microsoft.com/zh-hans/windows/forum/all/%E6%A3%80%E6%B5%8Bwin10%E7%94%B5%E8%84%91%E7%B3%BB/77871307-aa81-478e-bc4d-f007687d7f46
+use the command:
+slmgr.vbs -xpr
+here's another reference:
+https://kknews.cc/zh-tw/digital/ygjmp3b.html
+and you can use command:
+slmgr.vbs -dli
+slmgr.vbs -dlv
+4. if your windows system has no "ssh" commands you can just install it from internet. Here's a very useful reference:
+https://docs.plm.automation.siemens.com/content/polarion/19.3/help/en_US/polarion_linux_installation/configure_ole_object_support_and_attachment_preview_generator/install_openssh.html
+you can directly install the ssh folder. and here's the download site:
+https://github.com/PowerShell/Win32-OpenSSH/releases/tag/v7.9.0.0p1-Beta
 
 
 
