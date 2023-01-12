@@ -741,6 +741,10 @@ https://community.tableau.com/s/question/0D54T00000oLs65SAC/whats-the-difference
 6. you can use tabcmd to export csv files and xlsx file, here's some reference:
 https://kb.tableau.com/articles/Issue/tabcmd-export-get-ignores-filter-parameters-when-run-from-a-batch-file?lang=zh-tw
 
+2023/1/12
+1. ssh tool Putty basic tutorial:
+https://uncleit.net/windows%E4%B8%8A%E6%9C%80%E5%8F%97%E6%AD%A1%E8%BF%8E%E7%9A%84ssh%E9%80%A3%E7%B7%9A%E8%BB%9F%E9%AB%94%E3%80%8Cputty%E3%80%8D%E6%95%99%E5%AD%B8.html
+
 
 
 
