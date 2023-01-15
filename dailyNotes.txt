@@ -814,5 +814,6 @@ Microsoft SQL Server 安裝精靈的 [定序設定]
 感謝 大大們
 2. music note 3:
 https://www.youtube.com/watch?v=76Pdg2-BpG0
-3. test
+3. review about the http request command line tool "curl", here's some references talk about this:
+https://blog.csdn.net/weixin_41287260/article/details/119851086
 
