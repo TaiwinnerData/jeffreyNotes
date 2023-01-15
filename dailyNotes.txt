@@ -819,4 +819,14 @@ https://blog.csdn.net/weixin_41287260/article/details/119851086
 4. In curl commands, you can use -X to change http request method, for example:
 curl -X GET http://www.google.com --verbose    ---> this would show the method "get"
 curl -X POST http://www.google.com --verbose    ---> this would show the medhotd "post"
+5. In curl commands, when you use: curl --request (which is curl -X) POST --verbose http://google.com -d "testData", How can you show the data content in respose?
+here's some references(It seems like there's no way to show it by curl commands)
+https://superuser.com/questions/291424/how-do-you-display-post-data-with-curl
+6. How to use curl to run rest api? Here's some references talk about this:
+https://segmentfault.com/a/1190000041718917
+7. In tableau server, i use tableau server api 3.18 version doesn't work but 3.17 works.
+8. tableau api basic tutorial: 
+https://help.tableau.com/current/api/rest_api/en-us/REST/rest_api_ref_authentication.htm
+
+
 
