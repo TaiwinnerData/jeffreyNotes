@@ -842,6 +842,10 @@ curl --request GET http://34.124.166.158/api/3.17/sites/7ebac3d3-55b7-4cc1-87f3-
 which "X-Tableau_Auth" is the credential token
 
 
+2023/1/18
+1. 問題回復, BC002017盤口, 覆核日期有出現2023-12月的, 很有可能他本來就錯了.
+
+
 
 
 
