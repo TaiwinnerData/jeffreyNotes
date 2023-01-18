@@ -844,7 +844,14 @@ which "X-Tableau_Auth" is the credential token
 
 2023/1/18
 1. 問題回復, BC002017盤口, 覆核日期有出現2023-12月的, 很有可能他本來就錯了.
+2. when i use tableau server api in (pro host), the api would directly use 3.7(but the api for export crosstab excel doesn't support this function) even i set it to like 3.9, here's the evidence:
+response:
+<?xml version='1.0' encoding='UTF-8'?>
+<tsResponse xmlns="http://tableau.com/api" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://tableau.com/api http://tableau.com/api/ts-api-3.7.xsd">   --> it show 3.7
+<error code="404003"><summary>找不到资源</summary>
+<detail>URI 中指定的资源“/3.9/sites/a2fcf902-b158-4028-a9c2-fb94cc129316/views/085886a4-1e29-4a32-ae90-4f526ac33670/crosstab/excel”未知。</detail></error></tsResponse>
 
+but when i use the new tabeleau server on linux, there's no such problem, so in new linux tableau server, it works.
 
 
 
