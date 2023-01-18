@@ -852,6 +852,8 @@ response:
 <detail>URI 中指定的资源“/3.9/sites/a2fcf902-b158-4028-a9c2-fb94cc129316/views/085886a4-1e29-4a32-ae90-4f526ac33670/crosstab/excel”未知。</detail></error></tsResponse>
 
 but when i use the new tabeleau server on linux, there's no such problem, so in new linux tableau server, it works.
+3. I was reviewing about how to use c language to read a file contains characters or number into an array
+4. And I was trying to use dynamic memory to read the file.
 
 
 
