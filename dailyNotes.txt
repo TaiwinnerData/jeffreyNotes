@@ -861,6 +861,11 @@ And here's the command line tool called PsExec.exe. It seems like it can do this
 2. I was trying to use c language to read number files as array.
 3. In c language, there are some ways to find the length of a digit number, here are some reference:
 https://www.javatpoint.com/count-the-number-of-digits-in-c
+4. what does "?" question mark and ":" colon mark operators mean in c language:
+here's the reference talk about this:
+http://courses.washington.edu/css342/zander/css332/datatypes.html
+this is a syntatic sugar.
+
 
 
 
