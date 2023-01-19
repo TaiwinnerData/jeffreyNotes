@@ -859,6 +859,9 @@ but when i use the new tabeleau server on linux, there's no such problem, so in 
 1. I was trying to run the bat command from another machine in windows system. For example: I want to execute test.py which is in the tableau-dev(windows machine) from tableau-server(machine).
 And here's the command line tool called PsExec.exe. It seems like it can do this. but when i tried. It would show "Couldn't access". 
 2. I was trying to use c language to read number files as array.
+3. In c language, there are some ways to find the length of a digit number, here are some reference:
+https://www.javatpoint.com/count-the-number-of-digits-in-c
+
 
 
 
