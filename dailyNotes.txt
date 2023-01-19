@@ -855,6 +855,14 @@ but when i use the new tabeleau server on linux, there's no such problem, so in 
 3. I was reviewing about how to use c language to read a file contains characters or number into an array
 4. And I was trying to use dynamic memory to read the file.
 
+2023/1/19
+1. I was trying to run the bat command from another machine in windows system. For example: I want to execute test.py which is in the tableau-dev(windows machine) from tableau-server(machine).
+And here's the command line tool called PsExec.exe. It seems like it can do this. but when i tried. It would show "Couldn't access". 
+2. I was trying to use c language to read number files as array.
+
+
+
+
 
 
 
