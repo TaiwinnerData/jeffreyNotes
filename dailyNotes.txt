@@ -869,6 +869,18 @@ this is a syntatic sugar.
 2023/1/30
 1. I was trying to complete new codes, and I up to exchange rate crawler, and it can't insert to sql.
 
+2023/1/31
+1. I solved the problem i was encounter yesterday, and now exchange_rate can 
+2. I was reviewing about c language, how can i read and write data into files?
+3. How can i export the tableau data to csv or excel and then use python to check if the data are the same or not.
+4. C language how to write char and int to the file, here's some reference:
+https://stackoverflow.com/questions/11573974/write-to-txt-file
+5. In c language, how can i find the size of a file? here's some reference:
+https://stackoverflow.com/questions/238603/how-can-i-get-a-files-size-in-c
+6. In c language, what is the usage of the function fseek(), here's some reference talk about this:
+https://pydoing.blogspot.com/2010/07/c-fseek.html
+The key point is using the "SEEK_END", "SEEK_SET", "SEEK_CUR"
+7. what does "0L" mean in c language? It seems like "OL" is 0?? What is the difference?
 
 
 
