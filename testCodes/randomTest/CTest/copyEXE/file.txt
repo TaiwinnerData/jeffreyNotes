@@ -1,0 +1,322 @@
+import pandas as pd
+import re
+import datetime as dt
+from sqlalchemy import create_engine
+import numpy as np
+import json
+import os
+import dateutil.relativedelta
+import opencc
+import socket
+import requests as requests
+
+
+def get_db_info(f_db_json_path):
+    with open(f_db_json_path, mode="r") as file:
+        info = json.load(file)
+    return info
+
+
+def db_info_file_name():
+    json_file_name = ""
+    if socket.gethostname() == "tableau-server":
+        json_file_name = "proServerConfig.json"
+    elif socket.gethostname() == "tableau-dev":
+        json_file_name = "testServerConfig.json"
+    else:
+        json_file_name = "testServerConfig.json"
+    return json_file_name
+
+
+# This function is for special test.
+def decide_table_name(f_table_name):
+    if socket.gethostname() == "tableau-dev":
+        f_table_name = "test_" + f_table_name
+    return f_table_name
+
+
+def create_connection(f_db_info):  
+    engine = create_engine(
+            'mssql+pyodbc://{user}:{password}@{host}:{port}/{database}?driver=SQL+Server'.format(
+                user=f_db_info["user"],
+                password=f_db_info["password"],
+                host=f_db_info["host"],
+                #host="localhost",
+                port=f_db_info["port"],
+                database=f_db_info["db_name"]
+                )
+            )
+    con = engine.raw_connection()
+    cursor = con.cursor()
+    return [engine, con, cursor]
+
+
+def month_data_filter(datetime_data):
+    return str(datetime_data.year) + '-' + str(datetime_date.month) + '-1'    # yyyy-mm-dd xxxxxx  ==>  yyyy-mm-1
+
+
+def date_n_months_from_now(f_n_months):
+    today = dt.datetime.today()
+    result_date = today.replace(day=1) + dateutil.relativedelta.relativedelta(months=-f_n_months)
+    result_date = "".join((str(result_date.year), "-", str(result_date.month), "-1"))
+    return [result_date]    # ['yyyy-mm-dd']
+
+
+def month_list_from_now(f_n_months):
+    month_list = []
+    for i in range(f_n_months):
+        month_list.append(date_n_months_from_now(i))
+    return month_list
+
+
+def month_list_range(f_start_month, f_end_month, f_year):
+    month_list = []
+    for month in range (int(f_start_month), int(f_end_month)+1):
+        month_list.append(str(dt.date(int(f_year), month, 1)))
+    return month_list
+
+
+def insert_data_to_db(f_df, f_sql_connection, f_table_name, f_bot):
+    engine = f_sql_connection[0]
+    con = f_sql_connection[1]
+    cursor = f_sql_connection[2]
+    f_df.to_sql(f_table_name, con=engine, if_exists='append', index=False, chunksize=1000)
+    #con.close()   it seems like con.close() doesn't have to need here, you should be able to close the connection anytime you want.
+
+
+def select_data_from_db(f_date_list, f_sql_connection, f_table_name):
+    engine = f_sql_connection[0]
+    con = f_sql_connection[1]
+    cursor = f_sql_connection[2]
+    for month in f_date_list:
+        result = cursor.execute("select * from questions where 期 = " + "'" + str(month) + "'") # '2022-07-01'") #+ str(month)) 
+        result = cursor.fetchall()
+    return result
+
+
+def truncate_data_from_db(f_sql_connection, f_table_name):
+    engine = f_sql_connection[0]
+    con = f_sql_connection[1]
+    cursor = f_sql_connection[2]
+    # truncate a sql table is very risky when someone accidentally delete the wrong table so I give a defense just for prevention.   --jeffrey.wu 2022.11.8
+    result = cursor.execute("truncate table " + str(f_table_name))
+    con.commit()
+
+#    if str(f_table_name)[:5] == "test_" or str(f_table_name)[:] == "t_":
+#        result = cursor.execute("truncate table " + str(f_table_name))
+#        con.commit()
+
+
+def delete_data_from_db(f_date_list, f_sql_connection, f_table_name, f_key):
+    engine = f_sql_connection[0]
+    con = f_sql_connection[1]
+    cursor = f_sql_connection[2]
+    for month in f_date_list:
+        print("show month"*30)
+        print(month)
+        print("delete from " + str(f_table_name) + " where " +  f_key +  " = " + "'" + str(month) + "'")
+        result = cursor.execute("delete from " + str(f_table_name) + " where " +  str(f_key) +  " = " + "'" + str(month) + "'")
+    con.commit()
+
+
+def execute_from_db(f_sql_connection, f_sql_query):
+    engine = f_sql_connection[0]
+    con = f_sql_connection[1]
+    cursor = f_sql_connection[2]
+    result = cursor.execute(f_sql_query)
+    con.commit()
+
+
+
+def month_data_filter_beta(f_month):
+    if len(f_month) >= 7:
+        if f_month[6] == '-':
+            sixth_char = ''
+        else:
+            sixth_char = f_month[6]
+    else:
+        sixth_char = ''
+
+    if f_month[5] == str(0):
+        f_month = f_month[0:5] + sixth_char
+    else:
+        f_month = f_month[0:5] + f_month[5] + sixth_char
+    return f_month
+
+
+# This function can change data 2022-1 ----> 2022-01
+def month_data_filter_gamma(f_month_input):
+    if len(str(f_month_input)) < 2:
+        month = '0' + str(f_month_input)
+    else:
+        month = str(f_month_input)
+    return month
+
+
+# This function theorically can get the list of the "盘口编码" of all the files.
+def get_file_list(f_path):
+    file_list = []
+    for file in os.listdir(f_path):
+        if file[-4:] == "xlsx" and "~$" not in file:
+            file_list.append(file.split('_')[0])
+    return file_list
+
+
+def get_from_excel(f_path, f_month_list, f_sheets, index_ignored, row_skips, f_file_column, f_month_column):
+    df = pd.DataFrame({})
+    dic = dict.fromkeys(f_sheets, df)
+    file_list = []
+
+    for month in f_month_list:
+        # month's string format for the files is "yyyy-m" but the input format is "yyyy-mm-dd" so i need to change the format first.
+        #month = month[0:5] + month[6]
+        #if month[5] == str(0):
+        #    month = month[0:5] + month[6]
+        #else:
+        #    month = month[0:5] + month[5] + month[6]
+        #print(month) # this is a test
+        print("show month")
+        print(month)
+        month = month_data_filter_beta(str(month))
+        '''
+        print("-"*100)
+        print(month)   # this is a test
+        print("-"*100)
+        '''
+
+        for file in os.listdir(f_path + "\\" + str(month)):
+            if file[-4:] == "xlsx" and "~$" not in file:
+                dic_df = pd.read_excel(f_path + "\\" + str(month) + "\\" + str(file), sheet_name=f_sheets, skiprows=row_skips)
+                for sheet in f_sheets:
+                    if f_file_column == 1:
+                        dic_df[sheet]["盘口编码"] = file.split('_')[0]
+                    if f_month_column == 1:
+                        dic_df[sheet]["期"] = dt.datetime.strptime(month, "%Y-%m")
+                    #dic[sheet]["盘口编码"] = []
+                    #dic[sheet]["期"] = []
+                    dic[sheet] = dic[sheet].append(dic_df[sheet], ignore_index=index_ignored)
+                    #print(dic)
+
+#                    df_temp["盘口编码"] = file.split('_')[0]
+#                df_temp["期"] = dt.datetime.strptime(month, "%Y-%m")
+                #df_temp = df_temp.dropna(axis=0, thresh=6)
+#                df = df.append(df_temp, ignore_index=index_ignored)
+                #print("file name is: " + str(month) + "----" + file)
+                #print("row number of the excel file: " + str(len(df_temp)))   # this is for test.
+                # you should create a for loop to deal with multiple sheets.
+    return dic 
+
+
+# when the files are not directly in the month folder, you can use this function
+def get_from_excel_v2(f_path, f_path_inside, f_month_list, f_sheets, index_ignored, row_skips, f_file_column, f_month_column):
+    df = pd.DataFrame({})
+    dic = dict.fromkeys(f_sheets, df)
+    file_list = []
+
+    for month in f_month_list:
+        month = month_data_filter_beta(month)
+        for file in os.listdir(f_path + "\\" + str(month) + "\\" + f_path_inside):
+            if file[-4:] == "xlsx" and "~$" not in file:
+                dic_df = pd.read_excel(f_path + "\\" + str(month) + "\\" + f_path_inside + "\\" + str(file), sheet_name=f_sheets, skiprows=row_skips)
+                for sheet in f_sheets:
+                    if f_file_column == 1:
+                        dic_df[sheet]["盘口编码"] = file.split('_')[0]
+                    if f_month_column == 1:
+                        dic_df[sheet]["期"] = dt.datetime.strptime(month, "%Y-%m")
+                    dic[sheet] = dic[sheet].append(dic_df[sheet], ignore_index=index_ignored)
+    return dic 
+
+
+def get_from_excel_v3(f_path, f_month, file_name, f_sheets, index_ignored, row_skips):
+    dic = pd.read_excel(f_path + "\\" +  str(f_month) + "\\" + file_name)
+    return dic
+
+
+# this function can get the single module 编码's  data.
+def get_from_excel_v4(f_path, f_file, f_month_list, f_sheets, index_ignored, row_skips, f_file_column, f_month_column):
+    df = pd.DataFrame({})
+    dic = dict.fromkeys(f_sheets, df)
+    file_list = []
+
+    for month in f_month_list:
+        month = month_data_filter_beta(month)
+        dic_df = pd.read_excel(f_path + "\\" + str(month) + "\\" + str(f_file), sheet_name=f_sheets, skiprows=row_skips)
+        for sheet in f_sheets:
+            if f_file_column == 1:
+                dic_df[sheet]["盘口编码"] = f_file.split('_')[0]
+            if f_month_column == 1:
+                dic_df[sheet]["期"] = dt.datetime.strptime(month, "%Y-%m")
+            dic[sheet] = dic[sheet].append(dic_df[sheet], ignore_index=index_ignored)
+    return dic
+
+
+def get_file_codes(f_path, f_month_list):
+    dic = {}
+    for month in f_month_list:
+        month = month_data_filter_beta(month)
+        file_codes = []
+        for file in os.listdir(f_path + "\\" + str(month)):
+            if file[-4:] == "xlsx" and "~$" not in file:
+                file_codes.append(file.split('_')[0])
+        dic[str(month)] = file_codes
+    return dic
+
+
+
+
+
+
+# this function is pretty same propose as get_from_excel_v2, when the files are not directly in the month folder
+def get_file_codes_v2(f_path, f_path_inside , f_month_list):
+    dic = {}
+    for month in f_month_list:
+        month = month_data_filter_beta(month)
+        file_codes = []
+        for file in os.listdir(f_path + "\\" + str(month) + "\\" + f_path_inside):
+            if file[-4:] == "xlsx" and "~$" not in file:
+                file_codes.append(file.split('_')[0])
+        dic[str(month)] = file_codes
+    return dic
+
+
+def get_file_names(f_folder_path, f_file_type):
+    type_len = len(f_file_type)
+    file_names = []
+    for file in os.listdir(f_folder_path):
+        if file[-type_len:] == f_file_type and "~$" not in file:
+            file_names.append(file)
+    return file_names
+
+
+
+def get_file_names_v2(f_path, f_month_list):
+    for month in f_month_list:
+        month = month_data_filter_beta(month)
+        file_names = []
+        for file in os.listdir(f_path + "\\" + str(month)):
+            if file[-4:] == "xlsx" and "~$" not in file:
+                file_names.append(file)
+    return file_names
+
+
+
+#def telegram_bot_sendtext(f_bot_token, f_chat_id, f_bot_message):
+#    send_url = "https://api.telegram.org/bot" + f_bot_token + "/sendMessage?chat_id=" + f_chat_id + "&text=" + f_bot_message
+#    return requests.get(send_url)
+
+
+def telegram_bot_sendtext(f_bot, f_bot_message):
+    if f_bot["on"] == 1:
+        send_url = "https://api.telegram.org/bot" + f_bot["bot_token"] + "/sendMessage?chat_id=" + f_bot["chat_id"] + "&text=" + f_bot_message 
+        return requests.get(send_url)
+    else:
+        pass
+
+
+
+def main():
+    pass
+
+
+if __name__ == "__main__":
+    main()
