@@ -894,6 +894,17 @@ The key point is using the "SEEK_END", "SEEK_SET", "SEEK_CUR"
 	線性回歸的輸入x = [[1, 2], [2, 4], [3, 5]], y = [3, 4, 6]
 	y 不一定是0 or 1. 線性回歸的目的在於預測y的值, 而邏輯回歸的目的在於直接分類y, y的值是[0, 1], 當然y的值也可能不只兩個, 例如[0, 1, 2]
 You can also use VSM:
+2. Trying to review about machine learning. the difference between linear regression, logistic regression and neural network.
+3. What is the relation between neural network and matrix.
+4. Trying to learn the basic of image recognition
+5. What are the eigenvector and eigenvalue of an image
+6. But what do eigenvalue and eigenvector have to do with pictures? here's some reference talks about this:
+https://math.stackexchange.com/questions/92171/what-do-eigenvalues-have-to-do-with-pictures
+https://blog.csdn.net/AddVH/article/details/106312289
+7. I saw some people use "PIL" python library to deal with images but I remember there's another library called "opencv" So what's the difference between both of them?  
+Here's a reference talks about this:
+https://www.geeksforgeeks.org/convert-opencv-image-to-pil-image-in-python/
+
 
 
 
