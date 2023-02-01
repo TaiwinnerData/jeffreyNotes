@@ -72,8 +72,12 @@ class my_NN(object):
         np.random.seed(1) 
         # weight1: input -> hidden layer 
         self.w1 = np.random.randn(self.input, self.hidden_units) # 4*6 matrix
+        print("self.w1")
+        print(self.w1) # this line is for test.
         # weight2: hidden layer -> output
         self.w2 = np.random.randn(self.hidden_units, self.output) # 6*1 matrix
+        print("self.w2")
+        print(self.w2) # this line is for test.
 
 
     def _forward_propagation(self, X):
