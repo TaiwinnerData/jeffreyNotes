@@ -918,6 +918,10 @@ https://yadominjinta.github.io/2019/12/02/Image-compression-and-linear-alegebra.
 eigenDecomposition is actually doing this kinda thing below:
 A = QTQ^-1   which is decomposite matrix A into diagnozied matrix T(which is composed by eigenvalue) and Q which is composed by eigenvector.
 4. how to make any indepent basis to normalized orthogonal basis?? YOU CAN USE "Schmidt normalization"
+5. eigenDecomposition only works on square matrix but SVD can works on rather just that.
+6. about the confusion of orthogonalization of eigenvector, here's some
+reference talksk about this:
+https://www.quora.com/How-is-it-possible-to-orthogonalize-eigenvectors-when-they-are-not-orthogonal
 
 
 
