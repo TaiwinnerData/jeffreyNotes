@@ -904,6 +904,8 @@ https://blog.csdn.net/AddVH/article/details/106312289
 7. I saw some people use "PIL" python library to deal with images but I remember there's another library called "opencv" So what's the difference between both of them?  
 Here's a reference talks about this:
 https://www.geeksforgeeks.org/convert-opencv-image-to-pil-image-in-python/
+8. Here's another reference talk about how to use eigenvalue and eigenvector of a picture:
+https://www.k2zone.cn/?p=977
 
 
 
