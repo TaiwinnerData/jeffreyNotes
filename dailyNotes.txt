@@ -926,6 +926,11 @@ https://www.quora.com/How-is-it-possible-to-orthogonalize-eigenvectors-when-they
 https://zhuanlan.zhihu.com/p/136627868
 8. For symetry matrix, you can turn eigenvectors to normalized orthogonal matrix but only for symmetry matrix, here's some reference:
 https://zh.wikipedia.org/wiki/%E7%89%B9%E5%BE%81%E5%88%86%E8%A7%A3
+9. But why do we use SVD (why use singular value?) what does singular value
+do?
+10. Normalization of eigenValue, here's some reference:
+https://ithelp.ithome.com.tw/articles/10197357
+11. Here's another reference talk about "singular value decomposition" and image compression
 
 
 
