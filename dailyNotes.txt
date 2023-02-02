@@ -907,6 +907,12 @@ https://www.geeksforgeeks.org/convert-opencv-image-to-pil-image-in-python/
 8. Here's another reference talk about how to use eigenvalue and eigenvector of a picture:
 https://www.k2zone.cn/?p=977
 
+2023/2/2
+1. It seems like if we want to find the eigenvalue and eigenvector of an image or a picture, we need to use "singular value decomposition(奇異值分解)" 
+You should definitey check it out:
+https://zh.wikipedia.org/wiki/%E5%A5%87%E5%BC%82%E5%80%BC%E5%88%86%E8%A7%A3
+
+
 
 
 
