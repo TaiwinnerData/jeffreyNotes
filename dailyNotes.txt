@@ -917,6 +917,7 @@ https://yadominjinta.github.io/2019/12/02/Image-compression-and-linear-alegebra.
 3. what is "EigenDecomposition(特徵分解)"?
 eigenDecomposition is actually doing this kinda thing below:
 A = QTQ^-1   which is decomposite matrix A into diagnozied matrix T(which is composed by eigenvalue) and Q which is composed by eigenvector.
+4. how to make any indepent basis to normalized orthogonal basis?? YOU CAN USE "Schmidt normalization"
 
 
 
