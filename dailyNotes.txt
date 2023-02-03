@@ -932,6 +932,10 @@ do?
 https://ithelp.ithome.com.tw/articles/10197357
 11. Here's another reference talk about "singular value decomposition" and image compression
 
+2023/2/3
+1. I was modifing the backend style and trying to make code right.
+2. Tring to test how to use the new system.
+
 
 
 
