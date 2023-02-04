@@ -936,6 +936,10 @@ https://ithelp.ithome.com.tw/articles/10197357
 1. I was modifing the backend style and trying to make code right.
 2. Tring to test how to use the new system.
 
+2023/2/4
+1. How to use google Icons? Here's a simple tutorial reference:
+https://www.w3schools.com/icons/google_icons_intro.asp
+
 
 
 
