@@ -942,7 +942,32 @@ https://www.w3schools.com/icons/google_icons_intro.asp
 
 2023/2/7
 1. Trying to complete the backend reinsert code.
-2. Reviewing about d3.js which is an popular javascript data visualization lib.
+2. Reviewing about d3.js which is an popular javascript data visualization lib. Here are some comments about d3.js You can take reference:
+https://www.zhihu.com/question/38648735
+3. What is SVG exactly, we always see svg format on web but don't really understand what it is.
+4. How to make SVG image, basic tutorial: 
+https://www.youtube.com/watch?v=mZdzzaNjiqU&t=789s
+5. And what is the difference between "SVG" and "CSS", both used in web?
+well, css is used for stylizing the web but SVG is used for creating vector images.
+6. Before we starting to learn d3.js, we need to understand what exactly SVG is, here are some references talk about this:
+https://ithelp.ithome.com.tw/m/articles/10264614
+7. Reviewing about ajax. Actually, You are using ajax in the backend for Tawinner database which is "XMLHttpRequest()" function, it 
+can 
+8. Reviewing. How can i pass value from database to javascript XMLHttpRequest()?? Here's some references:
+https://stackoverflow.com/questions/11178426/how-can-i-pass-data-from-flask-to-javascript-in-a-template
+9. How can i get data from flask to XMLHttpRequest(), It seems like you have to use addEventListener, here's some reference:
+https://stackoverflow.com/questions/61766579/empty-response-when-responding-to-xmlhttprequest-from-flask
+10. In SQLAlchemy(python's sql connection library), if you want to get the result of "select", you have to use something like:
+result = cursor.fetchall()
+and then
+It seems like XMLHttpRequests only get string data type.
+And here's a reference talks about this:
+https://stackoverflow.com/questions/58658690/retrieve-query-results-as-dict-in-sqlalchemy
+11. If I want to completely understand about how to use flask as a backend tool, You better create an example practice case:
+	1. A library system, which is store many books and you can insert data into the system and you can search books, and read books.
+
+
+
 
 
 
