@@ -978,6 +978,19 @@ https://stackoverflow.com/questions/21810452/cv2-imshow-command-doesnt-work-prop
 3. The relationships between deep learning(neural network) and matrix(linear algebra)? It seems like Neural network is nothing but matrixs in 
 linear algebra!!! Here are some reference talk about this:
 https://zhuanlan.zhihu.com/p/73497541
+4. Review about c language, how is the pointer works??
+for example, "pointer of an array" and "array pointer":
+	// pointer of an array"
+	int (*arrayP)[10];     //  the operator precedence is this: "()", "[]", "*". Refernece: https://en.cppreference.com/w/c/language/operator_precedence 
+	// So that means that this line of code means that 
+	arrayP取值之後是一個有[10]的元素的array, 且每個元素的datatype都是int
+
+	// array pointer
+	int *pArray[10];
+	// the code means that 
+	pArray是一個陣列, 且每一個元素取值之後都是int, 這表示每個元素都是一個指向int的指標
+
+
 
 
 
