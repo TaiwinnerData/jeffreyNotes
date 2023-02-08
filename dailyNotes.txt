@@ -996,6 +996,20 @@ https://ithelp.ithome.com.tw/articles/10186403
 https://medium.com/analytics-vidhya/sklearn-linear-regression-under-the-hood-31ee71aec00
 7. In "least square" why do we use y on x? Or is "y on x" the same as "x on y"? And not the same why? why not symmetry? here's the import reference:
 https://stats.stackexchange.com/questions/22718/what-is-the-difference-between-linear-regression-on-y-with-x-and-x-with-y
+here's another reference:
+https://www.zhihu.com/question/57431366
+I think this is because of statics of y and x is different, which make regression x on y and regression y on x are not the same.
+8. In "least square" regression problem, the loss function is actually "Sigma(y-yp)^2", because accoding to the definitions we know that, the loss function
+should be the function that need to be minimized? You can see the wikipedia:
+https://en.wikipedia.org/wiki/Cost_function
+9. I was trying to create newton's method to solve least square problem but I failed. I remember that I used to make it done before. Here's a reference You
+can check it out:
+https://azrael.digipen.edu/MAT180/NewtonsMethod.pdf
+10. Why don't we use newton's method in machine learning? here's some reference talk about this:
+https://blog.csdn.net/weixin_46221946/article/details/126820460
+
+
+
 
 
 
