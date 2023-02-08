@@ -907,6 +907,8 @@ https://www.geeksforgeeks.org/convert-opencv-image-to-pil-image-in-python/
 8. Here's another reference talk about how to use eigenvalue and eigenvector of a picture:
 手寫數字識別:
 https://www.k2zone.cn/?p=977
+In the article above, the it talk about "feature vectors" which is not the same as eigenvectors.
+
 
 2023/2/2
 1. It seems like if we want to find the eigenvalue and eigenvector of an image
@@ -966,6 +968,16 @@ And here's a reference talks about this:
 https://stackoverflow.com/questions/58658690/retrieve-query-results-as-dict-in-sqlalchemy
 11. If I want to completely understand about how to use flask as a backend tool, You better create an example practice case:
 	1. A library system, which is store many books and you can insert data into the system and you can search books, and read books.
+
+2023/2/8
+1. I was studying about "feature extration". In chinese we call it "特徵提取", 這裡的"特徵"和特徵向量不是同一個東西,
+Here are some reference talk about this:
+https://www.zhihu.com/question/26559064
+2. In opencv-python, "imshow()" only works with waitKey(), Here's a reference talks about this:
+https://stackoverflow.com/questions/21810452/cv2-imshow-command-doesnt-work-properly-in-opencv-python
+3. The relationships between deep learning(neural network) and matrix(linear algebra)? It seems like Neural network is nothing but matrixs in 
+linear algebra!!! Here are some reference talk about this:
+https://zhuanlan.zhihu.com/p/73497541
 
 
 
