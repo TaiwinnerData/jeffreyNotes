@@ -989,6 +989,9 @@ for example, "pointer of an array" and "array pointer":
 	int *pArray[10];
 	// the code means that 
 	pArray是一個陣列, 且每一個元素取值之後都是int, 這表示每個元素都是一個指向int的指標
+5. In most regression, "least square method" is used for regression, but there's another one method to deal with different situation, called robost regression,
+Here's some references talk about this:
+https://ithelp.ithome.com.tw/articles/10186403
 
 
 
