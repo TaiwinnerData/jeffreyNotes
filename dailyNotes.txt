@@ -905,6 +905,7 @@ https://blog.csdn.net/AddVH/article/details/106312289
 Here's a reference talks about this:
 https://www.geeksforgeeks.org/convert-opencv-image-to-pil-image-in-python/
 8. Here's another reference talk about how to use eigenvalue and eigenvector of a picture:
+手寫數字識別:
 https://www.k2zone.cn/?p=977
 
 2023/2/2
