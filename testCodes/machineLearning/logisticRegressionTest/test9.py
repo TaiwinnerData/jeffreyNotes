@@ -81,6 +81,19 @@ test_x = [
         [13, 13]   # 0
         ]
 
+
+test_y = [
+        [1],
+        [1],
+        [0],
+        [1],
+        [1],
+        [1],
+        [1],
+        [1],
+        [0]
+        ]
+
 test_x = np.array(test_x)
 
 
@@ -116,19 +129,18 @@ b = result_intercept
 # calculate the coefficients of the fit line
 c = -b/w2
 m = -w1/w2
-# the fit equations should be like this:
-# w1*x + w2*y + b = 0, 
-# and so we want to draw the fit line as  y = -w1/w2 * x - b/w2
+# the separation data equations should be like this:
+# w1*x1 + w2*x2 + b = 0, 
+# and so we want to draw the separation line as  x2 = -w1/w2 * x1 - b/w2
 
 
 # Show diagram
 # Show the scatter dots
 plt.scatter(test_x[:, 0], test_x[:, 1], s=1)
-# Show the fitted lines
-plt.plot(test_x[:, 0], test_x[:,0]*m+c, 'r-', linewidth='0.5', label="fitted line")
+# Show the separate lines
+plt.plot(test_x[:, 0], test_x[:,0]*m+c, 'r-', linewidth='0.5', label="separation line")
 #plt.plot(test_x[:, 0], test_x[:,0]*m+c+10, linewidth='0.5', label="test line")
-# You have to add this line below to make label appeared in the plot
-plt.legend()
+plt.legend()  # You have to add this line below to make label appeared in the plot
 #plt.show()
 
 
@@ -137,9 +149,9 @@ plt.legend()
 
 # the Logistic regression method is actually use sigmoid function to decide whether the data calculated result is 1 or 0
 # show the "z = w1x1 + w2x2 + b"
-print("-"*100)
+print("#"*1000)
 print("z = w1*x1 + w2*x2 + b")
-print("z = " + str(w1) + "x1"+ str(w2) + "x2" + "+" + str(b))
+print("z = " + str(w1) + "x1" + "+" + str(w2) + "x2" + "+" + str(b))
 test_z = test_x[:, 0]*w1 + test_x[:, 1]*w2 + b
 print("show test_z")
 print(test_z)
@@ -168,3 +180,12 @@ for i in range(len(sigmoid_z)):
 
 print("show the prediction value from sigmoid method.")
 print(temp_result)
+
+
+
+# Show the accuracy score of the model
+print("Show the accuracy score of the model for the train data and it should be 100 % accuracy.")
+print(logistic_model.score(train_x, train_y))
+print("Show the accuracy score of the model for the test data and it should be random accuracy.")
+print(logistic_model.score(test_x, test_y))
+
