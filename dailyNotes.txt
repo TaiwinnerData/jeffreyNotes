@@ -992,6 +992,12 @@ for example, "pointer of an array" and "array pointer":
 5. In most regression, "least square method" is used for regression, but there's another one method to deal with different situation, called robost regression,
 Here's some references talk about this:
 https://ithelp.ithome.com.tw/articles/10186403
+6. what is the relationship between "Gradient Descent" and "Least Square"?? here's some references talk about this:
+https://medium.com/analytics-vidhya/sklearn-linear-regression-under-the-hood-31ee71aec00
+7. In "least square" why do we use y on x? Or is "y on x" the same as "x on y"? And not the same why? why not symmetry? here's the import reference:
+https://stats.stackexchange.com/questions/22718/what-is-the-difference-between-linear-regression-on-y-with-x-and-x-with-y
+
+
 
 
 
