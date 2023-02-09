@@ -1014,6 +1014,9 @@ https://blog.csdn.net/weixin_46221946/article/details/126820460
 https://stats.stackexchange.com/questions/253632/why-is-newtons-method-not-widely-used-in-machine-learning
 2. Here's an example talks about how to use Newton's method:
 https://oemiliatano.github.io/2021/03/01/%E6%9C%80%E4%BD%B3%E5%8C%96-%E7%89%9B%E9%A0%93%E6%B3%95/
+3. What is the difference between "objective function" and "loss function"?  They are basically pretty much the same thing in machine learning, 
+Here's some references talk about this:
+https://stats.stackexchange.com/questions/179026/objective-function-cost-function-loss-function-are-they-the-same-thing
 
 
 
