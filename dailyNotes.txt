@@ -1017,6 +1017,33 @@ https://oemiliatano.github.io/2021/03/01/%E6%9C%80%E4%BD%B3%E5%8C%96-%E7%89%9B%E
 3. What is the difference between "objective function" and "loss function"?  They are basically pretty much the same thing in machine learning, 
 Here's some references talk about this:
 https://stats.stackexchange.com/questions/179026/objective-function-cost-function-loss-function-are-they-the-same-thing
+4. What is "forward propgation" and "backward propgation" in machine learning?? here's some references talk about this:
+https://chih-sheng-huang821.medium.com/%E6%A9%9F%E5%99%A8%E5%AD%B8%E7%BF%92-%E7%A5%9E%E7%B6%93%E7%B6%B2%E8%B7%AF-%E5%A4%9A%E5%B1%A4%E6%84%9F%E7%9F%A5%E6%A9%9F-multilayer-perceptron-mlp-%E5%90%AB%E8%A9%B3%E7%B4%B0%E6%8E%A8%E5%B0%8E-ee4f3d5d1b41
+5. What is the relationship bewteen "Gradient Descent" and "Backward Propagation". It seems like "Backward Propgation" is just a more efficient method for "Gradient Descent". They are 
+basically the same thing.
+https://ithelp.ithome.com.tw/articles/10272479
+6. "Backward Propagation" in short called "BP"
+7. What is the difference between "CNN (Convolution Neural Network)" and "MLP (Multilayer perceptron)"? Here's some reference talks about this:
+Convolutional Neural Networks are MLPs with a special structure.
+check out Zia's answer:
+https://www.quora.com/Whats-the-difference-between-convolution-neural-networks-and-multi-layer-perceptron
+Here's another references talks about this:
+https://stats.stackexchange.com/questions/234891/what-is-the-difference-between-convolutional-neural-networks-and-deep-learning
+8. Here's another references talk about how "Backward Propagation" works and talk about the "Gradient Descent" and "Image recognition".
+https://datasciocean.tech/deep-learning-core-concept/backpropagation-explain/
+https://datasciocean.tech/deep-learning-core-concept/deep-learning-gradient-descent/
+https://datasciocean.tech/deep-learning-core-concept/neural-network-classify-handwritten-digit-image/
+9. Here's another example talk about how to make a digit number images recognition tutorial. You should definitely check it out(He use flask too!):
+https://www.toptal.com/data-science/machine-learning-number-recognition
+10. In hidde layer, How do i decide how many units does a hidden layer should have?  Here's a references talk about this:
+https://www.quora.com/How-do-I-decide-the-number-of-nodes-in-a-hidden-layer-of-a-neural-network-I-will-be-using-a-three-layer-model
+11. Wait a second!! How many weights does I have in a neural neworks diagram?? Here's a reference talk about this: 
+https://stats.stackexchange.com/questions/296981/ormula-for-number-of-weights-in-neural-network
+12. In Gradient Descent, How many times does it should take to get the correct result? It seems like when the datasets get more data, the rate and times have to change with it?
+13. I just try simple Gradient Descent but it keep diverging??? How can this happens? Here's some references talk about this:
+https://stackoverflow.com/questions/41354177/why-does-simple-gradient-descent-diverge
+14. But in 13. Doesn't that mean when the dataset is huge, this would make objective function huge?
+
 
 
 
