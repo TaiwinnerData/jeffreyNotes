@@ -1012,6 +1012,8 @@ https://blog.csdn.net/weixin_46221946/article/details/126820460
 2023/2/9
 1. Why newton's method not widely used in machine learning? here's some reference:
 https://stats.stackexchange.com/questions/253632/why-is-newtons-method-not-widely-used-in-machine-learning
+2. Here's an example talks about how to use Newton's method:
+https://oemiliatano.github.io/2021/03/01/%E6%9C%80%E4%BD%B3%E5%8C%96-%E7%89%9B%E9%A0%93%E6%B3%95/
 
 
 
