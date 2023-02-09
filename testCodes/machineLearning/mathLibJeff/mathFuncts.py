@@ -10,6 +10,9 @@ def testFunct2(x):
 def testFunct3(x, y):
     return 3*x*y + x*2*y + 1
 
+def testFunct4(x, y):
+    return (3*x**2)*y + 3*x*y + x*y
+
 
 def first_diff(f_funct, f_x):
     dx = 0.001
@@ -22,19 +25,25 @@ def second_diff(f_funct, f_x):
     return dy/dx
 
 # second dimensional partial differnetial for x
-def first_p_diff(f_funct, f_x, f_y):
+def first_px_diff(f_funct, f_x, f_y):
     dx = 0.001
     df = f_funct(f_x+dx, f_y) - f_funct(f_x, f_y)
     return df/dx
 
-def second_p_diff(f_funct, f_x, f_y):
+
+def first_py_diff(f_funct, f_x, f_y):
+    dy = 0.001
+    df = f_funct(f_x, f_y + dy) - f_funct(f_x, f_y)
+    return df/dy
+
+def second_px_diff(f_funct, f_x, f_y):
     dx = 0.001
-    df = first_p_diff(f_funct, f_x+dx, f_y) - first_p_diff(f_funct, f_x, f_y)
+    df = first_px_diff(f_funct, f_x+dx, f_y) - first_px_diff(f_funct, f_x, f_y)
     return df/dx
 
 def second_pxy_diff(f_funct, f_x, f_y):
     dy = 0.001
-    df = first_p_diff(f_funct, f_x, f_y+dy) - first_p_diff(f_funct, f_x, f_y)
+    df = first_py_diff(f_funct, f_x, f_y+dy) - first_py_diff(f_funct, f_x, f_y)
     return df/dy
 
 
@@ -71,11 +80,11 @@ def newton_method_for_diff(f_funct, n):
 # --------------------------------------------------------------------------------------
 # Gradient Descent method
 def GD(f_funct, n):
-    xn, yn = 0, 0
+    xn, yn = 10, 10 
     vn = np.array([xn, yn])
     for i in range(n):
-        vn = vn - [first_p_diff(f_funct, vn[0], vn[1]), first_p_diff(f_funct, vn[1], vn[0])]
-    return [xn, yn]
+        vn = vn - np.array([first_px_diff(f_funct, vn[0], vn[1]), first_py_diff(f_funct, vn[0], vn[1])])*0.001
+    return vn
 
 
 
@@ -96,16 +105,18 @@ def main():
     #testFunct3 = 3*x*y + x*2*y + 1
     # so the partial x differential should be 3y + 2y = 3*2 + 2*2 = 10
     print("show the partial differnetial result of testFunct3 when x = 1, y = 2")
-    print(first_p_diff(testFunct3, 1, 2))
+    print(first_px_diff(testFunct3, 1, 2))
+    print(first_px_diff(testFunct3, 2, 1))
     # the answer of below code should be 0
     print("show the second order partial differential result of testFunct3 when x = 1, y=2")
-    print(second_p_diff(testFunct3, 2, 1))
+    print(second_px_diff(testFunct3, 2, 1))
     # the answer of below code should 5
     print("show the second order partial differential result of testFunct3 when x = 1, y=2")
     print(second_pxy_diff(testFunct3, 1, 2))
 
-    print("Show the Gradient Descent result of the testFunct3")
-    print(GD(testFunct3, 10))
+    print("Show the Gradient Descent result of the testFunct4")
+    print(GD(testFunct4, 60000))
+
 
 
 
