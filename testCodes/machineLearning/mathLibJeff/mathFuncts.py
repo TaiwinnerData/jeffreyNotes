@@ -58,6 +58,29 @@ def newton_method_for_diff(f_funct, n):
         xn = xn - first_diff(f_funct, xn)/second_diff(f_funct, xn)
     return xn
 
+
+# --------------------------------------------------------------------------------------
+# Newton's Method for two variables problem.
+# This would use Hessain matrix which is complicated to calculated. And the math behind it is unknow now to me.
+
+# Newton's method is kinda complicated in more than two variables
+
+
+
+
+# --------------------------------------------------------------------------------------
+# Gradient Descent method
+def GD(f_funct, n):
+    xn, yn = 0, 0
+    vn = np.array([xn, yn])
+    for i in range(n):
+        vn = vn - [first_p_diff(f_funct, vn[0], vn[1]), first_p_diff(f_funct, vn[1], vn[0])]
+    return [xn, yn]
+
+
+
+
+
 # define linear regression least action. This function only works on 2 variables problems.
 # if the fit line is w1*x1 + w2*x2 = b, then x2 = (b - w1*x1)/w2
 # so the y distance between fit line and the data point is Py - (b-w1*Px)/w2 , for (Px, Py) is the example data point.
@@ -80,6 +103,9 @@ def main():
     # the answer of below code should 5
     print("show the second order partial differential result of testFunct3 when x = 1, y=2")
     print(second_pxy_diff(testFunct3, 1, 2))
+
+    print("Show the Gradient Descent result of the testFunct3")
+    print(GD(testFunct3, 10))
 
 
 
