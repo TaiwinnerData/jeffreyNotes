@@ -1048,6 +1048,19 @@ https://stackoverflow.com/questions/41354177/why-does-simple-gradient-descent-di
 2023/2/10
 1. What is the difference, and what is the usage difference between "neural network" and "Support vector machine"?? Well, it seems like they're different, Here's some references talk about this:
 https://www.zhihu.com/question/22290096
+2. Why is "neural network" more popular than "Support vector machine"?? Here's some reference talks about this:
+https://stats.stackexchange.com/questions/510052/are-neural-networks-better-than-svms
+3. I think if I want to understand why hidden layer has more than 1 units i have to understand "backward propogation" first, here's some referece talk about this:
+https://www.brilliantcode.net/1326/backpropagation-1-gradient-descent-chain-rule/
+4. So "forward propagation"*"backward propagation" = gradient(f), Here's the reference:
+https://ithelp.ithome.com.tw/articles/10272479
+5. Here's another example explaning how "backward propagation" works:
+https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/
+here's another one. ---> important
+https://allen108108.github.io/blog/2020/06/01/%E7%82%BA%E4%BB%80%E9%BA%BC%E9%9C%80%E8%A6%81%E5%8F%8D%E5%90%91%E5%82%B3%E6%92%AD%20_%20Why%20Backpropagation%20_/
+6. Difference between "error function" and "loss function"?? here's some reference talk about this:
+https://zh.wikipedia.org/zh-tw/%E8%AF%AF%E5%B7%AE%E5%87%BD%E6%95%B0
+https://www.jianshu.com/p/7a592ad7591a   ---> error function's definition doesn't change but loss function doesn't. Loss function's definition is based on your choice.
 
 
 
@@ -1059,6 +1072,8 @@ https://www.zhihu.com/question/22290096
 
 
 
+
+  
 
 
 
