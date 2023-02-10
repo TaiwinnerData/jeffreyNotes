@@ -1058,6 +1058,8 @@ https://ithelp.ithome.com.tw/articles/10272479
 https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/
 here's another one. ---> important
 https://allen108108.github.io/blog/2020/06/01/%E7%82%BA%E4%BB%80%E9%BA%BC%E9%9C%80%E8%A6%81%E5%8F%8D%E5%90%91%E5%82%B3%E6%92%AD%20_%20Why%20Backpropagation%20_/
+here's another references talk about this:
+https://www.zhihu.com/question/27239198
 6. Difference between "error function" and "loss function"?? here's some reference talk about this:
 https://zh.wikipedia.org/zh-tw/%E8%AF%AF%E5%B7%AE%E5%87%BD%E6%95%B0
 https://www.jianshu.com/p/7a592ad7591a   ---> error function's definition doesn't change but loss function doesn't. Loss function's definition is based on your choice.
