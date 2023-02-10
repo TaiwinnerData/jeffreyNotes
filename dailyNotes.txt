@@ -1045,6 +1045,10 @@ https://stackoverflow.com/questions/41354177/why-does-simple-gradient-descent-di
 14. But in 13. Doesn't that mean when the dataset is huge, this would make objective function huge?
 
 
+2023/2/10
+1. What is the difference, and what is the usage difference between "neural network" and "Support vector machine"?? Well, it seems like they're different, Here's some references talk about this:
+https://www.zhihu.com/question/22290096
+
 
 
 
