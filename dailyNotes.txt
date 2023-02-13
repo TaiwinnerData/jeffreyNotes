@@ -1065,6 +1065,12 @@ https://zh.wikipedia.org/zh-tw/%E8%AF%AF%E5%B7%AE%E5%87%BD%E6%95%B0
 https://www.jianshu.com/p/7a592ad7591a   ---> error function's definition doesn't change but loss function doesn't. Loss function's definition is based on your choice.
 
 
+2023/2/13
+1. Why some python's code use underscore as function's name??? I have seen some python coder use this. Here's some reference:
+https://stackoverflow.com/questions/8689964/why-do-some-functions-have-underscores-before-and-after-the-function-name
+
+
+
 
 
 
