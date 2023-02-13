@@ -1068,6 +1068,8 @@ https://www.jianshu.com/p/7a592ad7591a   ---> error function's definition doesn'
 2023/2/13
 1. Why some python's code use underscore as function's name??? I have seen some python coder use this. Here's some reference:
 https://stackoverflow.com/questions/8689964/why-do-some-functions-have-underscores-before-and-after-the-function-name
+2. In python numpy array. When you use "someArray.T" that means you actually find the transpose of that array(or matrix in this situation).
+3. I am studying about how to use backward propagation in python algorithm. It's kinda complicated now.
 
 
 
