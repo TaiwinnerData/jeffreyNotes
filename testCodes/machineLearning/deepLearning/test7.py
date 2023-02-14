@@ -1,3 +1,4 @@
+# this example is the first time i made for neural network.
 import numpy as np
 import pandas as pd
 import random as random
@@ -43,7 +44,7 @@ class NN(object):
         self.w1_2_grad = np.dot(self.net1.T, self.delta2)
         self.w2_3_grad = np.dot(self.net2.T, self.delta3)
 
-    def _update(self, learning_rate=0.01):
+    def _update(self, learning_rate=1.2):
 #        self.w1_2 = self.w1_2 - np.multiply(learning_rate, self.w1_2_grad)
 #        self.w2_3 = self.w2_3 - np.multiply(learning_rate, self.w2_3_grad)
         self.w1_2 = self.w1_2 - learning_rate*self.w1_2_grad
@@ -55,9 +56,21 @@ class NN(object):
             self._backward_propagation(y)
             self._update()
 
+    def predict(self, X):
+        y_pred = self._forward_propagation(X)
+        print("y_pred")
+        print(y_pred)
+        for i in range(len(X)):
+            if y_pred[i] >= 0.5:
+                y_pred[i] = 1
+            else:
+                y_pred[i] = 0
+        return np.array(y_pred)
 
-#    def predict(self, X):
-#        y_pred = self.
+    def accuracy(self, predict, y):
+        cnt = np.sum(predict==y)
+        return (cnt/len(y))*100
+
 
 
 # import example data, for this test I use weight-height datasets.
@@ -67,12 +80,14 @@ datasets = pd.DataFrame.to_numpy(datasets)
 np.random.shuffle(datasets)
 
 # define train data
-train_number = 2
+train_number = 100 
 train_X, train_y = datasets[:train_number, 1:3], datasets[:train_number, 0:1]
 
 # define the test data
 test_number = 200
 test_X, test_y = datasets[train_number:train_number+test_number, 1:3], datasets[train_number:train_number+test_number, 0:1]
+#print(test_X)
+
 
 # turn all the y value to 1 or 0
 for i in range(train_number):
@@ -84,26 +99,17 @@ for i in range(train_number):
 
 def main():
     testNN = NN()
+# test:
 #    testNN._forward_propagation(train_X)
 #    testNN._backward_propagation(train_y)
 
     testNN.train(train_X, train_y, 30)
 
-    testData = np.array([64, 145])
-    testNN._forward_propagation(testData)
-    print("weight: " + str(testData[0]) + "height: " + str(testData[1]))
-    if testNN.o3 > 0.5:
-        print(testNN.o3)
-        print(1)
-        print("male")
-    else:
-        print(testNN.o3)
-        print(0)
-        print("female")
 
-
-
-
+    predict_y = testNN.predict(test_X)
+#    test_accuracy = accuracy(predict_y, test_y)
+    print(test_accuracy)
+    
 
 
 
