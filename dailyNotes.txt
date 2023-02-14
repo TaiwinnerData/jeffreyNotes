@@ -1072,6 +1072,10 @@ https://stackoverflow.com/questions/8689964/why-do-some-functions-have-underscor
 3. I am studying about how to use backward propagation in python algorithm. It's kinda complicated now.
 
 
+2023/2/14
+1. I was keeping trying to make neural network practice example.
+
+
 
 
 
