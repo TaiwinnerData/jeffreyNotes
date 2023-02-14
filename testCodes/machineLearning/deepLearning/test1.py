@@ -6,7 +6,12 @@
 from sklearn import datasets
 iris = datasets.load_iris()
 X = iris.data
+print("show X")
+print(X)
+print(X.shape)
 y = iris.target
+print("show y")
+print(y.shape)
 
 print('A data:', X[0], 'nLabel:', y[0])
 '''output
@@ -102,6 +107,9 @@ class my_NN(object):
     def _backward_propagation(self, X, y):
         predict = self._forward_propagation(X)
         m = X.shape[0]
+        # test show x.shape
+        print("show X.shape[0]")
+        print(m)
         delta3 = predict - y
         dz3 = np.multiply(delta3, self._sigmoid_prime(self.z3))
         self.dw2 = (1/m)*np.sum(np.multiply(self.a2, dz3), axis=1).reshape(self.w2.shape)
@@ -143,6 +151,13 @@ class my_NN(object):
 from sklearn.model_selection import train_test_split
 if __name__=='__main__':
     train_X, test_X, train_y, test_y = train_test_split(X, re_y, test_size=0.25) # split training data and testing data
+    print("-"*100)
+    print("test_X")
+    print(train_X)
+    print("number of the data")
+    print(train_X.shape)
+    print("-"*100)
+
     clr = my_NN() #initialize the model
     clr.train(train_X, train_y) # train model
     pre_y = clr.predict(test_X) # predict
