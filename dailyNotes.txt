@@ -1075,6 +1075,11 @@ https://stackoverflow.com/questions/8689964/why-do-some-functions-have-underscor
 2023/2/14
 1. I was keeping trying to make neural network practice example.
 
+2023/2/16
+1. I was studying about neural network. And I finally made a correct model but sometimes it would happen something like "overfitting" which make me confused
+2. How do i choose the number of units of hidden layers in the nueral network?? Here's some reference talk about this:
+https://zhuanlan.zhihu.com/p/100419971
+
 
 
 
