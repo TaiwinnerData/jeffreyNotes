@@ -1085,6 +1085,7 @@ https://stats.stackexchange.com/questions/338255/what-is-effect-of-increasing-nu
 https://www.cupoy.com/qa/club/ai_tw/0000016D6BA22D97000000016375706F795F72656C656173654B5741535354434C5542/0000017B5471FC67000000086375706F795F72656C656173655155455354
 here's another reference:
 https://www.zhihu.com/question/38102762
+5. I find that's weird that taiwinner database "cost_living_partition" view.
 
 
 
