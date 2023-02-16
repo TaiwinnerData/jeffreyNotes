@@ -23,7 +23,8 @@ class NN(object):
 
     def _forward_propagation(self, X_input): # 
         # layer 1
-        self.net1 = (X_input-120)*0.01 
+        self.net1 = (X_input-120)*0.01  # why should i do this?  # this is actually normalization. without this it's hard to train.
+#        self.net1 = X_input*0.01
         self.net2 = np.dot(self.net1, self.w1_2)
         self.net2 = np.float64(self.net2) # change the data type to numpy's float or the _simgoid can't read it.
         self.o2 = self._sigmoid(self.net2)
@@ -35,7 +36,8 @@ class NN(object):
 
     def _backward_propagation(self, y):
         predict = self.o3
-        delta = y-predict
+#        delta = y-predict
+        delta = predict-y   # what is the difference between "predict-y" and "y-predict"??? 
         self.delta3 = np.multiply(delta, self._diff_sigmoid(self.net3))
         self.delta2 = np.multiply(np.dot(self.delta3, self.w2_3.T), self._diff_sigmoid(self.net2))
 
@@ -48,8 +50,8 @@ class NN(object):
 #        self.w2_3_grad = np.dot(self.net2.T, self.delta3)
 
     def _update(self, learning_rate=10):
-        self.w1_2 = self.w1_2 + learning_rate*self.w1_2_grad
-        self.w2_3 = self.w2_3 + learning_rate*self.w2_3_grad
+        self.w1_2 = self.w1_2 - learning_rate*self.w1_2_grad
+        self.w2_3 = self.w2_3 - learning_rate*self.w2_3_grad
 
     def train(self, X, y, iteration):
         for i in range(iteration):
@@ -82,7 +84,7 @@ def main():
 #    np.random.seed(30)
     np.random.shuffle(datasets)
 
-    train_number = 10  # 100 original
+    train_number = 30  # 100 original
     train_X, train_y = datasets[:train_number, 1:3], datasets[:train_number, 0:1]
 
 
@@ -113,6 +115,12 @@ def main():
     print(predict_y)
     accuracy = testNN.accuracy(predict_y, test_y)
     print("accuracy: " + str(accuracy) + " %")
+    print("weights")
+    print(testNN.w1_2)
+    print(testNN.w2_3)
+    print("gradient")
+    print(testNN.w1_2_grad)
+    print(testNN.w2_3_grad)
 
 if __name__ == "__main__":
     main()
