@@ -40,10 +40,14 @@ class NN(object):
         self.delta2 = np.multiply(np.dot(self.delta3, self.w2_3.T), self._diff_sigmoid(self.net2))
 
         # create gradient
-        self.w1_2_grad = np.dot(self.net1.T, self.delta2)
-        self.w2_3_grad = np.dot(self.net2.T, self.delta3)
+        m = self.net1.shape[0]   # m is for the normalization of gradient
+        self.w1_2_grad = np.dot(self.net1.T, self.delta2)*(1/m)
+        self.w2_3_grad = np.dot(self.net2.T, self.delta3)*(1/m)
 
-    def _update(self, learning_rate=0.5):
+#        self.w1_2_grad = np.dot(self.net1.T, self.delta2)
+#        self.w2_3_grad = np.dot(self.net2.T, self.delta3)
+
+    def _update(self, learning_rate=10):
         self.w1_2 = self.w1_2 + learning_rate*self.w1_2_grad
         self.w2_3 = self.w2_3 + learning_rate*self.w2_3_grad
 
@@ -78,11 +82,11 @@ def main():
 #    np.random.seed(30)
     np.random.shuffle(datasets)
 
-    train_number = 100
+    train_number = 10  # 100 original
     train_X, train_y = datasets[:train_number, 1:3], datasets[:train_number, 0:1]
 
 
-    test_number = 30
+    test_number = 100
     test_X, test_y = datasets[train_number:train_number+test_number, 1:3], datasets[train_number:train_number+test_number, 0:1]
 
 
@@ -108,7 +112,7 @@ def main():
     predict_y = testNN.predict(test_X)
     print(predict_y)
     accuracy = testNN.accuracy(predict_y, test_y)
-    print(accuracy)
+    print("accuracy: " + str(accuracy) + " %")
 
 if __name__ == "__main__":
     main()
