@@ -1093,6 +1093,10 @@ https://www.zhihu.com/question/38102762
 https://www.youtube.com/watch?v=oksffSVy1Vg
 2. I keep studying about how to use neural network. 
 
+2023/2/20
+1. I keep modifying the taiwinner backend web, and finally finish the problem.
+2. What exactly is "modularity" for development?? Any example?
+
 
 
 
