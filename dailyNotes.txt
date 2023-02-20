@@ -1094,8 +1094,9 @@ https://www.youtube.com/watch?v=oksffSVy1Vg
 2. I keep studying about how to use neural network. 
 
 2023/2/20
-1. I keep modifying the taiwinner backend web, and finally finish the problem.
+1. I keep modifying the taiwinner backend web, and finally finish the co_mapping problem.
 2. What exactly is "modularity" for development?? Any example?
+3. I keep modifying the new database and finally trying to complete the problem of view_cost_living_partition, Why the data number is different from the "pro server"
 
 
 
