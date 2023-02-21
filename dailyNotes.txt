@@ -1098,6 +1098,10 @@ https://www.youtube.com/watch?v=oksffSVy1Vg
 2. What exactly is "modularity" for development?? Any example?
 3. I keep modifying the new database and finally trying to complete the problem of view_cost_living_partition, Why the data number is different from the "pro server"
 
+2023/2/21
+1. What does "!" mean in c language?? 
+2. I was reviewing about c language, how to read and write file, and what is the difference between array pointer and pointer of an array.
+
 
 
 
