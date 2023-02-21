@@ -1101,6 +1101,9 @@ https://www.youtube.com/watch?v=oksffSVy1Vg
 2023/2/21
 1. What does "!" mean in c language?? 
 2. I was reviewing about c language, how to read and write file, and what is the difference between array pointer and pointer of an array.
+3. music note 5: 
+https://www.youtube.com/watch?v=ctX9oil5uWY
+4. 
 
 
 
