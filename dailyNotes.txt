@@ -1115,6 +1115,17 @@ https://www.toutiao.com/article/6751046884359406091/?&source=m_redirect&wid=1677
 2023/2/23
 1. Python flask multipleThreading, how can i execute two task at the same time? here's some reference talks about this:
 https://flask-yushu.gitbook.io/yushu/5.flask-zhong-de-duo-xian-cheng-yu-xian-cheng-ge-li-ji-shu/5.2-quan-ju-jie-shi-qi-suo-gil
+2. In numpy, if you want to combine two array like array1=[[1, 2, 3, 4], [2, 3, 4, 8]] and array2=[[1], [2]], You can use np.concatenate((array1, array2), axis=1), 
+here's some reference: 
+https://sparkbyexamples.com/numpy/numpy-concatenate-arrays/
+3. How to use python's requests to get tableau server's api(well, not just tableau server api, including any other kinda restful api), here's some reference:
+https://stackoverflow.com/questions/8685790/adding-headers-to-requests-module
+
+
+
+
+
+
 
 
 
