@@ -1120,6 +1120,10 @@ here's some reference:
 https://sparkbyexamples.com/numpy/numpy-concatenate-arrays/
 3. How to use python's requests to get tableau server's api(well, not just tableau server api, including any other kinda restful api), here's some reference:
 https://stackoverflow.com/questions/8685790/adding-headers-to-requests-module
+4. how to upload file by python requests:
+https://stackoverflow.com/questions/22567306/how-to-upload-file-with-python-requests
+5. how to send file by telegram bot, here's some reference:
+https://stackoverflow.com/questions/55470047/how-to-send-file-via-telegram-bot
 
 
 
