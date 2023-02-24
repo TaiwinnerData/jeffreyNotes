@@ -1125,6 +1125,11 @@ https://stackoverflow.com/questions/22567306/how-to-upload-file-with-python-requ
 5. how to send file by telegram bot, here's some reference:
 https://stackoverflow.com/questions/55470047/how-to-send-file-via-telegram-bot
 
+2023/2/24
+1. I was studying about machine Learning, using "neural network" to deal with "iris flower" problem. The unbelievable part is that IT WORKS!!
+2. In python when we encounter the month and date for only single number, how can we fullfill the 0, here's some reference:
+https://blog.csdn.net/lxq_9532/article/details/85759673
+
 
 
 
