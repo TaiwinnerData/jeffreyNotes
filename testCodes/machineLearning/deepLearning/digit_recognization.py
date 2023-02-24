@@ -19,7 +19,7 @@ class NN():
     def __init__(self):
         # declare 
         self.feature_size = 64
-        self.hidden_size = 50
+        self.hidden_size = 10 
         self.output_size = 10
 
         # declare weights
@@ -34,12 +34,14 @@ class NN():
 
     def _forward_propagation(self, input_X):
         # layer 1
-        self.net1 = input_X
+        self.net1 = (input_X-8)*0.1
         # layer 2
         self.net2 = np.dot(self.net1, self.w1_2)
+        self.net2 = np.float64(self.net2)
         self.o2 = self._sigmoid(self.net2)
         # layer 3
         self.net3 = np.dot(self.o2, self.w2_3)
+        self.net3 = np.float64(self.net3)
         self.o3 = self._sigmoid(self.net3)
 
     def _backward_propagation(self, input_y):
@@ -55,7 +57,7 @@ class NN():
         self.w1_2_grad = np.dot(self.net1.T, self.delta2)/m
         self.w2_3_grad = np.dot(self.net2.T, self.delta3)/m
 
-    def _update(self, learning_rate=0.0001):
+    def _update(self, learning_rate=3):
         self.w1_2 = self.w1_2 - learning_rate*self.w1_2_grad
         self.w2_3 = self.w2_3 - learning_rate*self.w2_3_grad
 
@@ -77,7 +79,7 @@ class NN():
 
 def main():
     # import digits datasets
-    train_size = 300
+    train_size = 500
     test_size = 5 
 
     digits = datasets.load_digits()
@@ -99,7 +101,7 @@ def main():
 
 
 #    result_y = digits_y[train_size:train_size+test_size]
-    testNN.train(train_X, train_y, 50)
+    testNN.train(train_X, train_y, 100)
     predict_result = testNN.predict(test_X)
     print(predict_result)
     print(result_y)
