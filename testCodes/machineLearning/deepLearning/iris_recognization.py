@@ -20,7 +20,7 @@ def iris_classification(input_y):
 class NN(object):
     def __init__(self):
         self.feature_size = 4
-        self.hidden_size = 3
+        self.hidden_size = 5
         self.output_size = 3
 
         # initialize the weights
@@ -40,10 +40,10 @@ class NN(object):
         # layer 2
         self.net2 = np.dot(self.net1, self.w1_2)
         self.net2 = np.float64(self.net2)
-#        self.o2 = self._sigmoid(self.net2)
+        self.o2 = self._sigmoid(self.net2)
 
         # layer 3
-        self.net3 = np.dot(self.net2, self.w2_3)
+        self.net3 = np.dot(self.o2, self.w2_3)
         self.net3 = np.float64(self.net3)
         self.o3 = self._sigmoid(self.net3)
 
@@ -51,8 +51,8 @@ class NN(object):
         predict = self.o3 
         delta = predict - y
         # layer 3
-#        self.delta3 = np.multiply(delta, self._diff_sigmoid(self.net3))
-        self.delta3 = delta
+        self.delta3 = np.multiply(delta, self._diff_sigmoid(self.net3))
+#        self.delta3 = delta
         # layer 2
         self.delta2 = np.multiply(np.dot(self.delta3, self.w2_3.T), self._diff_sigmoid(self.net2))
 
@@ -62,7 +62,7 @@ class NN(object):
         self.w2_3_grad = np.dot(self.net2.T, self.delta3)/m
 
 
-    def _update(self, learning_rate=1):
+    def _update(self, learning_rate=1.5):
         self.w1_2 = self.w1_2 - learning_rate*self.w1_2_grad
         self.w2_3 = self.w2_3 - learning_rate*self.w2_3_grad
 
@@ -79,6 +79,9 @@ class NN(object):
         result_pred = []
         for i in range(len(y_pred)):
             result_pred.append(np.argmax(y_pred[i], axis=0))
+
+        result_pred = np.array(result_pred)
+        result_pred = np.reshape(result_pred, (-1, 1))
         return result_pred
 
     def accuracy(self, predict, y):
@@ -94,19 +97,17 @@ def main():
     iris_datasets = ds.load_iris()
     iris_data = iris_datasets.data
     iris_result = np.reshape(iris_datasets.target, (-1, 1))
+    print("size of the iris datasets")
+    print(len(iris_result))
     datasets = np.concatenate((iris_data, iris_result), axis=1)
 
     # shuffle the data
     np.random.shuffle(datasets)
-    train_size = 30
+    train_size = 100
     train_X, train_y = datasets[:train_size, 0:4], datasets[:train_size, 4:5]
     train_y = iris_classification(train_y)
-    print("train_X")
-    print(train_X)
-    print("train_y")
-    print(train_y)
 
-    test_size = 100
+    test_size = 50
     test_X, test_y = datasets[train_size:train_size+test_size, 0:4], datasets[train_size:train_size+test_size, 4:5]
     test_y_o = test_y
     test_y = iris_classification(test_y)
@@ -115,14 +116,13 @@ def main():
 
     # training
     testNN = NN()
-    iteration = 100
+    iteration = 150
     testNN.train(train_X, train_y, iteration)
 
     # predict 
     predict_y = testNN.predict(test_X)
+    print(testNN.o3)
     print("predict_y")
-    print(predict_y)
-    predict_y = np.reshape(predict_y, (-1, 1))
     print(predict_y)
     print("test_y")
     print(test_y_o)
