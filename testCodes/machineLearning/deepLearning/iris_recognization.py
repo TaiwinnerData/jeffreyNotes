@@ -35,7 +35,7 @@ class NN(object):
 
     def _forward_prop(self, X_input):
         # layer 1
-        self.net1 = X_input-5
+        self.net1 = (X_input-5)
 
         # layer 2
         self.net2 = np.dot(self.net1, self.w1_2)
@@ -62,7 +62,7 @@ class NN(object):
         self.w2_3_grad = np.dot(self.net2.T, self.delta3)/m
 
 
-    def _update(self, learning_rate=1.5):
+    def _update(self, learning_rate=0.5):
         self.w1_2 = self.w1_2 - learning_rate*self.w1_2_grad
         self.w2_3 = self.w2_3 - learning_rate*self.w2_3_grad
 
@@ -117,6 +117,7 @@ def main():
     # training
     testNN = NN()
     iteration = 150
+    iteration = 1000
     testNN.train(train_X, train_y, iteration)
 
     # predict 
