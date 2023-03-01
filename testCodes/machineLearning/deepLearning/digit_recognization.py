@@ -34,7 +34,9 @@ class NN():
 
     def _forward_propagation(self, input_X):
         # layer 1
-        self.net1 = (input_X-8)*0.1
+#        self.net1 = (input_X-8)*0.01  # you could *0.1 or what
+        self.net1 = (input_X-8)*0.1 # you could *0.1 or what
+
         # layer 2
         self.net2 = np.dot(self.net1, self.w1_2)
         self.net2 = np.float64(self.net2)
@@ -57,7 +59,7 @@ class NN():
         self.w1_2_grad = np.dot(self.net1.T, self.delta2)/m
         self.w2_3_grad = np.dot(self.net2.T, self.delta3)/m
 
-    def _update(self, learning_rate=3):
+    def _update(self, learning_rate=10):
         self.w1_2 = self.w1_2 - learning_rate*self.w1_2_grad
         self.w2_3 = self.w2_3 - learning_rate*self.w2_3_grad
 
@@ -77,10 +79,17 @@ class NN():
             y_output_pred.append(y_pred[i].argmax(axis=0))
         return y_output_pred
 
+    def accuracy(self, predict, y):
+        cnt = np.sum(predict==y)
+        return (cnt/len(y))*100
+
 def main():
     # import digits datasets
-    train_size = 500
-    test_size = 5 
+#    train_size = 100
+#    test_size = 10
+
+    train_size = 300
+    test_size = 100 
 
     digits = datasets.load_digits()
     digits_X = digits.data
@@ -106,6 +115,8 @@ def main():
     print(predict_result)
     print(result_y)
 #    print(testNN.o3)
+    print("accuracy")
+    print(testNN.accuracy(predict_result, result_y))
 
 
 if __name__ == "__main__":
