@@ -35,7 +35,7 @@ class NN():
     def _forward_propagation(self, input_X):
         # layer 1
 #        self.net1 = (input_X-8)*0.01  # you could *0.1 or what
-        self.net1 = (input_X-8)*0.1 # you could *0.1 or what
+        self.net1 = (input_X-8)*0.01 # you could *0.1 or what
 
         # layer 2
         self.net2 = np.dot(self.net1, self.w1_2)
@@ -88,7 +88,7 @@ def main():
 #    train_size = 100
 #    test_size = 10
 
-    train_size = 300
+    train_size = 300 
     test_size = 100 
 
     digits = datasets.load_digits()
@@ -110,7 +110,7 @@ def main():
 
 
 #    result_y = digits_y[train_size:train_size+test_size]
-    testNN.train(train_X, train_y, 100)
+    testNN.train(train_X, train_y, 1500)
     predict_result = testNN.predict(test_X)
     print(predict_result)
     print(result_y)
