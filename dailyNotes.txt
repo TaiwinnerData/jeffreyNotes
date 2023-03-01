@@ -1130,6 +1130,23 @@ https://stackoverflow.com/questions/55470047/how-to-send-file-via-telegram-bot
 2. In python when we encounter the month and date for only single number, how can we fullfill the 0, here's some reference:
 https://blog.csdn.net/lxq_9532/article/details/85759673
 
+2023/3/1
+1. I was trying to modified digit recognization python deep neural network test. And I just found out that if you want to increase the accuracy of 
+the prediction, sometimes you can increase the iteration number of the descent gradient method. And It's just not only work on digit recognization. 
+It also works on iris flowers recogniztion.
+2. I was keep studying neural network. And there's weird situations happens in the iris_recognization case. That is the accuracy of the program would 
+sometimes suddenly discrease
+3. How to send multiple files in python requests at the same time(so far i only know how to send one file one time), here's some reference:
+https://stackoverflow.com/questions/18179345/uploading-multiple-files-in-a-single-request-using-python-requests-module
+4. So I know that send multiple files with "sendDocument" api doesn't work, then what about "sendGroupMedia" api?? does that work? api doesn't work, then what about "sendMediaGroup" api?? does that work?
+5. I was trying to use "sendMediaGroup" api, but it keeps failing. So Maybe I should use another api other people made: "python-telegram-bot", here's some reference:
+https://stackoverflow.com/questions/58893142/how-to-send-telegram-mediagroup-with-caption-text
+6. How to send image by python requests to telegram, here' some reference:
+https://stackoverflow.com/questions/71985926/how-to-send-image-by-url-with-telegram-api-using-python/71985948
+
+
+
+
 
 
 
