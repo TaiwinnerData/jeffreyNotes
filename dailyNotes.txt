@@ -1145,6 +1145,18 @@ https://stackoverflow.com/questions/58893142/how-to-send-telegram-mediagroup-wit
 https://stackoverflow.com/questions/71985926/how-to-send-image-by-url-with-telegram-api-using-python/71985948
 
 
+2023/3/2
+1. I was trying to use telegram restful api of "sendMediaGroup" to send two images and it works!! Here's the reference:
+https://stackoverflow.com/questions/73717024/how-to-send-photos-with-multipart-form-data-in-media-group-with-python-requests
+2. After trying again and again, I started wondering if the "sendMediaGroup" can't send files unless the files are already in the server?? Here's some refereces talk about this:
+https://github.com/unreal4u/telegram-api/issues/76
+still suspect that "sendMediaGroup" can't send local files, here's another reference:
+https://community.n8n.io/t/telegram-media-upload/15391/6
+3. How to modified excel(or access excel) contents in python. You can use "openpyxl", Here's some reference:
+https://pythoninoffice.com/use-python-to-delete-excel-rows-columns/
+4. How can i crypto excel files by python, here's some reference:
+https://blog.csdn.net/SDKL_YI/article/details/124401238
+
 
 
 
