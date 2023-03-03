@@ -1157,6 +1157,12 @@ https://pythoninoffice.com/use-python-to-delete-excel-rows-columns/
 4. How can i crypto excel files by python, here's some reference:
 https://blog.csdn.net/SDKL_YI/article/details/124401238
 
+2023/3/3
+1. In neural network, how many nodes and hidden layers should i choose when it count to the accuracy, here's some reference:
+https://www.linkedin.com/pulse/choosing-number-hidden-layers-neurons-neural-networks-sachdev
+2. In neural network, when you want to save or load the training result models you can save it as json files. Here' some reference talk about this:
+https://stackoverflow.com/questions/55102781/how-to-save-and-load-my-neural-network-model-after-training-along-with-weights-i
+
 
 
 
