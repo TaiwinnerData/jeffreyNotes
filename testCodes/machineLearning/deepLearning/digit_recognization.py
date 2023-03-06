@@ -119,6 +119,9 @@ def main():
     print(testNN.accuracy(predict_result, result_y))
 
 
+    # save the weights and bias result as json files
+
+
 if __name__ == "__main__":
     main()
 
