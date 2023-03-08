@@ -1191,6 +1191,7 @@ https://en.wikipedia.org/wiki/First_fundamental_form
 https://math.stackexchange.com/questions/434267/gaussian-curvature-invariant-under-an-isometry
 9. Any isometry preserves the length and angle?? Here's some reference:
 https://math.stackexchange.com/questions/1131642/isometries-preserving-distance-but-not-angles
+10. About isometry preserves about the angle?
 
 
 
