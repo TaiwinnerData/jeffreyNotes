@@ -1162,6 +1162,20 @@ https://blog.csdn.net/SDKL_YI/article/details/124401238
 https://www.linkedin.com/pulse/choosing-number-hidden-layers-neurons-neural-networks-sachdev
 2. In neural network, when you want to save or load the training result models you can save it as json files. Here' some reference talk about this:
 https://stackoverflow.com/questions/55102781/how-to-save-and-load-my-neural-network-model-after-training-along-with-weights-i
+3. What language does "stable diffusion" use? It seems like it use python. But if it use python then it should i kinda slow??
+4. Can I use "C language" to build the neural network training model??
+5. I think I should try to build some test python lib by c or c++. When you still have times.
+6. Try to practice c++.
+
+
+2023/3/8
+1. I keep studying about a math subject "why Guassian curvature is intrinsic,how can i explain it with a simple idea"?
+here's some ideas i think you can consider about:
+https://www.britannica.com/science/differential-geometry/Curvature-of-surfaces
+2. In Guassian curvature i think i lost the goal of what i should prove that makes we can't prove the right thing. 
+I think there's a hint about what should i really prove: https://en.wikipedia.org/wiki/Gaussian_curvature
+Gauss's Theorema egregium (Latin: "remarkable theorem") states that Gaussian curvature of a surface can be determined from the measurements of length on the surface itself. 
+In fact, it can be found given the full knowledge of the first fundamental form and expressed via the first fundamental form and its partial derivatives of first and second order
 
 
 
