@@ -1175,7 +1175,22 @@ https://www.britannica.com/science/differential-geometry/Curvature-of-surfaces
 2. In Guassian curvature i think i lost the goal of what i should prove that makes we can't prove the right thing. 
 I think there's a hint about what should i really prove: https://en.wikipedia.org/wiki/Gaussian_curvature
 Gauss's Theorema egregium (Latin: "remarkable theorem") states that Gaussian curvature of a surface can be determined from the measurements of length on the surface itself. 
-In fact, it can be found given the full knowledge of the first fundamental form and expressed via the first fundamental form and its partial derivatives of first and second order
+In fact, it can be found given the full knowledge of the first fundamental
+form and expressed via the first fundamental form and its partial derivatives
+of first and second order. Here's some reference:
+https://encyclopediaofmath.org/wiki/Gaussian_curvature
+3. what is the gemoetric meaning of the coefficients of the first fundamental form?
+4. In taiwinner, You should try to testing create folders in ga_data and make sure that you can put the files in that folder.
+5. I think you should really really need to understand "the first fundamental form" and not just only know that first fundamental form is "ds", here's wiki:
+https://en.wikipedia.org/wiki/First_fundamental_form
+6. In first fundamental form, there's one import thing called "metric tensor", I think should really need to know:
+度量張量在黎曼幾何裡面又叫黎曼度量，物理學譯為度規張量，是指一用來衡量度量空間中距離，面積及角度的二階張量。
+7. Here's another reference talk about the area using the "first fundamental form"
+
+8. Here's another reference talk about why Gaussian curvature is invariant under isometry transformation:
+https://math.stackexchange.com/questions/434267/gaussian-curvature-invariant-under-an-isometry
+9. Any isometry preserves the length and angle?? Here's some reference:
+https://math.stackexchange.com/questions/1131642/isometries-preserving-distance-but-not-angles
 
 
 
