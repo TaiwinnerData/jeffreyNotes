@@ -1194,6 +1194,14 @@ https://math.stackexchange.com/questions/1131642/isometries-preserving-distance-
 10. About isometry preserves about the angle?
 
 
+2023/3/9
+1. What exactly make the accuracy can't go any higher in neural network? Here might be a reason:
+https://stackoverflow.com/questions/42998307/how-to-solve-the-issue-testing-accuracy-reduce-during-iterations
+2. I keep fail to improve digit recognization accuracy, but this time, holy shit!!! It works. 
+I use 500 training data, and 3000 hundred iteration and use learning rate accoroding as a function of iteration number! And the accuracy is 97%!! oh my god!
+
+
+
 
 
 
