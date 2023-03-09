@@ -1199,6 +1199,12 @@ https://math.stackexchange.com/questions/1131642/isometries-preserving-distance-
 https://stackoverflow.com/questions/42998307/how-to-solve-the-issue-testing-accuracy-reduce-during-iterations
 2. I keep fail to improve digit recognization accuracy, but this time, holy shit!!! It works. 
 I use 500 training data, and 3000 hundred iteration and use learning rate accoroding as a function of iteration number! And the accuracy is 97%!! oh my god!
+3. But!! when I increase the number of the test data, the same thing happens again the accuracy fall down!!
+4. What is the difference between "validation set" and "test set". It seems like they are almost the same.
+5. What if I use the trained model to test "training data" ?? What accuray would I get??
+6. How do i use vim to compile latex file to pdf, here's some referece:
+https://www.youtube.com/watch?v=igX_QbCS5bg
+
 
 
 
