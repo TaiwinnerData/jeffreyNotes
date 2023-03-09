@@ -1204,9 +1204,14 @@ I use 500 training data, and 3000 hundred iteration and use learning rate accoro
 5. What if I use the trained model to test "training data" ?? What accuray would I get??
 6. How do i use vim to compile latex file to pdf, here's some referece:
 https://www.youtube.com/watch?v=igX_QbCS5bg
-
-
-
+7. Well, It seems like you can't just transfer .tex files to pdf unless you have the software.
+here's some reference:
+https://tex.stackexchange.com/questions/49569/where-to-download-pdflatex-exe
+8. I give up using vim to create latex pdf. Here's another software called "LyX", I think I could try this one.
+here' some reference talk about this:
+https://www.reddit.com/r/LaTeX/comments/1mhlbv/lyx_vs_pure_latex_which_one_should_i_started_first/
+9. or you can use "TEX Live" it seems better than other
+10. "TEX Live" is just too huge. Here seems like another light weight alternative solution called "TinyTex"
 
 
 
