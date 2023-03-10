@@ -1213,28 +1213,41 @@ https://www.reddit.com/r/LaTeX/comments/1mhlbv/lyx_vs_pure_latex_which_one_shoul
 9. or you can use "TEX Live" it seems better than other
 10. "TEX Live" is just too huge. Here seems like another light weight alternative solution called "TinyTex"
 
+2023/3/10
+1. Keep studying about how to use latex. Now I use "tinyTex". The exe (pdfLatex.exe) files do works. Here's some latex basic tutorial that works now:
+https://guides.nyu.edu/LaTeX/creating-document
+2. When I use windows "invoke-WebRequest(iwr)" to get the files on github. It showed that "iwr : 要求已經中止: 無法建立 SSL/TLS 的安全通道。". 
+It seems like windows default support is just too old. Here's the reference of how to modified this kinda thing:
+https://blog.miniasp.com/post/2019/01/12/PowerShell-Invoke-WebRequest-use-TLS-v12
+3. And here's the way you can download "vim plugin" on your windows by powershell command line:
+https://www.youtube.com/watch?v=jyWis694NVc
+4. There's the way talk about how you can install vimtex in your vim:
+https://vimawesome.com/plugin/vimtex
+5. If you want to plug something plugin in vim, you can use this kinda thing inside the "_vimrc" (or .vimrc file in linux)
+here's the reference:
+https://blog.csdn.net/guchaono1/article/details/114632338
+The process is below:
+
+call plug#begin('~/.vim/plugged')
+Plug 'lervag/vimtex'
+call plug#end()
 
 
+just put the plugin you want to plug between two lines:
 
+call plug#begin('~/.vim/plugged')
+call plug#end()
 
+and then use the command below INSIDE .vimrc file!
+:source %
+:PlugInstall
 
+the the plug would be installed.
 
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
+6. What is the difference between ".vim" folder and "vimfiles" folder, here's the reference below:
+basically ".vim" folder is for linux based system, and vimfiles is for gvim windows based system:
+https://stackoverflow.com/questions/851133/what-is-the-difference-between-vim72-and-vimfiles-folder
+7. I still can't solve the problem 
 
 
 
