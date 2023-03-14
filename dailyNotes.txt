@@ -1249,6 +1249,27 @@ basically ".vim" folder is for linux based system, and vimfiles is for gvim wind
 https://stackoverflow.com/questions/851133/what-is-the-difference-between-vim72-and-vimfiles-folder
 7. I still can't solve the problem 
 
+2023/3/13
+1. I was study about how to use vpn. And here's a software i use called "vpn gate" and  it is useful. But here's the thing
+You should be careful. You shouldn't install the wrong software. Here's some reference talk about this:
+https://zhidao.baidu.com/question/1047140770396026859.html?qbpn=1_1&fr=newsearchlist&word=SoftEther%20VPN%20Client%E6%89%93%E5%BC%80%E4%B9%8B%E5%90%8E%E6%B2%A1%E6%9C%89vpn%20gate%E5%85%AC%E5%85%B1VPN%E4%B8%AD%E7%BB%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%8C%E6%80%8E%E4%B9%88%E5%8A%9E%EF%BC%9F
+2. and I was trying to use chatgpt inside taiwinnerData's private network. And It failed! Because I found out that 
+TaiwinnerData's IP is located in HongKong which chatgpt doesn't suppot to!!! 
+The only way you can use chatgpt inside Taiwinner is to use VPN to connect to other network rather than China
+3. You can use the command below to check your ip location:
+
+curl ipinfo.io
+
+4. How can i remote other computer in a remoted computer?
+
+
+2023/3/14
+1. I was trying to use Taiwinner's computer to login ChatGPT with vpn and it worked.
+In the normal situation in Taiwinner. The ip address is like in HK. So you can't login into ChatGPT. 
+
+The interesting things is when i cut the VPN. The ChatGPT can still login!! I think that's because of cookies or something. It has remember you already.
+
+
 
 
 
