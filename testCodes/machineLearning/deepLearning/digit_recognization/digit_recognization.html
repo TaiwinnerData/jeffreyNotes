@@ -48,7 +48,10 @@
 			// Get the drawing result's image data as an array
 			var imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
 			var data = imageData.data;
-			console.log(data);
+			
+			// Before we really use this kinda data. We should compress the image to the size as small as
+			// nueral network model can handle
+			// Chatgpt suggest you can use image_compressor (which is a javascript image compression lib)
 			// TODO: Preprocess image and recognize handwriting using machine learning
 
 		}
