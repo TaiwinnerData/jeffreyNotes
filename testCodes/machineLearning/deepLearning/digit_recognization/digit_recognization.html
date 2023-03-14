@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Handwriting Recognition</title>
+	<style>
+		canvas {
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+	<h1>Handwriting Recognition</h1>
+	<canvas id="canvas" width="200" height="200"></canvas>
+	<button onclick="recognize()">Recognize</button>
+	<script src="https://cdn.jsdelivr.net/npm/image-compressor/dist/image-compressor.min.js"></script>
+	<script>
+		var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+		var drawing = false;
+
+		canvas.addEventListener("mousedown", function(event) {
+			drawing = true;
+			ctx.beginPath();
+			ctx.moveTo(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop);
+		});
+
+		canvas.addEventListener("mousemove", function(event) {
+			if (drawing) {
+				ctx.lineTo(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop);
+				ctx.stroke();
+			}
+		});
+
+		canvas.addEventListener("mouseup", function(event) {
+			drawing = false;
+		});
+
+		function compress_img(imgs){
+			const compressor = new ImageCompressor();
+			const fileInput = 
+
+
+		}
+
+
+
+		function recognize() {
+			// Get the drawing result's image data as an array
+			var imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+			var data = imageData.data;
+			console.log(data);
+			// TODO: Preprocess image and recognize handwriting using machine learning
+
+		}
+	</script>
+</body>
+</html>
