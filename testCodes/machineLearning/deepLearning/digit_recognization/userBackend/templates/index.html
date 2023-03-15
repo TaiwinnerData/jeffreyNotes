@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title> Backend </title>
+	</head>
+	<body>
+		<h1> Image Compression Example</h1>
+		<input type="file" id="input">
+		<br><br>
+		<button onclick="compress()">Compress</button>
+		<br><br>
+		<img id="output" src="" alt="">
+	</body>
+
+	<script>
+		function compress(){
+			/*
+			const input = document.getElementById('input');
+
+			// Create request
+			var xhr = new XMLHttpRequest();
+			xhr.open('get', "/process-image");
+			xhr.send()
+			console.log("doing xhr");
+	       		*/
+			
+			const input = document.getElementById('input');
+			const file = input.files[0];
+			const reader = new FileReader();
+			reader.readAsDataURL(file);
+			reader.onload = function () {
+				const img = new Image();
+				img.src = reader.result;
+				var imgData = img.src;
+				console.log(imgData);
+				console.log(typeof(imgData));
+
+					fetch("/process-image", {
+						method: 'POST',
+						headers: {
+							'Content-Type': 'application/json'
+						},
+						body: JSON.stringify({img: imgData})
+						})
+							.then(response => response.json())
+							.then(data => console.log(data))
+							.catch(error => console.error(error));
+				}
+		}
+	</script>
+</html>
