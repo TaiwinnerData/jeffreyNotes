@@ -1,42 +1,105 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<title> Backend </title>
-	</head>
-	<body>
-		<h1> Image Compression Example</h1>
-		<input type="file" id="input">
-		<br><br>
-		<button onclick="compress()">Compress</button>
-		<br><br>
-		<img id="output" src="" alt="">
-	</body>
+<head>
+	<title>Handwriting Recognition</title>
+	<style>
+		canvas {
+			border: 1px solid black;
+		}
 
+	</style>
+</head>
+<body>
+	<h1>Handwriting Recognition</h1>
+	<canvas id="canvas" width="200" height="200"></canvas>
+	<button onclick="recognize()">Recognize</button>
+	<img id="output" src="" alt="">
+	<script src="https://cdn.jsdelivr.net/npm/image-compressor/dist/image-compressor.min.js"></script>
 	<script>
-		function compress(){
-			/*
-			const input = document.getElementById('input');
+		var canvas = document.getElementById("canvas");
+		var ctx = canvas.getContext("2d");
+		var drawing = false;
 
-			// Create request
-			var xhr = new XMLHttpRequest();
-			xhr.open('get', "/process-image");
-			xhr.send()
-			console.log("doing xhr");
-	       		*/
-			
-			const input = document.getElementById('input');
-			const file = input.files[0];
-			const reader = new FileReader();
-			reader.readAsDataURL(file);
-			reader.onload = function () {
-				const img = new Image();
-				img.src = reader.result;
-				var imgData = img.src;
+		canvas.addEventListener("mousedown", function(event) {
+			drawing = true;
+			ctx.beginPath();
+			ctx.moveTo(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop);
+		});
+
+		canvas.addEventListener("mousemove", function(event) {
+			if (drawing) {
+				ctx.lineTo(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop);
+				// set the size of width of stroke line.
+				ctx.lineWidth = 15;
+				ctx.stroke();
+			}
+		});
+
+		canvas.addEventListener("mouseup", function(event) {
+			drawing = false;
+		});
+
+
+
+
+		function compress() {
+
+				// Get the original canvas element and its context
+				const originalCanvas = document.getElementById('canvas');
+				const originalCtx = originalCanvas.getContext('2d');
+
+				// Create a new canvas element and its context
+				const newCanvas = document.createElement('canvas');
+				newCanvas.setAttribute("id", "compressedCanvas")
+				const newCtx = newCanvas.getContext('2d');
+
+				// Set the dimensions of the new canvas element
+				newCanvas.width = originalCanvas.width / 2;
+				newCanvas.height = originalCanvas.height / 2;
+				newCanvas.width = 8;
+				newCanvas.height = 8;
+
+				// Copy the context of the original canvas onto the new canvas
+				newCtx.drawImage(originalCanvas, 0, 0, newCanvas.width, newCanvas.height);
+
+				// Add the new canvas element to the DOM
+				document.body.appendChild(newCanvas);
+
+				const compressedDataUrl = canvas.toDataURL();
+				output.src = compressedDataUrl;
+
+			/*
+
+			const canvas = document.getElementById('canvas');
+			const desiredWidth = 50;
+			const desiredHeight = 50;
+			const resizedCanvas = document.createElement('canvas');
+			resizedCanvas.width = desiredWidth;
+			resizedCanvas.height = desiredHeight;
+
+			pica.resize(canvas, resizedCanvas, {
+			  unsharpAmount: 80,
+			  unsharpRadius: 0.6,
+			  unsharpThreshold: 2
+			}).then(() => {
+			  // The resized canvas is now in `resizedCanvas`
+			});
+
+			*/
+
+			    }
+
+
+
+		
+		
+		function sendImgToBack(){
+				var output = document.getElementById("output");
+				console.log("show output.src");
+				console.log(output.src);
+				console.log(typeof(output.src));
+				var imgData = output.src;
+				console.log("show imgData");
 				console.log(imgData);
 				console.log(typeof(imgData));
 
@@ -46,11 +109,17 @@
 							'Content-Type': 'application/json'
 						},
 						body: JSON.stringify({img: imgData})
+//						body: "test"
 						})
 							.then(response => response.json())
 							.then(data => console.log(data))
 							.catch(error => console.error(error));
-				}
+		}
+
+		function recognize() {
+			compress();
+//			sendImgToBack();
 		}
 	</script>
+</body>
 </html>
