@@ -28,7 +28,7 @@ class NN():
     def __init__(self):
         # declare 
         self.feature_size = 64
-        self.hidden_size = 10 
+        self.hidden_size = 70  # the orinal is 5
         self.output_size = 10
 
         # declare weights
