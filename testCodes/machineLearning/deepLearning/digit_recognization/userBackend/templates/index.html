@@ -1,125 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Handwriting Recognition</title>
-	<style>
-		canvas {
-			border: 1px solid black;
-		}
-
-	</style>
-</head>
-<body>
-	<h1>Handwriting Recognition</h1>
-	<canvas id="canvas" width="200" height="200"></canvas>
-	<button onclick="recognize()">Recognize</button>
-	<img id="output" src="" alt="">
-	<script src="https://cdn.jsdelivr.net/npm/image-compressor/dist/image-compressor.min.js"></script>
-	<script>
-		var canvas = document.getElementById("canvas");
-		var ctx = canvas.getContext("2d");
-		var drawing = false;
-
-		canvas.addEventListener("mousedown", function(event) {
-			drawing = true;
-			ctx.beginPath();
-			ctx.moveTo(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop);
-		});
-
-		canvas.addEventListener("mousemove", function(event) {
-			if (drawing) {
-				ctx.lineTo(event.clientX - canvas.offsetLeft, event.clientY - canvas.offsetTop);
-				// set the size of width of stroke line.
-				ctx.lineWidth = 15;
-				ctx.stroke();
-			}
-		});
-
-		canvas.addEventListener("mouseup", function(event) {
-			drawing = false;
-		});
-
-
-
-
-		function compress() {
-
-				// Get the original canvas element and its context
-				const originalCanvas = document.getElementById('canvas');
-				const originalCtx = originalCanvas.getContext('2d');
-
-				// Create a new canvas element and its context
-				const newCanvas = document.createElement('canvas');
-				newCanvas.setAttribute("id", "compressedCanvas")
-				const newCtx = newCanvas.getContext('2d');
-
-				// Set the dimensions of the new canvas element
-				newCanvas.width = originalCanvas.width / 2;
-				newCanvas.height = originalCanvas.height / 2;
-				newCanvas.width = 8;
-				newCanvas.height = 8;
-
-				// Copy the context of the original canvas onto the new canvas
-				newCtx.drawImage(originalCanvas, 0, 0, newCanvas.width, newCanvas.height);
-
-				// Add the new canvas element to the DOM
-				document.body.appendChild(newCanvas);
-
-				const compressedDataUrl = canvas.toDataURL();
-				output.src = compressedDataUrl;
-
-			/*
-
-			const canvas = document.getElementById('canvas');
-			const desiredWidth = 50;
-			const desiredHeight = 50;
-			const resizedCanvas = document.createElement('canvas');
-			resizedCanvas.width = desiredWidth;
-			resizedCanvas.height = desiredHeight;
-
-			pica.resize(canvas, resizedCanvas, {
-			  unsharpAmount: 80,
-			  unsharpRadius: 0.6,
-			  unsharpThreshold: 2
-			}).then(() => {
-			  // The resized canvas is now in `resizedCanvas`
-			});
-
-			*/
-
-			    }
-
-
-
-		
-		
-		function sendImgToBack(){
-				var output = document.getElementById("output");
-				console.log("show output.src");
-				console.log(output.src);
-				console.log(typeof(output.src));
-				var imgData = output.src;
-				console.log("show imgData");
-				console.log(imgData);
-				console.log(typeof(imgData));
-
-					fetch("/process-image", {
-						method: 'POST',
-						headers: {
-							'Content-Type': 'application/json'
-						},
-						body: JSON.stringify({img: imgData})
-//						body: "test"
-						})
-							.then(response => response.json())
-							.then(data => console.log(data))
-							.catch(error => console.error(error));
-		}
-
-		function recognize() {
-			compress();
-//			sendImgToBack();
-		}
-	</script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Canvas Drawing</title>
+    <style>
+      canvas {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas" width="64" height="64"></canvas>
+    <canvas id="compressed-canvas" width="8" height="8"></canvas>
+    <button onclick="clearCanvas()">clear</button>
+    <button onclick="guess()">guess</button>
+    <script src="script.js"></script>
+  </body>
 </html>
