@@ -14,6 +14,12 @@
     <canvas id="compressed-canvas" width="8" height="8"></canvas>
     <button onclick="clearCanvas()">clear</button>
     <button onclick="guess()">guess</button>
+    <!--
     <script src="script.js"></script>
+    -->
+    <!--
+    <script src="static/js/script.js"></script>
+    -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
   </body>
 </html>
