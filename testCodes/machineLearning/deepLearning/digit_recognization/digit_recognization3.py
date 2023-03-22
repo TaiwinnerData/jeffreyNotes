@@ -1,3 +1,4 @@
+# this example use "backward propogation"
 import numpy as np
 import pandas as pd
 import random as random
