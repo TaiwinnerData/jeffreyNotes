@@ -1,3 +1,4 @@
+# this example use "backward propogation"
 import numpy as np
 import pandas as pd
 import random as random
@@ -30,7 +31,7 @@ class NN():
     def __init__(self):
         # declare 
         self.feature_size = 64
-        self.hidden_size = 150 # the orinal is 10, but 25 is good
+        self.hidden_size = 70 # the orinal is 10, but 25 is good
         self.output_size = 10
 
         # declare weights
@@ -199,7 +200,7 @@ def main():
     if test_request == "y":
         # the following steps can change the images to the type that machine learning model can handle with
 #        img = cv2.imread("digit_test_original2.png")
-        img = cv2.imread("6_2.png")
+        img = cv2.imread("7_1.png")
         img = cv2.bitwise_not(img)
         img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         img = cv2.cvtColor(img, cv2.COLOR_RGBA2RGB)
