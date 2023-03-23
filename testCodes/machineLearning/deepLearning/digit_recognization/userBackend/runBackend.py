@@ -6,6 +6,8 @@ import base64
 import numpy as np
 from PIL import Image
 from io import BytesIO
+import cv2
+import json
 
 
 # Backend test codes
@@ -26,49 +28,48 @@ def index():
 
 @app.route('/process-image', methods=['POST', 'GET'])
 def get_image():
-    img_data = request.get_json()
-    img_url = img_data['img']
+    img = request.get_json()
+    img_data = request.get_json()['img']
+    print(img_data)
+    data_bytes = base64.b64decode(img_data)
+
+    image = Image.open(BytesIO(data_bytes))
+    image_np = np.array(image)
+    print("image_np")
+    print(image_np)
+
+    img_np = np.frombuffer(data_bytes, dtype=np.uint8)
+    print(img_np)
+    img = cv2.imdecode(img_np, cv2.IMREAD_COLOR)
+
+    print(img)
+
+
 #    img_string = jsonify({'message': f'The text you entered is: {img_url}'})
-    img_string = img_url
-    print("show img_url")
-    print(type(img_url))
-    print(img_url)
-    img_raw = base64.b64decode(img_url.split(',')[1])
-    img = Image.open(BytesIO(img_raw))
-    img = img.convert("L")
-    img_array = np.array(img)
-    print(img_array)
-    print(type(img_array))
-    print(len(img_array))
+
+#    img_string = img_url
+#    img_raw = base64.b64decode(img_url.split(',')[1])
+#    img = Image.open(BytesIO(img_raw))
+#    img = img.convert("L")
+#    img_array = np.array(img)
 
 
 
 
 #    img_array = np.frombuffer(img_raw, np.uint8)
-#    print("show img_array")
-#    print(img_array)
-#    print("show the lengh of the array")
-#    print(len(img_array))
 
 
 #    img_string = img_string.data
 #    img_string = img_string.decode('utf-8')
-#    print("image string")
-#    print(img_string)
-#    print("show the type of image string")
-#    print(type(img_string))
 #    img_array = base64.b64decode(img_string)
-#    print("img_array")
-#    print(img_array)
 
 #    img_raw_data = base64.b64decode(img_string.data)
 #    img_array = np.frombuffer(img_raw_data, np.uint8)
-#    print(img_array)
-#    print(type(img_array))
 
 
-
-    return img_url
+    result = {'img': 'test'}
+    return json.dumps(result)
+#    return "done"
 
 
 
