@@ -35,41 +35,30 @@ def get_image():
 
     image = Image.open(BytesIO(data_bytes))
     image_np = np.array(image)
+    img = image_np
+
+
+    if img.shape[2] == 4:
+        # Create a mask of the transparent pixels
+        alpha_mask = img[:, :, 3] == 0
+
+        # Replace the transparent pixels with white
+        img[alpha_mask] = [255, 255, 255, 255]
+    # invert the color
+    inv_img = cv2.bitwise_not(img)
+    # convert the image to grayscale
+    gray_img = cv2.cvtColor(inv_img, cv2.COLOR_BGR2GRAY)
+    result_img = gray_img
+
+
+
+
     print("image_np")
     print(image_np)
-
-    img_np = np.frombuffer(data_bytes, dtype=np.uint8)
-    print(img_np)
-    img = cv2.imdecode(img_np, cv2.IMREAD_COLOR)
-
-    print(img)
-
-
-#    img_string = jsonify({'message': f'The text you entered is: {img_url}'})
-
-#    img_string = img_url
-#    img_raw = base64.b64decode(img_url.split(',')[1])
-#    img = Image.open(BytesIO(img_raw))
-#    img = img.convert("L")
-#    img_array = np.array(img)
-
-
-
-
-#    img_array = np.frombuffer(img_raw, np.uint8)
-
-
-#    img_string = img_string.data
-#    img_string = img_string.decode('utf-8')
-#    img_array = base64.b64decode(img_string)
-
-#    img_raw_data = base64.b64decode(img_string.data)
-#    img_array = np.frombuffer(img_raw_data, np.uint8)
 
 
     result = {'img': 'test'}
     return json.dumps(result)
-#    return "done"
 
 
 
