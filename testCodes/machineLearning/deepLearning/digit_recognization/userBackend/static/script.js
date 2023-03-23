@@ -133,11 +133,13 @@
 
 
 	function sendImgToBack(){
-			var output = document.getElementById("compressed-canvas");
-			console.log("show output.src");
-			console.log(output.src);
-			console.log(typeof(output.src));
-			var imgData = output.src;
+			var canvas = document.getElementById("compressed-canvas");
+
+			var canvasData = canvas.getContext('2d');
+//			var imgData = canvasData.getImageData(0, 0, canvas.width, canvas.height);
+//			imgData = imgData.data;
+			imgData = canvas.toDataURL().split(',')[1];
+//			imgData = btoa((imgData));
 			console.log("show imgData");
 			console.log(imgData);
 			console.log(typeof(imgData));
