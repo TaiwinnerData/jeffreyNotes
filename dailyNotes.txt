@@ -1270,6 +1270,11 @@ In the normal situation in Taiwinner. The ip address is like in HK. So you can't
 The interesting things is when i cut the VPN. The ChatGPT can still login!! I think that's because of cookies or something. It has remember you already.
 
 
+2023/3/24
+1. When you want to restore sql server database from the backup file, you are supposed to restart sql server, here's a reference talks about this:
+https://www.ubackup.com/enterprise-backup/sql-database-restore-failed-database-in-use-1021.html
+
+
 
 
 
