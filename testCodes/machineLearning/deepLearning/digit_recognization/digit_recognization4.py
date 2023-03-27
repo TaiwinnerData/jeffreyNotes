@@ -31,7 +31,7 @@ class NN():
     def __init__(self):
         # declare 
         self.feature_size = 64
-        self.hidden_size = 70 # the orinal is 10, but 25 is good
+        self.hidden_size = 100 # the orinal is 10, but 25 is good
         self.output_size = 10
 
         # declare weights
@@ -124,12 +124,12 @@ def main():
 #    train_size = 100
 #    test_size = 10
 #    train_size = 300 
-    train_size = 1600
+    train_size = 1500
 
 #    test_size = 100 
     test_size = 3
     test_size = 100
-    test_size = 600
+#    test_size = 600
 #    test_size = 700
 
     digits = datasets.load_digits()
@@ -200,7 +200,9 @@ def main():
     if test_request == "y":
         # the following steps can change the images to the type that machine learning model can handle with
 #        img = cv2.imread("digit_test_original2.png")
-        img = cv2.imread("7_1.png")
+        img = cv2.imread("9_5.png")
+        print("show image before doing anything")
+        print(img)
         img = cv2.bitwise_not(img)
         img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         img = cv2.cvtColor(img, cv2.COLOR_RGBA2RGB)
@@ -210,8 +212,10 @@ def main():
         print("-"*100)
         img = np.rot90(img, k=-1)
         img = np.fliplr(img)
+        print("image transpose")
+        print(img)
         img = img.flatten()
-        img = img/20
+        img = img/35
         print(img)
         test_X = np.array([img])
         print("show test_X")
