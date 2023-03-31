@@ -1274,6 +1274,20 @@ The interesting things is when i cut the VPN. The ChatGPT can still login!! I th
 1. When you want to restore sql server database from the backup file, you are supposed to restart sql server, here's a reference talks about this:
 https://www.ubackup.com/enterprise-backup/sql-database-restore-failed-database-in-use-1021.html
 
+2023/3/27
+1. I was studying about neural network of digit recognization using backward propogation. The problem i had is that 
+when the dataset is the training data from sklearn. It works fine but when it counts to the dataset i created the accuracy failed. how?
+
+2. Maybe because i should use (convolutionarl neural network)? does it has a better performance in digit recognition?
+
+3. What is the difference between CNN, RNN, DNN ??? 
+
+
+2023/3/31
+1. Keep studying about CNN, it's saying that CNNs has more accuracy than NN.
+2. Study about the algorithm of CNN
+
+
 
 
 
