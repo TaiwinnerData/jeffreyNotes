@@ -1285,7 +1285,11 @@ when the dataset is the training data from sklearn. It works fine but when it co
 
 2023/3/31
 1. Keep studying about CNN, it's saying that CNNs has more accuracy than NN.
-2. Study about the algorithm of CNN
+2. Study about the algorithm of CNN. 
+3. study about the algorithm of  "Convolutional Layer"
+4. It seems like "Convolutional Layer" is trying to get "feature". 
+5. But what does "feature" mean in image reconition? Here's some reference talks about this:
+https://chtseng.wordpress.com/2017/05/06/%E5%9C%96%E5%83%8F%E7%89%B9%E5%BE%B5%E6%AF%94%E5%B0%8D%E4%B8%80-%E5%8F%96%E5%BE%97%E5%BD%B1%E5%83%8F%E7%9A%84%E7%89%B9%E5%BE%B5%E9%BB%9E/
 
 
 
