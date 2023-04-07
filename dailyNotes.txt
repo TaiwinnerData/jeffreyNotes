@@ -1292,6 +1292,20 @@ when the dataset is the training data from sklearn. It works fine but when it co
 https://chtseng.wordpress.com/2017/05/06/%E5%9C%96%E5%83%8F%E7%89%B9%E5%BE%B5%E6%AF%94%E5%B0%8D%E4%B8%80-%E5%8F%96%E5%BE%97%E5%BD%B1%E5%83%8F%E7%9A%84%E7%89%B9%E5%BE%B5%E9%BB%9E/
 
 
+2023/4/7
+1. There's a problem about third_bank, here's the sql code i found:
+
+find the problem of the the redundant records:
+select 简称 from view_余额表 where 其='2023-04-01' and 盘口编码='CC006008' and 用途='三方入款' and 日期='2023-4-3' and 余额表摘要 is  null order by 简称
+select distinct 简称 from view_余额表 where 其='2023-04-01' and 盘口编码='CC006008' and 用途='三方入款' and 日期='2023-4-3' and 余额表摘要 is  null  order by 简称
+show the difference between the view and module records:
+select* from view_余额表 where 其='2023-04-01' and 盘口编码='CC006008' and 简称='715支付'
+select * from t_余额表 where 其='2023-04-01' and 盘口编码='CC006008' and 简称='715支付'
+
+
+
+
+
 
 
 
