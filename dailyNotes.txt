@@ -1303,6 +1303,11 @@ select* from view_余额表 where 其='2023-04-01' and 盘口编码='CC006008' a
 select * from t_余额表 where 其='2023-04-01' and 盘口编码='CC006008' and 简称='715支付'
 
 
+2023/4/10
+1. How to use sql server's "while" loop to do something.
+2. How to use sql server's row_number() function to do something.
+
+
 
 
 
