@@ -1307,6 +1307,11 @@ select * from t_余额表 where 其='2023-04-01' and 盘口编码='CC006008' and
 1. How to use sql server's "while" loop to do something.
 2. How to use sql server's row_number() function to do something.
 
+2023/4/11
+2023/4/11
+1. I was studying about what is "Euler Characteristic" and how can i use it? Here's some references talk about this:
+https://zhuanlan.zhihu.com/p/348237282
+
 
 
 
