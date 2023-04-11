@@ -1311,6 +1311,14 @@ select * from t_余额表 where 其='2023-04-01' and 盘口编码='CC006008' and
 2023/4/11
 1. I was studying about what is "Euler Characteristic" and how can i use it? Here's some references talk about this:
 https://zhuanlan.zhihu.com/p/348237282
+2. Keep study about feature of machine learning.
+3. When you talk about "extration of feature" in machine leanring, "keypoint feature" is very important,
+It is kinda like when you give machine a human face image, the algorithm can say the keypoints on the face like eyes ears, the corners or the edge of the face.
+That makes reconitions possible. Here's some reference you can check it out:
+https://chtseng.wordpress.com/2017/05/06/%E5%9C%96%E5%83%8F%E7%89%B9%E5%BE%B5%E6%AF%94%E5%B0%8D%E4%B8%80-%E5%8F%96%E5%BE%97%E5%BD%B1%E5%83%8F%E7%9A%84%E7%89%B9%E5%BE%B5%E9%BB%9E/
+https://medium.com/data-breach/introduction-to-feature-detection-and-matching-65e27179885d
+https://medium.com/analytics-vidhya/understanding-keypoints-and-orb-algorithm-f260e6fb640c
+
 
 
 
