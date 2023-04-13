@@ -112,7 +112,8 @@ username:TaiwinnerData
 EmailAddress:david.hsieh@taiwinner.com.tw
 Password:2aqR2S39
 Token:
-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
+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 (old)
+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 (new)
 
 
 
