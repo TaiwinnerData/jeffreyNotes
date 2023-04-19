@@ -1308,7 +1308,6 @@ select * from t_余额表 where 其='2023-04-01' and 盘口编码='CC006008' and
 2. How to use sql server's row_number() function to do something.
 
 2023/4/11
-2023/4/11
 1. I was studying about what is "Euler Characteristic" and how can i use it? Here's some references talk about this:
 https://zhuanlan.zhihu.com/p/348237282
 2. Keep study about feature of machine learning.
@@ -1320,6 +1319,21 @@ https://medium.com/data-breach/introduction-to-feature-detection-and-matching-65
 https://medium.com/analytics-vidhya/understanding-keypoints-and-orb-algorithm-f260e6fb640c
 4. I was study about multiprocess and mutlithreads, here's some reference:
 https://stackoverflow.com/questions/69145314/does-running-two-scripts-in-parallel-on-a-dual-core-cpu-decrease-the-speed-as-co
+
+
+2023/4/12
+1. How can i use bat to call another batch file and then run at the same time.
+Here's the basic example you can take as reference:
+
+start "cmd.exe /k"  python test2.py 
+python test1.py
+
+2. How to timing the programming time in python?
+3. How to timing the programming time in c Language?
+
+2023/4/19
+1. i was studying about "Bivector". It is very relative with "exterior algebra"
+2. What is the difference between "exterior product" and "cross product"??
 
 
 
