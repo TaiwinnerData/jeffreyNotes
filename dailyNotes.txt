@@ -1290,6 +1290,7 @@ when the dataset is the training data from sklearn. It works fine but when it co
 4. It seems like "Convolutional Layer" is trying to get "feature". 
 5. But what does "feature" mean in image reconition? Here's some reference talks about this:
 https://chtseng.wordpress.com/2017/05/06/%E5%9C%96%E5%83%8F%E7%89%B9%E5%BE%B5%E6%AF%94%E5%B0%8D%E4%B8%80-%E5%8F%96%E5%BE%97%E5%BD%B1%E5%83%8F%E7%9A%84%E7%89%B9%E5%BE%B5%E9%BB%9E/
+The reference above introduce the algorithm that "opencv" has, including some of the famous algorithm
 
 
 2023/4/7
@@ -1334,6 +1335,10 @@ python test1.py
 2023/4/19
 1. i was studying about "Bivector". It is very relative with "exterior algebra"
 2. What is the difference between "exterior product" and "cross product"??
+3. I was studying about the algorithms used in image feature detection.
+4. Harris corner detector. Here's some reference:
+https://medium.com/data-breach/introduction-to-harris-corner-detector-32a88850b3f6
+5. Review about how to use python and c language to write a differential function
 
 
 
