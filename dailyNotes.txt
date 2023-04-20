@@ -1339,6 +1339,23 @@ python test1.py
 4. Harris corner detector. Here's some reference:
 https://medium.com/data-breach/introduction-to-harris-corner-detector-32a88850b3f6
 5. Review about how to use python and c language to write a differential function
+6. There are some methods to get the answer of extreme value of the a function(no matter how many variables.)
+including 
+	a. Newton's method
+	b. Gradient method
+	
+	But New's method is too complicated in multiple variables problem.
+	so most of the time, people use gradient method.
+
+7. When you want to use "gradient method", the key point is find the gradient, the most used method to use is "backward propagation", which is actually chain rule
+in calculus.
+8. Keep studying about Harris corner detection algorithm
+
+2023/4/20
+1. I was modifying the database of TaiwinnerData and it seems work.
+2. I was keep studying about "What is the difference between exterior product and cross product"?  Here's some reference:
+https://www.quora.com/What-is-the-difference-between-cross-product-and-exterior-product-with-the-derivation-of-the-formulae
+
 
 
 
