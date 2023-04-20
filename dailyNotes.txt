@@ -1356,6 +1356,7 @@ in calculus.
 2. I was keep studying about "What is the difference between exterior product and cross product"?  Here's some reference:
 https://www.quora.com/What-is-the-difference-between-cross-product-and-exterior-product-with-the-derivation-of-the-formulae
 3. You have to understand the formula definition of the "cross product" and "exterior product"
+4. Keep studying Harris corner detector?
 
 
 
