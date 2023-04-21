@@ -1364,6 +1364,8 @@ https://medium.com/data-breach/introduction-to-harris-corner-detector-32a88850b3
 
 2023/4/21
 1. Keep studying Harris corner detector
+2. I am studying about how to use c language function. You can use function inside another function.
+
 
 
 
