@@ -100,7 +100,7 @@ david.hsieh
 aisha55
 
 tableau_key_实体:
-TCWK-43D9-2430-74FA-E1B2
+TCQ6-BA78-54D0-4252-DB0C    (would be expired in 2024/4/20) 
 
 MailDNS:https://mail.taiwinner.com.tw/
 david.hsieh@taiwinner.com.tw
@@ -123,6 +123,7 @@ HR_website: https://femascloud.com/taiwinner/accounts/login    ---> account/pass
 
 ga-data, username/password: jeffrey.wu/jeffrey.wu
 tableau key, carol gave to me: TCPJ-745B-2810-EA18-7A3F
+tableau key, carol gave to me: TC3L-BA71-A950-05F8-A658
 
 
 
@@ -161,3 +162,5 @@ invited_link: https://t.me/+YwmFbHvjqgY5NmNl  group_id: -920942673  group_name: 
 invited_link: https://t.me/+yU4hvKxz0G05NDI1  group_id: -908573443  group_name: 每日三方使用情況-15.16.18號
 invited_link: https://t.me/+36-IrVulw7E2YjY1  group_id: -916298884  group_name: 每日三方使用情況-17號
 					      group_id: -948748804  group_name: 每日三方使用情況-19體育
+					      group_id: -569751154  group_name: 報表模板(日)
+					      group_id: -697155956  group_name: 問題提問(日)
