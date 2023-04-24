@@ -1371,6 +1371,12 @@ https://zh.wikipedia.org/zh-tw/%E8%A7%92%E6%A3%80%E6%B5%8B
 https://zh.wikipedia.org/zh-tw/%E7%9B%B8%E5%85%B3_(%E6%A6%82%E7%8E%87%E8%AE%BA)
 
 
+2023/4/24
+1. I kept studying about what is the difference between "cross product" and "exterior product".
+	And maybe you can read the second explanation below:
+	https://www.quora.com/What-is-the-difference-between-cross-product-and-exterior-product-with-the-derivation-of-the-formulae
+	It says something about "Tensor product". Maybe you can get some idea from that.
+
 
 
 
