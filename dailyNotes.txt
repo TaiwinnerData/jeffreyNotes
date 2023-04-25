@@ -1377,6 +1377,13 @@ https://zh.wikipedia.org/zh-tw/%E7%9B%B8%E5%85%B3_(%E6%A6%82%E7%8E%87%E8%AE%BA)
 	https://www.quora.com/What-is-the-difference-between-cross-product-and-exterior-product-with-the-derivation-of-the-formulae
 	It says something about "Tensor product". Maybe you can get some idea from that.
 
+2023/4/25
+1. I kept studying about the difference between  "cross product" and "exterior product" 
+2. before we talk about exterior product. It seems like we have to talk about "tensor product" first.
+	You can take a look at wikipedia which is about "tensor product":
+	https://zh.wikipedia.org/zh-tw/%E5%BC%A0%E9%87%8F%E7%A7%AF
+3. Here's another reference talk about the relationship between wedge product(which is exterior product) and "tensor product":
+https://math.stackexchange.com/questions/2312215/relationship-between-tensor-product-and-wedge-product
 
 
 
