@@ -836,9 +836,9 @@ https://www.youtube.com/watch?v=fVmHqtjFzbA
 https://www.youtube.com/watch?v=NHomg6M9RcA
 3. tableau server api sign in basic tutorial:
 You can use this command to get site's id and auth token:
-curl --request POST http://34.124.166.158/api/3.17/auth/signin -H "Content-Type: application/json" -d @login.json --verbose
+curl --request POST http://35.185.182.105/api/3.17/auth/signin -H "Content-Type: application/json" -d @loginPro.json --verbose
 And you have the site's id and auth token you can get the view id from command:
-curl --request GET http://34.124.166.158/api/3.17/sites/7ebac3d3-55b7-4cc1-87f3-e55da6ec1437/views  -H "X-Tableau-Auth:tHc010hNQ_CZ9iIFjyidhw|aITMcKzT8GIXHGTkYFtskZqxLXUicj4u|7ebac3d3-55b7-4cc1-87f3-e55da6ec1437"  --verbose
+curl --request GET http://35.185.182.105/api/3.17/sites/a2fcf902-b158-4028-a9c2-fb94cc129316/views?pageSize=130  -H "X-Tableau-Auth:rnki0VJCT8K7Qpr_cDM4Pw|2U76XDsLHGK5NYgfZwgsD8u7Gp6hsU1F|a2fcf902-b158-4028-a9c2-fb94cc129316"  --verbose
 which "X-Tableau_Auth" is the credential token
 
 
