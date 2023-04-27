@@ -1385,6 +1385,10 @@ https://zh.wikipedia.org/zh-tw/%E7%9B%B8%E5%85%B3_(%E6%A6%82%E7%8E%87%E8%AE%BA)
 3. Here's another reference talk about the relationship between wedge product(which is exterior product) and "tensor product":
 https://math.stackexchange.com/questions/2312215/relationship-between-tensor-product-and-wedge-product
 
+2023/4/27
+1. Keep studying about what is "exterior product" and "tensor product".
+2. if we want to talk about exterior product, have to understand "multivectors"
+
 
 
 
