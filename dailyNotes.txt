@@ -1388,6 +1388,7 @@ https://math.stackexchange.com/questions/2312215/relationship-between-tensor-pro
 2023/4/27
 1. Keep studying about what is "exterior product" and "tensor product".
 2. if we want to talk about exterior product, have to understand "multivectors"
+3. I think "multivectors" is the key, if you understand "multivectors" you can understand why we need "exterior product"  and why we need "exterior product"
 
 
 
