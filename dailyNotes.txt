@@ -1396,6 +1396,10 @@ https://math.stackexchange.com/questions/2312215/relationship-between-tensor-pro
 1. When I use multiple Threads in python. every function you want to execute would execute together with threads you are starting to run.
 So if you want to wait for other threads to end. You have to use join() function, here's some example talks about this:
 https://medium.com/ching-i/%E5%A4%9A%E5%9F%B7%E8%A1%8C%E7%B7%92-python-threading-52e1dfb3d5c9
+2. I was trying to use python to run multiple threads, but the speed is way more slower than single thread. It seems like the multiple threads in python
+is not reallyl multiple but single thread and need to swtich to threads each other. Here's some refernece talks about this:
+https://blog.csdn.net/winter2121/article/details/115280178
+
 
 
 
