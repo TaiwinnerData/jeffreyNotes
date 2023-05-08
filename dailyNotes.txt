@@ -1392,6 +1392,12 @@ https://math.stackexchange.com/questions/2312215/relationship-between-tensor-pro
 4. study about how to use multiple process in python.
 
 
+2023/5/8
+1. When I use multiple Threads in python. every function you want to execute would execute together with threads you are starting to run.
+So if you want to wait for other threads to end. You have to use join() function, here's some example talks about this:
+https://medium.com/ching-i/%E5%A4%9A%E5%9F%B7%E8%A1%8C%E7%B7%92-python-threading-52e1dfb3d5c9
+
+
 
 
 
