@@ -1400,6 +1400,19 @@ https://medium.com/ching-i/%E5%A4%9A%E5%9F%B7%E8%A1%8C%E7%B7%92-python-threading
 is not reallyl multiple but single thread and need to swtich to threads each other. Here's some refernece talks about this:
 https://blog.csdn.net/winter2121/article/details/115280178
 
+2023/5/10
+1. How can i set "login system" in flask backend.
+2. python, what does this mean below?
+	def my_funct(*args):
+		print(args)
+
+	def my_funct(**kwargs):
+		print(kwargs)
+
+3. python, how to define a function inside another function?
+4. In python, multiprocesses in taiwinner. 
+The 4 process spend like 30 minutes
+The 10 processes spend like 26 minutes
 
 
 
