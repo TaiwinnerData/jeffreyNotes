@@ -1414,6 +1414,16 @@ https://blog.csdn.net/winter2121/article/details/115280178
 The 4 process spend like 30 minutes
 The 10 processes spend like 26 minutes
 
+2023/5/15
+1. I was studying how to use "tableau" basic. Including below
+	a. how to create basic view from data source from sql server
+	b. how to create parameter with formula
+2. how can i disconnect/log out from windows network share(you can see from file explorer), here's some reference talks about
+this:
+https://superuser.com/questions/883604/disconnecting-logging-out-from-windows-network-share-without-restarting-workst
+
+
+
 
 
 
