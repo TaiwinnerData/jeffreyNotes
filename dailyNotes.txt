@@ -1421,6 +1421,8 @@ The 10 processes spend like 26 minutes
 2. how can i disconnect/log out from windows network share(you can see from file explorer), here's some reference talks about
 this:
 https://superuser.com/questions/883604/disconnecting-logging-out-from-windows-network-share-without-restarting-workst
+3. review about flask backend, here's an example:
+https://github.com/psergicv/Restaurant-Management-System
 
 
 
