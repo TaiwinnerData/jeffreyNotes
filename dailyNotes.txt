@@ -1435,6 +1435,11 @@ https://github.com/psergicv/Restaurant-Management-System
 1. sql Server, how to clear the log files? Here's some reference:
 https://dotblogs.com.tw/mepowerlmay/2019/03/24/164610
 
+2023/5/24
+1. When I was trying to shrink sql server's log file by "sqlAlchemy" lib from python, It happens some error. Here's the reference:
+https://stackoverflow.com/questions/60204631/why-i-receive-error-pyodbc-error-hy000-the-driver-did-not-supply-an-error
+
+
 
 
 
