@@ -1423,8 +1423,10 @@ this:
 https://superuser.com/questions/883604/disconnecting-logging-out-from-windows-network-share-without-restarting-workst
 3. review about flask backend, here's an sample project:
 https://github.com/psergicv/Restaurant-Management-System
-4. how do i transpose data from backend to frontend.
-5. I need to study docker. What exactly is docker? And how can i use it?
+4. When you run flask --app run in this example above, when you ask you that you need MySQLdb, You should use this command below:
+"pip install mysqlclient"
+5. how do i transpose data from backend to frontend.
+6. I need to study docker. What exactly is docker? And how can i use it?
 
 2023/5/16
 1. I was using python flask backend. xhr.responseText in javascript doesn't show anything. Again, this problem is encountered before
