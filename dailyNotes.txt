@@ -1444,7 +1444,7 @@ https://stackoverflow.com/questions/60204631/why-i-receive-error-pyodbc-error-hy
 2023/5/26
 1. Flask Practice, full tutorial, here's some rerference talks about this:
 https://hackmd.io/@shaoeChen/HJiZtEngG/https%3A%2F%2Fhackmd.io%2Fs%2FSyP4YEnef
-
+2. I was trying to use python multiple Process, and I encounter something called "運行一次包裝器"? What is it?
 
 
 
