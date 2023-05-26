@@ -1449,6 +1449,8 @@ https://hackmd.io/@shaoeChen/HJiZtEngG/https%3A%2F%2Fhackmd.io%2Fs%2FSyP4YEnef
 https://community.safe.com/s/question/0D54Q000080hBRlSAM/deployed-batch-runs-very-slow-as-scheduled-task
 Here's another reference talks about this:
 https://serverfault.com/questions/151824/process-runs-slower-as-a-scheduled-task-than-it-does-interactively
+The key points is that in windows vista, the task schedule has it's own priority. You should export 
+the schedule task and reset the priority value.
 
 
 
