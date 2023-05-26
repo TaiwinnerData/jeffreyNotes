@@ -1445,7 +1445,10 @@ https://stackoverflow.com/questions/60204631/why-i-receive-error-pyodbc-error-hy
 1. Flask Practice, full tutorial, here's some rerference talks about this:
 https://hackmd.io/@shaoeChen/HJiZtEngG/https%3A%2F%2Fhackmd.io%2Fs%2FSyP4YEnef
 2. I was trying to use python multiple Process, and I encounter something called "運行一次包裝器"? What is it?
-3. 
+3. It seems like it is because of the "Priority" of the task in windows scheduler. Here's a reference talks about this:
+https://community.safe.com/s/question/0D54Q000080hBRlSAM/deployed-batch-runs-very-slow-as-scheduled-task
+Here's another reference talks about this:
+https://serverfault.com/questions/151824/process-runs-slower-as-a-scheduled-task-than-it-does-interactively
 
 
 
