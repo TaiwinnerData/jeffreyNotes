@@ -1439,6 +1439,10 @@ https://dotblogs.com.tw/mepowerlmay/2019/03/24/164610
 1. When I was trying to shrink sql server's log file by "sqlAlchemy" lib from python, It happens some error. Here's the reference:
 https://stackoverflow.com/questions/60204631/why-i-receive-error-pyodbc-error-hy000-the-driver-did-not-supply-an-error
 
+2023/5/26
+1. Flask Practice, full tutorial, here's some rerference talks about this:
+https://hackmd.io/@shaoeChen/HJiZtEngG/https%3A%2F%2Fhackmd.io%2Fs%2FSyP4YEnef
+
 
 
 
