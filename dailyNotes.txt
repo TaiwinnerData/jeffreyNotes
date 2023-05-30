@@ -1455,6 +1455,9 @@ the schedule task and reset the priority value.
 2023/5/30
 1. Study about how to use mutlprocessing, Process, pool in python to deal with multiProcess data to sql program. It
 seems like you have to use "Pool" to prevent recreate connection in every process
+2. Review about how to use "with" statement in python. And how it works. It seems like with statement is mostly used
+in "file open" situation, but i see other situation use it too. Here's some reference talks about this:
+https://builtin.com/software-engineering-perspectives/what-is-with-statement-python
 
 
 
