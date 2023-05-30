@@ -1452,6 +1452,11 @@ https://serverfault.com/questions/151824/process-runs-slower-as-a-scheduled-task
 The key points is that in windows vista, the task schedule has it's own priority. You should export 
 the schedule task and reset the priority value.
 
+2023/5/30
+1. Study about how to use mutlprocessing, Process, pool in python to deal with multiProcess data to sql program. It
+seems like you have to use "Pool" to prevent recreate connection in every process
+
+
 
 
 
