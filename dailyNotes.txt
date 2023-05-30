@@ -1458,6 +1458,9 @@ seems like you have to use "Pool" to prevent recreate connection in every proces
 2. Review about how to use "with" statement in python. And how it works. It seems like with statement is mostly used
 in "file open" situation, but i see other situation use it too. Here's some reference talks about this:
 https://builtin.com/software-engineering-perspectives/what-is-with-statement-python
+3. How to use "Process" and "Pool" in "multiprocessing" in python basic?? Here's a reference:
+https://docs.python.org/zh-tw/3/library/multiprocessing.html
+
 
 
 
