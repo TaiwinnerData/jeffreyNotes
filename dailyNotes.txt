@@ -1460,6 +1460,16 @@ in "file open" situation, but i see other situation use it too. Here's some refe
 https://builtin.com/software-engineering-perspectives/what-is-with-statement-python
 3. How to use "Process" and "Pool" in "multiprocessing" in python basic?? Here's a reference:
 https://docs.python.org/zh-tw/3/library/multiprocessing.html
+4. What is the difference between "Pool" and "Process" in "multiprocessing" in python?? Here's a reference talks about this:
+https://towardsdatascience.com/how-to-use-the-multiprocessing-package-in-python3-a1c808415ec2
+5. Why is there no faster when i use Pool() in multiprocessing when the Pool number over than 2? Here's a reference talks about this:
+https://stackoverflow.com/questions/50748857/why-is-there-no-influence-after-using-more-than-2-processes-in-pool
+
+2023/5/31
+1. keep studying about How python multiprocessing works? And how can i use it?? Here's a reference talks about this:
+https://zhuanlan.zhihu.com/p/340657122
+2. In python, how can we change scientific notation to normal float?? You first need to learn how to use format() function in python
+3. review about how to use "format" in string in python, Review about how to use 
 
 
 
