@@ -1471,6 +1471,10 @@ https://zhuanlan.zhihu.com/p/340657122
 2. In python, how can we change scientific notation to normal float?? You first need to learn how to use format() function in python
 3. Review about how to use format() in python. Here's some reference talks about this:
 https://www.w3schools.com/python/ref_string_format.asp
+4. why use oop in python? Here's some reference talks about this:
+https://stackoverflow.com/questions/36640673/why-should-i-use-classes-in-python
+
+
 
 
 
