@@ -228,7 +228,8 @@ https://stackoverflow.com/questions/42601478/flask-calling-python-function-on-bu
 2022/9/29
 1. in python class, what's the difference between "staticmethod", "classmethod" and normal instance method. here's some reference talk about this: 
 https://zhuanlan.zhihu.com/p/28010894
-https://blog.csdn.net/Gobsd/article/details/56282967    , <---- here's another reference talk about this.
+https://blog.csdn.net/Gobsd/article/details/56282967
+, <---- here's another reference talk about this.
 2. should and could i use bultin server in flask?? here's some discussion talk about this: 
 https://stackoverflow.com/questions/20843486/what-are-the-limitations-of-the-flask-built-in-web-server
 3. CA003499 9/7's record in questions has some problems.
@@ -1473,7 +1474,13 @@ https://zhuanlan.zhihu.com/p/340657122
 https://www.w3schools.com/python/ref_string_format.asp
 4. why use oop in python? Here's some reference talks about this:
 https://stackoverflow.com/questions/36640673/why-should-i-use-classes-in-python
-
+5. When I code in python, when and how to use "comments" and "docstrings"? And what is the difference between both of them?
+Here's a reference talks about this:
+https://www.pythonforbeginners.com/comments/when-to-use-comments-vs-docstrings-in-python
+6. Here's another flask example I think you can check it out:
+https://github.com/XD-DENG/flask-example
+https://github.com/sumairz/photo-gallery-python-flask
+7. In vim, if you want to get the total line number you can use "ctrl-g"
 
 
 
