@@ -1482,6 +1482,11 @@ https://github.com/XD-DENG/flask-example
 https://github.com/sumairz/photo-gallery-python-flask
 7. In vim, if you want to get the total line number you can use "ctrl-g"
 
+2023/6/1
+1. Keep modified taiwinner module codes
+2. study about how to use decorator correctly.
+3. What is *args and **kwargs do in decorator??
+
 
 
 
