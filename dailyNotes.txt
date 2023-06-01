@@ -1485,7 +1485,6 @@ https://github.com/sumairz/photo-gallery-python-flask
 2023/6/1
 1. Keep modified taiwinner module codes
 2. study about how to use decorator correctly.
-https://skylinelimit.blogspot.com/2018/04/python-args-kwargs.html
 3. What is *args and **kwargs do in decorator?? Here's a reference talk about how to use "*" and "**".
 https://skylinelimit.blogspot.com/2018/04/python-args-kwargs.html
 
