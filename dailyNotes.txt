@@ -1494,6 +1494,7 @@ https://skylinelimit.blogspot.com/2018/04/python-args-kwargs.html
 https://ithelp.ithome.com.tw/articles/10276797    ---> this website is kinda outdated. the function is not useful anymore
 https://www.browserstack.com/guide/download-file-using-selenium-python
 https://pythonexamples.org/python-selenium-find-element-by-class-name/
+https://www.geeksforgeeks.org/download-file-in-selenium-using-python/
 
 
 
