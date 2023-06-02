@@ -1489,6 +1489,13 @@ https://github.com/sumairz/photo-gallery-python-flask
 https://skylinelimit.blogspot.com/2018/04/python-args-kwargs.html
 
 
+2023/6/2
+1. study about how to use selenium to do the basic download method, here are some references:
+https://ithelp.ithome.com.tw/articles/10276797    ---> this website is kinda outdated. the function is not useful anymore
+https://www.browserstack.com/guide/download-file-using-selenium-python
+https://pythonexamples.org/python-selenium-find-element-by-class-name/
+
+
 
 
 
