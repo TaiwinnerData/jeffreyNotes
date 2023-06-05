@@ -1499,9 +1499,11 @@ https://www.geeksforgeeks.org/download-file-in-selenium-using-python/
 
 2023/6/5
 1. modified ETL codes.
-2 In python, when you want to use string for a variable file path, you should better use "r" before the string or some error 
+2. In python, when you want to use string for a variable file path, you should better use "r" before the string or some error 
 may come, here's a reference talks about this:
 https://stackoverflow.com/questions/37400974/error-unicode-error-unicodeescape-codec-cant-decode-bytes-in-position-2-3
+3. should I use documentation even when i remember the lib?
+https://www.quora.com/Is-it-okay-if-I-dont-remember-the-syntax-of-the-libraries-I-use-in-Python
 
 
 
