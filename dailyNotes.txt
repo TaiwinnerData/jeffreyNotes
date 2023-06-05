@@ -1504,18 +1504,31 @@ may come, here's a reference talks about this:
 https://stackoverflow.com/questions/37400974/error-unicode-error-unicodeescape-codec-cant-decode-bytes-in-position-2-3
 3. should I use documentation even when i remember the lib?
 https://www.quora.com/Is-it-okay-if-I-dont-remember-the-syntax-of-the-libraries-I-use-in-Python
+4. When i use vim, how can i search an exact string? here's some reference
+https://stackoverflow.com/questions/22147639/finding-exact-match-in-vim
+5. Some website will ask you to "accept cookies", that's a very important part of web development, here's some reference:
+https://www.kocpc.com.tw/archives/461832
+6. In word, how can i create new page? to avoiding to keep tape "Enter" to change to a new page, here's a reference:
+http://lisinfochamber.blogspot.com/2015/05/word-pagebreak.html
+7. What is the usage of "Pull Request" in github?? Here's some reference talks about this:
+https://gitbook.tw/chapters/github/pull-request
+8. How frequent does people use "Pull Request" when they are working in companies? You can see the answer in above
+referece url too
+9. Here's an example of php web developing:
+https://github.com/pterodactyl/panel
+And it is so compliated!
+What is the mearning of the .filename? I see this files in the main folder. Here are some reference.
+https://askubuntu.com/questions/1072377/what-does-the-period-mean-at-the-start-of-a-filename-in-a-terminal-command
+It seems like they are hidden files in linux??
 
-
-
-
-
-
-
-
-
-
-
-
+For example, What is the usage of '.editorconfig'?? here's a reference talks about this:
+https://blog.csdn.net/qq_20553613/article/details/105496828
+And ChatGpt said it is almost the same as above url. And it also said that '.' files default hidden file in linux. 
+So I think when the the project in github has '.' files, it probably means that it is developed in linux
+10. Here's another example project(big one) but use python and flask. And it also has '.editorconfig' and  '.gitignore'
+, '.prettierrrc', '.flake8'
+Here it is:
+https://github.com/jkenlooper/puzzle-massive
 
 
 
