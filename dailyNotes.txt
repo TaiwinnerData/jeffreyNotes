@@ -1522,13 +1522,49 @@ https://askubuntu.com/questions/1072377/what-does-the-period-mean-at-the-start-o
 It seems like they are hidden files in linux??
 
 For example, What is the usage of '.editorconfig'?? here's a reference talks about this:
+
 https://blog.csdn.net/qq_20553613/article/details/105496828
+https://ithelp.ithome.com.tw/m/articles/10276220
+
 And ChatGpt said it is almost the same as above url. And it also said that '.' files default hidden file in linux. 
 So I think when the the project in github has '.' files, it probably means that it is developed in linux
 10. Here's another example project(big one) but use python and flask. And it also has '.editorconfig' and  '.gitignore'
 , '.prettierrrc', '.flake8'
+
 Here it is:
 https://github.com/jkenlooper/puzzle-massive
+
+
+
+
+2023/6/6/
+1. keey studying about .editorconfig file and other .file and what is ".gitignore" file?
+2. PyCharm is one of the the most popular IDE in python community
+3. Study about how to use Pycharm
+4. When i start a project in Pycharm, Pycharm would create a lotta small files I don't really understand what it is for.
+	1. For example. What is "venv" folder in pyCharm main pythonProject folder?? It actually means virtual environment.
+		here's a reference talks about this:
+			https://www.freecodecamp.org/news/python-virtual-environments-explained-with-examples/
+	2. And what does ".idea" folder do? Here's a reference talks about this:
+			https://twitter.com/pycharm/status/936344172969242625
+		here's the conversation:
+			JetBrains PyCharm: Right, the .idea folder contains the IDE settings, such as the project interpreter. When you then 
+			open that project, does it load faster?
+
+5. Why does PEP8 recommendleaving a blank line at the end of the file? Here's some discussion talks about this:
+https://www.reddit.com/r/Python/comments/1zjugg/question_why_does_pep8_recommend_leaving_a_blank/
+6. In vscode, If you want to change line after autocomplete of the text you're typing, you can use Ctrl+Enter
+	In PyCharm, same thing, you can use Shift+Enter to change to the new line
+
+	here's a reference talks about this:
+		https://stackoverflow.com/questions/66468316/vscode-how-to-jump-after-auto-closing-bracket
+7. What exactly is the beneifits of Pycharm?
+8. How do i use Pycharm with git? Here's a reference talks about this:
+https://www.cnblogs.com/mind18/p/14595531.html
+
+9. Spyder is also a IDE!! Same as Pycharm.
+10. But what is better, Spyder or Pycharm?? Here's a reference talks about this:
+https://www.zhihu.com/question/48168875
 
 
 
