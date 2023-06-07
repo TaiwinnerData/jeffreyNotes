@@ -1592,3 +1592,9 @@ https://akuma1.pixnet.net/blog/post/291578440-%EF%BC%88%E4%B8%80%EF%BC%89%E5%89%
 https://www.youtube.com/watch?v=G0hvLDTmXig&list=PLliocbKHJNwsyKkNwFUHbZZOJ2gT9qnT9
 2. most popular cloud service comparason, reference:
 https://www.nextlink.cloud/news/aws-gcp-azure-compare-cloud-news-20221116/
+3. "README.md" and "CODE_OF_CONDUCT.md" what exactly are the usage of this two files? Here's a reference talks about this:
+https://www.renfei.net/posts/1003278
+4. "SECURITY.md" file is for github security panel. I think the most md files are for github?? Not really sure.
+5. For github projects "puzzle-massive-develop" and "panel-develop", They all have "CHANGELOG.md", "CODE_OF_CONDUCT.md", "CONTRIBUTING.md"
+So I think they probably all for github
+6. And
