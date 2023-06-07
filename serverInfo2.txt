@@ -113,15 +113,11 @@ EmailAddress:david.hsieh@taiwinner.com.tw
 Password:2aqR2S39
 Token:
 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 (old)
-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 (new)
+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 (old)
+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 (new)
 
 
 
-david's cell phone number: 0972737388 
-HR_website: https://femascloud.com/taiwinner/accounts/login    ---> account/password: 0262(your employeeID)/Desktop's password in cypherTech
----> new account/password: 0262, Jeffrey20221121
-
-ga-data, username/password: jeffrey.wu/jeffrey.wu
 tableau key, carol gave to me: TCPJ-745B-2810-EA18-7A3F
 tableau key, carol gave to me: TC3L-BA71-A950-05F8-A658
 
