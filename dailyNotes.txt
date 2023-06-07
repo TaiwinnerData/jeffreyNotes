@@ -1561,12 +1561,34 @@ https://www.reddit.com/r/Python/comments/1zjugg/question_why_does_pep8_recommend
 7. What exactly is the beneifits of Pycharm?
 8. How do i use Pycharm with git? Here's a reference talks about this:
 https://www.cnblogs.com/mind18/p/14595531.html
+https://blog.csdn.net/qq_38604355/article/details/105483794
 
 9. Spyder is also a IDE!! Same as Pycharm.
 10. But what is better, Spyder or Pycharm?? Here's a reference talks about this:
 https://www.zhihu.com/question/48168875
+11. Should I use IDE?? Here's a discussion talks about this:
+https://www.reddit.com/r/learnprogramming/comments/1u60pn/does_using_an_ide_really_turn_you_stupid/
+
+
+or maybe I should learn both
+12. What is the usage of ".gitignore" file? Here's some refernces talk about this:
+https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+	It is for when you don't want some files to be tracked by git. You add to that files to .gitigmore
+
+13. But why and when do I need .gitignore?? If I don't want git to track that file. Why not simply just don't add that file?
+Here's a reference talks about this:
+https://stackoverflow.com/questions/13675216/why-should-i-use-gitignore
+14. What is ".github" file for? here are some referneces talk about this:
+https://www.freecodecamp.org/news/how-to-use-the-dot-github-repository/
+https://stackoverflow.com/questions/60507097/is-there-an-overview-of-what-can-go-into-a-github-dot-github-directory
+15. let's talk about .git file again! .git file contains all the information required for version control. Here'a reference:
+https://stackoverflow.com/questions/29217859/what-is-the-git-folder
 
 
 
-
-
+2023/6/7
+1. AWS basic tutorial reference:
+https://akuma1.pixnet.net/blog/post/291578440-%EF%BC%88%E4%B8%80%EF%BC%89%E5%89%8D%E8%A8%80%EF%BC%8D%EF%BC%8Daws%E7%B6%93%E9%A9%97%E6%95%99%E5%AD%B8
+https://www.youtube.com/watch?v=G0hvLDTmXig&list=PLliocbKHJNwsyKkNwFUHbZZOJ2gT9qnT9
+2. most popular cloud service comparason, reference:
+https://www.nextlink.cloud/news/aws-gcp-azure-compare-cloud-news-20221116/
