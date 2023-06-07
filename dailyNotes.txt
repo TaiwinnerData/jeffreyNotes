@@ -1550,6 +1550,8 @@ https://github.com/jkenlooper/puzzle-massive
 		here's the conversation:
 			JetBrains PyCharm: Right, the .idea folder contains the IDE settings, such as the project interpreter. When you then 
 			open that project, does it load faster?
+		Well, it seems like .idea is for Jet Brains company, so you say that when the project has such .idea folder
+		It has a high probability that it is developed by JetBrains's IDE.
 
 5. Why does PEP8 recommendleaving a blank line at the end of the file? Here's some discussion talks about this:
 https://www.reddit.com/r/Python/comments/1zjugg/question_why_does_pep8_recommend_leaving_a_blank/
