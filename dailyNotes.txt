@@ -1623,4 +1623,7 @@ https://www.quora.com/When-using-Flask-is-using-React-instead-of-Jinja2-worth-it
 
 
 
-
+2023/6/30
+1. website scrape with login session. Reference tutorials:
+https://ithelp.ithome.com.tw/articles/10269592
+https://www.zenrows.com/blog/web-scraping-login-python#scraping-websites-with-csrf-token-authentication-for-login
